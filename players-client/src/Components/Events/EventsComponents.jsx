@@ -1,5 +1,5 @@
 const EventsComponents = () => {
-  return <div>EventsComponents</div>;
+  return <div>Events Components</div>;
 };
 
 export default EventsComponents;
