@@ -16,11 +16,11 @@ const EventsTopDropDown = () => {
   };
 
   return (
-    <div className="relative inline-block text-left mt-[16px]">
+    <div className="relative inline-block text-left mt-[16px] montserrat">
       <div>
         <button
           type="button"
-          className="rounded-md border-gray-300 shadow-sm px-[16px] py-[18px] bg-white text-sm font-medium text-gray-700 hover:bg-gray-50  flex item-center justify-between"
+          className="rounded-[6px] border-gray-300 shadow-sm py-[10px] my-[8px] px-[16px] bg-white text-sm text-gray-700 hover:bg-gray-50  flex item-center justify-between text-[16px]"
           onClick={toggleDropdown}
         >
           {selectedOption ? selectedOption : "Select an option"}
@@ -32,7 +32,7 @@ const EventsTopDropDown = () => {
 
       {isOpen && (
         <div
-          className="origin-top-right absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+          className="origin-top-right absolute left-0 mt-2 w-56  rounded-[6px] shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="options-menu"
