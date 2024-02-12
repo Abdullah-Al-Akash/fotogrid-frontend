@@ -61,12 +61,12 @@ const EventTabs = ({ tab, setTab }) => {
                 Hall of Donors
               </p>
             </div>
-            <div className="md:hidden ms-3">
+            <div className="md:hidden ms-3 ">
               <DropDownTab tab={tab} setTab={setTab} />
             </div>
           </div>
         </div>
-        <div className="mt-[15px] bg-white rounded-[8px]">
+        <div className="mt-[15px] bg-white rounded-[8px] px-[24px]">
           {tab === "tab1" ? (
             <ResultsAndStanding />
           ) : tab === "tab2" ? (

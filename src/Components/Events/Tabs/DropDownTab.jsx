@@ -32,7 +32,7 @@ const DropDownTab = ({ tab, setTab }) => {
 
         {isOpen && (
           <div
-            className="origin-top-right absolute left-0 mt-2 w-56  rounded-[6px] shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+            className="origin-top-right absolute left-0 mt-2 w-56  rounded-[6px] shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-[999]"
             role="menu"
             aria-orientation="vertical"
             aria-labelledby="options-menu"
