@@ -1,9 +1,9 @@
-import EventsComponents from "../../Components/Events/EventsComponents";
+import EventsTopDropDown from "../../Components/Events/EventsTopDropDown";
 
 const Events = () => {
   return (
     <div>
-      <EventsComponents />
+      <EventsTopDropDown />
     </div>
   );
 };
