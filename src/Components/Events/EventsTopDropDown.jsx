@@ -16,11 +16,11 @@ const EventsTopDropDown = () => {
   };
 
   return (
-    <div className="relative inline-block text-left mt-[15px]">
+    <div className="relative inline-block text-left mt-[16px]">
       <div>
         <button
           type="button"
-          className="rounded-md border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50  flex item-center justify-between"
+          className="rounded-md border-gray-300 shadow-sm px-[16px] py-[18px] bg-white text-sm font-medium text-gray-700 hover:bg-gray-50  flex item-center justify-between"
           onClick={toggleDropdown}
         >
           {selectedOption ? selectedOption : "Select an option"}

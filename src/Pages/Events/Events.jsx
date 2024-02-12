@@ -1,7 +1,7 @@
 import EventsTopDropDown from "../../Components/Events/EventsTopDropDown";
 
 const Events = () => {
-  return (
+  return ( 
     <div>
       <EventsTopDropDown />
     </div>
