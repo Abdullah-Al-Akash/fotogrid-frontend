@@ -5,6 +5,7 @@
 
 body {
     background: #F2F2F2;
+    min-height: 100vh;
     height: 100%;
 }
 
