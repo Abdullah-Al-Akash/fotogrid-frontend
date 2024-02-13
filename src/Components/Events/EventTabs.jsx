@@ -11,7 +11,7 @@ import Schedule from "./Tabs/Schedule";
 const EventTabs = ({ tab, setTab }) => {
   return (
     <div className="mt-[16px]">
-      <div className="bg-white rounded-[8px]">
+      <div className="bg-white rounded-[8px] pb-[84px]">
         <div className="border-b">
           <div className="bg-[#FBFBFB]  rounded-t-[8px]">
             <div className="md:flex hidden items-start gap-[16px] px-[24px] text-[20px] text-[#7D7D7D] rubik ">

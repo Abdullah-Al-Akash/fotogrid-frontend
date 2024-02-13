@@ -26,3 +26,12 @@ font-family: 'Bebas Neue', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Rubik', sans-serif; 
 */
+
+li::marker {
+    color: #ABABAB;
+    width: 8px;
+    height: 8px;
+}
+input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+}

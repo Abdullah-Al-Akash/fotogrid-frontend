@@ -6,7 +6,7 @@ const ResultTable = () => {
       <table className="table !font-medium ">
         {/* head */}
         <thead>
-          <tr className="bg-base-200 !text-[16px] !montserrat ">
+          <tr className="bg-base-200 !text-[16px] !montserrat text-center">
             <th className="border-r">Club</th>
             <th className="border-r">Total Plays</th>
             <th className="border-r">Total Wins</th>
@@ -24,12 +24,12 @@ const ResultTable = () => {
               <img src={resultTableImage} className="w-[28] h-[28]" alt="" />
               <h1>Victoria</h1>
             </th>
-            <td className="border-r">10</td>
-            <td className="border-r">10</td>
-            <td className="border-r">0</td>
-            <td className="border-r">100</td>
-            <td className="border-r">50</td>
-            <td className="border-r">50</td>
+            <td className="border-r text-center">10</td>
+            <td className="border-r text-center">10</td>
+            <td className="border-r text-center">0</td>
+            <td className="border-r text-center">100</td>
+            <td className="border-r text-center">50</td>
+            <td className="border-r text-center">50</td>
             <td className="flex flex-col md:flex-row items-center gap-[8px] ">
               <img src={trophy} className="w-[20px] h-[20px]" alt="" />
               <p className="text-[16px]">Winner</p>
@@ -41,12 +41,12 @@ const ResultTable = () => {
               <img src={resultTableImage} className="w-[28] h-[28]" alt="" />
               <h1>Victoria</h1>
             </th>
-            <td className="border-r">10</td>
-            <td className="border-r">10</td>
-            <td className="border-r">0</td>
-            <td className="border-r">100</td>
-            <td className="border-r">50</td>
-            <td className="border-r">50</td>
+            <td className="border-r text-center">10</td>
+            <td className="border-r text-center">10</td>
+            <td className="border-r text-center">0</td>
+            <td className="border-r text-center">100</td>
+            <td className="border-r text-center">50</td>
+            <td className="border-r text-center">-50</td>
             <td className="flex flex-col md:flex-row items-center gap-[8px]">
               <img src={trophy} className="w-[20px] h-[20px]" alt="" />
               <p className="text-[16px]">Winner</p>
