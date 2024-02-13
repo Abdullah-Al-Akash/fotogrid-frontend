@@ -7,7 +7,7 @@ const LeaderBoard = () => {
         Leaderboard
       </h2>
       <TableWrapper>
-        <table className="rounded-[2px] mt-[8px] ">
+        <table className="rounded-[2px] mt-[8px] w-[1500px] ">
           <thead className="bg-primary">
             <tr>
               <th className="text-[14px] text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
