@@ -32,3 +32,6 @@ li::marker {
     width: 8px;
     height: 8px;
 }
+input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+}

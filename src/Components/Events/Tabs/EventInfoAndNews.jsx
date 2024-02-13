@@ -1,7 +1,7 @@
 const EventInfoAndNews = () => {
   return (
     <div className="">
-      <div className="flex flex-col gap-[16px]">
+      <div className="flex flex-col gap-[16px] text-[#4A4A4A]">
         <div className="mt-[8px]">
           <h2 className="uppercase bebas-Neue text-[24px] ">Event Info</h2>
           <div className="mt-[16px]">
