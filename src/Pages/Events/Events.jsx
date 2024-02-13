@@ -9,7 +9,7 @@ const Events = () => {
   return (
     <div>
       <EventsTopDropDown />
-      <CakraSaktiCup />
+      <CakraSaktiCup tab={tab} />
       <EventTabs setTab={setTab} tab={tab} />
     </div>
   );

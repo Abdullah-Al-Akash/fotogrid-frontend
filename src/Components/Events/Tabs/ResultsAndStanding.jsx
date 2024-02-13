@@ -53,7 +53,7 @@ const ResultsAndStanding = () => {
           </div>
         </div>
       </div>
-      <div className="my-[8px] ">
+      <div className="my-[8px]">
         <h2 className="bebas-Neue uppercase text-[24px] mb-[8px] pb-[9px]">
           Standings
         </h2>
