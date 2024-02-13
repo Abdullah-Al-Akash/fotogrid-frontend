@@ -21,7 +21,7 @@ const Dropdown = ({ options, label }) => {
       <div>
         <button
           type="button"
-          className="rounded-[6px] border-gray-300 shadow-sm py-[8px] px-[16px] bg-white text-sm text-gray-700  flex item-center justify-between text-[16px] font-medium"
+          className="h-[48px] rounded-[6px]   border-gray-300 shadow-sm py-[8px] px-[16px] bg-white text-sm text-gray-700  flex items-center justify-between text-[16px] font-medium"
           onClick={toggleDropdown}
         >
           {selectedOption ? selectedOption : label}
