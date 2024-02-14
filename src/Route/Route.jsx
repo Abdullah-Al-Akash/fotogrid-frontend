@@ -1,4 +1,7 @@
+/* eslint-disable no-unused-vars */
 import { createBrowserRouter } from "react-router-dom";
+import React from "react"; // Add this line to import React
+
 import Main from "../Layout/Main/Main";
 import Home from "../Pages/Home/Home";
 import Events from "../Pages/Events/Events";
