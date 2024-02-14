@@ -7,7 +7,7 @@ const PlayerInfo = () => {
   const [tab, setTab] = useState("tab1");
   return (
     <>
-      <section className="border-t-[1px]  border-[#333333] md:grid md:grid-cols-4 gap-[22px]">
+      <section className="border-t-[1px] container  border-[#333333] md:grid md:grid-cols-4 gap-[22px]">
         <div className="bg-[#242424] h-[570px] rounded-[6px] mt-[24px]">
           <div className="p-[28px]">
             <img
