@@ -1,11 +1,11 @@
-import LeaderBoard from "./LeaderBoard";
-import PlayerTopbar from "./PlayerTopbar";
+import PlayerInfo from "./PlayerInfo";
+import PlayersTopBar from "./PlayersTopBar";
 
 const PlayersComponents = () => {
   return (
-    <main className="min-h-screen bg-primary">
-      <PlayerTopbar />
-      <LeaderBoard />
+    <main className="min-h-screen bg-[#1E1E1E] montserrat">
+      <PlayersTopBar />
+      <PlayerInfo />
     </main>
   );
 };
