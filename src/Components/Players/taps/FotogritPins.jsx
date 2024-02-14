@@ -12,11 +12,7 @@ const FotogritPins = () => {
               key={item}
               className="bg-white my-[18px] sm:my-auto p-[24px] rounded-[6px]"
             >
-              <img
-                className="w-full"
-                src="../../../../public/Logo (3).png"
-                alt="player image"
-              />
+              <img className="w-full" src="/Logo (3).png" alt="player image" />
               <div className="text-center">
                 <h3 className="text-[14px] mt-[24px] leading-[24px] text-[#7D7D7D]">
                   Event Group TitIe
