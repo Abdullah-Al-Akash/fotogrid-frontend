@@ -53,7 +53,7 @@ const PlayerInfo = () => {
             <div className="px-[30px] py-[18px] flex gap-[6px] items-center  ">
               <img
                 className="w-[28px] h-[28px]"
-                src="../../../public/cup.png"
+                src="/../../public/cup.png"
                 alt="cup"
               />
               <h3 className="text-[48px] leading-[60px] text-[#F2F2F2]">45</h3>
