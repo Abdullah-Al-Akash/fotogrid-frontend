@@ -4,7 +4,7 @@ import { FiSearch } from "react-icons/fi";
 
 const PlayersTopBar = () => {
   return (
-    <section className="flex items-center justify-between py-[28px] px-[8px]">
+    <section className="flex container items-center justify-between py-[28px] px-[8px]">
       <Link
         className="text-[#7D7D7D] flex items-center gap-[10px] text-[20px] leading-[28px]"
         to="#"
