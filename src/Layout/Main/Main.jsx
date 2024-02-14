@@ -4,7 +4,7 @@ import Topvar from "../../Shared/Topvar/Topvar";
 
 const Main = () => {
   return (
-    <div className="max-w-[1512px] md:mx-auto mx-2">
+    <div className="max-w-[1512px] xl:mx-auto  mx-3">
       <Topvar></Topvar>
       <Navbar></Navbar>
       <Outlet></Outlet>

@@ -1,8 +1,7 @@
-import { useState } from "react";
-import { FaArrowUp } from "react-icons/fa";
-import { FaArrowDown } from "react-icons/fa6";
+import React, { useState } from "react";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
-const EventsTopDropDown = () => {
+const AgeDropDown = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
 
@@ -14,18 +13,17 @@ const EventsTopDropDown = () => {
     setSelectedOption(option);
     setIsOpen(false);
   };
-
   return (
     <div className="relative inline-block text-left mt-[16px] montserrat">
       <div>
         <button
           type="button"
-          className="rounded-[6px] border-gray-300 shadow-sm py-[10px] my-[8px] px-[16px] bg-white text-sm text-gray-700 hover:bg-gray-50  flex item-center justify-between text-[16px]"
+          className="rounded-[6px] text-[#1A1A1A] border-gray-300 shadow-sm py-[10px] my-[8px] px-[16px] bg-white text-sm  hover:bg-gray-50  flex item-center justify-between text-[16px] montserrat"
           onClick={toggleDropdown}
         >
-          {selectedOption ? selectedOption : "Select an option"}
-          <span className={`mt-[2px] ms-[26px]`}>
-            {isOpen ? <FaArrowUp /> : <FaArrowDown />}
+          {selectedOption ? selectedOption : "Age Group"}
+          <span className={`mt-[3px] ms-[20px]`}>
+            {isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
           </span>
         </button>
       </div>
@@ -39,11 +37,11 @@ const EventsTopDropDown = () => {
         >
           <div className="py-1" role="none">
             <button
-              onClick={() => handleOptionClick("Cakra Sakti Cup 2023")}
+              onClick={() => handleOptionClick("Age Group")}
               className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
               role="menuitem"
             >
-              Cakra Sakti Cup 2023
+              Age Group
             </button>
             <button
               onClick={() => handleOptionClick("Option 2")}
@@ -66,4 +64,4 @@ const EventsTopDropDown = () => {
   );
 };
 
-export default EventsTopDropDown;
+export default AgeDropDown;

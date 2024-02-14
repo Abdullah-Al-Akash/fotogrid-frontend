@@ -1,29 +1,159 @@
 import React from "react";
+import { useState } from "react";
+import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowUp } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedOption, setSelectedOption] = useState(null);
+
+  //For Player dropdown:
+  const [isPlayerOpen, setIsPlayerOpen] = useState(false);
+  const [playerSelected, setPlayerSelected] = useState(null);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const handleOptionClick = (option) => {
+    setSelectedOption(option);
+    setIsOpen(false);
+  };
+
+  //   For Player:
+  const toggleDropdownForPlayer = () => {
+    setIsPlayerOpen(!isPlayerOpen);
+  };
+
+  const handleOptionClickForPlayer = (option) => {
+    setPlayerSelected(option);
+    setIsPlayerOpen(false);
+  };
   const navOptions = (
     <>
       <li>
-        <a className="bebas-Neue font-normal text-2xl leading-8	uppercase">
+        <Link
+          to="/"
+          className="bebas-Neue font-normal text-2xl leading-8	uppercase text-[#A46E40]"
+        >
           Home
+        </Link>
+      </li>
+      <li className="md:ms-[56px]">
+        <div className="relative inline-block text-left montserrat">
+          <div>
+            <button
+              type="button"
+              className="flex item-center justify-between bebas-Neue font-normal text-2xl leading-8	uppercase"
+              onClick={toggleDropdown}
+            >
+              {selectedOption ? selectedOption : "Event"}
+              <span className={`mt-[2px] ms-[5px]`}>
+                {isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
+              </span>
+            </button>
+          </div>
+
+          {isOpen && (
+            <div
+              className="origin-top-right absolute left-0 mt-2 w-24  rounded-[6px] shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-[999999999]"
+              role="menu"
+              aria-orientation="vertical"
+              aria-labelledby="options-menu"
+            >
+              <div className="py-1" role="none">
+                <Link
+                  to="/events"
+                  onClick={() => handleOptionClick("Event")}
+                  className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
+                  role="menuitem"
+                >
+                  Event
+                </Link>
+                <button
+                  onClick={() => handleOptionClick("Event1")}
+                  className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
+                  role="menuitem"
+                >
+                  Event2
+                </button>
+                <button
+                  onClick={() => handleOptionClick("Event2")}
+                  className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
+                  role="menuitem"
+                >
+                  Event3
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+      </li>
+      <li className="md:ms-[56px]">
+        <div className="relative inline-block text-left montserrat">
+          <div>
+            <button
+              type="button"
+              className="flex item-center justify-between bebas-Neue font-normal text-2xl leading-8	uppercase"
+              onClick={toggleDropdownForPlayer}
+            >
+              {playerSelected ? playerSelected : "Players"}
+              <span className={`mt-[2px] ms-[5px]`}>
+                {isPlayerOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
+              </span>
+            </button>
+          </div>
+
+          {isPlayerOpen && (
+            <div
+              className="origin-top-right absolute left-0 mt-2 w-24  rounded-[6px] shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-[999999999]"
+              role="menu"
+              aria-orientation="vertical"
+              aria-labelledby="options-menu"
+            >
+              <div className="py-1" role="none">
+                <Link
+                  to="/players"
+                  onClick={() => handleOptionClickForPlayer("Players")}
+                  className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
+                  role="menuitem"
+                >
+                  Player
+                </Link>
+                <button
+                  onClick={() => handleOptionClickForPlayer("Player1")}
+                  className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
+                  role="menuitem"
+                >
+                  Player1
+                </button>
+                <button
+                  onClick={() => handleOptionClickForPlayer("Player2")}
+                  className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
+                  role="menuitem"
+                >
+                  Player2
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+      </li>
+      <li className="md:ms-[56px]">
+        <a className="bebas-Neue font-normal text-2xl leading-8 uppercase">
+          Service
         </a>
       </li>
-      <li>
-        <a>Events</a>
-      </li>
-      <li>
-        <a>Players</a>
-      </li>
-      <li>
-        <a>Service</a>
-      </li>
-      <li>
-        <a>About Fotogrit</a>
+      <li className="md:ms-[56px]">
+        <a className="bebas-Neue font-normal text-2xl leading-8 uppercase">
+          About Fotogrit
+        </a>
       </li>
     </>
   );
   return (
-    <div>
+    <div className="md:px-[64px] bg-white">
       <div className="navbar mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
@@ -45,15 +175,13 @@ const NavBar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[#A46E40]"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2  w-52 text-[#A46E40]"
             >
               {navOptions}
             </ul>
           </div>
           <div className="navbar-start hidden w-full lg:flex">
-            <ul className="menu menu-horizontal text-[#A46E40]">
-              {navOptions}
-            </ul>
+            <ul className="menu-horizontal text-[#A46E40]">{navOptions}</ul>
           </div>
         </div>
 
