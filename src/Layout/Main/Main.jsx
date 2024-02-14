@@ -9,7 +9,9 @@ const Main = () => {
     <div className="">
       <Topvar></Topvar>
       <Navbar></Navbar>
-      <Outlet></Outlet>
+      <div className="md:min-h-[calc(100vh-172px)]">
+        <Outlet></Outlet>
+      </div>
       <Footer></Footer>
     </div>
   );

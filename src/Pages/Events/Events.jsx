@@ -7,7 +7,7 @@ import EventsTopDropDown from "../../Components/Events/EventsTopDropDown";
 const Events = () => {
   const [tab, setTab] = useState("tab1");
   return (
-    <div>
+    <div className="container my-2">
       <EventsTopDropDown />
       <CakraSaktiCup tab={tab} />
       <EventTabs setTab={setTab} tab={tab} />

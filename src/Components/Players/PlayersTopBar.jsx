@@ -1,11 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { IoIosArrowBack } from "react-icons/io";
 import { FiSearch } from "react-icons/fi";
 
 const PlayersTopBar = () => {
+  const navigate = useNavigate();
   return (
     <section className="flex container md:flex-row flex-col md:items-center md:justify-between py-[28px] px-[8px]">
       <Link
+        onClick={() => navigate(-1)}
         className="text-[#7D7D7D]  flex items-center gap-[10px] text-[20px] leading-[28px]"
         to="#"
       >

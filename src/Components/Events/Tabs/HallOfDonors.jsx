@@ -60,8 +60,8 @@ const HallOfDonors = () => {
     },
   ];
   return (
-    <div className="flex flex-col gap-[16px]">
-      <div className="mt-[16px]">
+    <div className="flex flex-col">
+      <div className="">
         <div className="flex flex-col md:flex-row gap-[15px] md:gap-0 md:justify-between md:items-center">
           <div className="flex gap-[16px]">
             <AgeGroupDropDown />
@@ -77,7 +77,7 @@ const HallOfDonors = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-12 gap-[24px]">
+      <div className="grid grid-cols-12 gap-[24px] mt-[16px]">
         <div className="md:col-span-8 col-span-12 border  rounded-[6px]">
           <div className="p-[24px]">
             <h2 className="mb-[8px] text-[24px] bebas-Neue">
