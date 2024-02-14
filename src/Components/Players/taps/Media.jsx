@@ -1,4 +1,3 @@
-
 import Dropdown from "../../ui/dropdown";
 import { defaultOptions } from "../../../constants/player.constants";
 import { FiSearch } from "react-icons/fi";
@@ -60,6 +59,6 @@ const Media = () => {
       </div>
     </div>
   );
-
+};
 
 export default Media;
