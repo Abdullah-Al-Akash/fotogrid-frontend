@@ -28,7 +28,7 @@ font-family: 'Rubik', sans-serif;
 */
 
 .container {
-  @apply !max-w-[1512px] mx-auto  px-6;
+  @apply !max-w-[1512px] mx-auto  px-3;
 }
 
 li::marker {

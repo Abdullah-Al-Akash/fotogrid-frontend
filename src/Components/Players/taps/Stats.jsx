@@ -7,8 +7,8 @@ import TableWrapper from "../../ui/table-wrapper";
 const Stats = () => {
   return (
     <div>
-      <div className="flex  bebas-Neue justify-between items-center">
-        <div className="flex items-center bebas-Neue gap-[24px]">
+      <div className="flex  bebas-Neue lg:flex-row flex-col justify-between items-center">
+        <div className="flex flex-col md:flex-row items-center bebas-Neue gap-[24px]">
           <div className="flex items-center gap-[24px]">
             <h3 className="text-[24px] leading-[32px]">Age Group</h3>
             <Dropdown options={defaultOptions} label="KU 10" />
@@ -22,7 +22,7 @@ const Stats = () => {
             <Dropdown options={defaultOptions} label="January" />
           </div>
         </div>
-        <div className="h-[46px] relative border-[#CCCCCC] overflow-hidden border-[1px] rounded-[6px] bg-white w-full max-w-[300px]">
+        <div className="h-[46px] mt-[18px] lg:mt-auto relative border-[#CCCCCC] overflow-hidden border-[1px] rounded-[6px] bg-white w-[90%] md:w-[70%] lg:max-w-[300px]">
           <FiSearch className=" text-[#636363] text-[18px] font-bold left-[17px] absolute top-1/2 -translate-y-1/2" />
           <input
             className="w-full h-full placeholder:text-[#636363] px-[48px] border-none outline-none"

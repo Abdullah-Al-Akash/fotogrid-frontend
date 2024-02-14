@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 
+import PlayerDropdownTap from "./playerDropdownTap";
 import FotogritPins from "./taps/FotogritPins";
 import Media from "./taps/Media";
 import SocialMedia from "./taps/SocialMedia";
@@ -56,7 +57,7 @@ const PlayerTaps = ({ tab, setTab }) => {
                 </p>
               </div>
               <div className="md:hidden ms-3 ">
-                {/* <DropDownTab tab={tab} setTab={setTab} /> */}
+                <PlayerDropdownTap tab={tab} setTab={setTab} />
               </div>
             </div>
           </div>

@@ -11,7 +11,7 @@ const PlayerInfo = () => {
         <div className="bg-[#242424] h-[570px] rounded-[6px] mt-[24px]">
           <div className="p-[28px]">
             <img
-              className="max-w-[272px] max-h-[272px] h-full w-full rounded-full overflow-hidden"
+              className="max-w-[272px] mx-auo max-h-[272px] h-full w-full rounded-full overflow-hidden"
               src="../../../public/player.png"
               alt=""
             />
@@ -19,7 +19,7 @@ const PlayerInfo = () => {
           <PlayerPersonalInfo />
         </div>
         <div className="col-span-3">
-          <div className="flex justify-between items-center  border-x-[1px] border-b-[1px] border-[#333333] p-[24px]">
+          <div className="flex md:flex-row flex-col justify-between items-center  border-x-[1px] border-b-[1px] border-[#333333] p-[24px]">
             <h2 className="uppercase text-[48px] leading-[60px] bebas-Neue text-[#F2F2F2]">
               Avery FreeMan
             </h2>
@@ -36,7 +36,7 @@ const PlayerInfo = () => {
               </div>
             </div>
           </div>
-          <div className="border-x-[1px] border-b-[1px] border-[#333333] bebas-Neue flex items-center">
+          <div className="border-x-[1px] border-b-[1px] border-[#333333] bebas-Neue flex md:flex-row flex-col items-center">
             <div className="px-[30px] py-[18px] flex gap-[6px] items-center ">
               <img
                 className="w-[28px] h-[28px]"
@@ -48,7 +48,7 @@ const PlayerInfo = () => {
                 Recorded Events <br /> Played
               </p>
             </div>
-            <hr className=" w-[1px] h-[60px] bg-[#4A4A4A] " />
+            <hr className=" w-[30%] h-[1px] md:w-[1px] md:h-[60px] bg-[#4A4A4A] " />
             <div className="px-[30px] py-[18px] flex gap-[6px] items-center  ">
               <img
                 className="w-[28px] h-[28px]"
@@ -68,44 +68,44 @@ const PlayerInfo = () => {
             <h2 className="uppercase text-[24px] leading-[32px] text-white font-bold">
               Recent in Game Fotogrit Pins
             </h2>
-            <div className="flex mt-[24px] items-center flex-wrap justify-between">
+            <div className="mt-[24px]  sm:gap-[18px] sm:grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 ">
               <img
-                className="w-[109px]"
+                className="w-[200px] mx-auto mt-[18px] sm:w-full "
                 src="../../../public/Logo (3).png"
                 alt="icon"
               />
               <img
-                className="w-[109px]"
+                className="w-[200px] mx-auto mt-[18px] sm:w-full "
                 src="../../../public/Logo (4).png"
                 alt="icon"
               />
               <img
-                className="w-[109px]"
+                className="w-[200px] mx-auto mt-[18px] sm:w-full "
                 src="../../../public/Logo (5).png"
                 alt="icon"
               />
               <img
-                className="w-[109px]"
+                className="w-[200px] mx-auto mt-[18px] sm:w-full "
                 src="../../../public/Logo (6).png"
                 alt="icon"
               />
               <img
-                className="w-[109px]"
+                className="w-[200px] mx-auto mt-[18px] sm:w-full "
                 src="../../../public/Logo (7).png"
                 alt="icon"
               />
               <img
-                className="w-[109px]"
+                className="w-[200px] mx-auto mt-[18px] sm:w-full "
                 src="../../../public/Logo (8).png"
                 alt="icon"
               />
               <img
-                className="w-[109px]"
+                className="w-[200px] mx-auto mt-[18px] sm:w-full "
                 src="../../../public/Logo (9).png"
                 alt="icon"
               />
               <img
-                className="w-[109px]"
+                className="w-[200px] mx-auto mt-[18px] sm:w-full "
                 src="../../../public/Logo (10).png"
                 alt="icon"
               />
