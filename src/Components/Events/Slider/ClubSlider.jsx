@@ -11,6 +11,7 @@ import { MdOutlineArrowForwardIos } from "react-icons/md";
 const ClubSlider = () => {
   const [activeSliderIndex, setActiveSliderIndex] = useState(0);
 
+  // slider items
   const clubs = [
     { image: club1, name: "detroit" },
     { image: club2, name: "boston" },
@@ -20,14 +21,14 @@ const ClubSlider = () => {
   ];
 
   const handleNextButton = () => {
-    setActiveSliderIndex((prevIndex) =>
-      prevIndex === clubs.length - 1 ? 0 : prevIndex + 1
+    setActiveSliderIndex((prev) =>
+      prev === clubs.length - 1 ? 0 : prev + 1
     );
   };
 
   const handlePreviousButton = () => {
-    setActiveSliderIndex((prevIndex) =>
-      prevIndex === 0 ? clubs.length - 1 : prevIndex - 1
+    setActiveSliderIndex((prev) =>
+      prev === 0 ? clubs.length - 1 : prev - 1
     );
   };
 
@@ -40,28 +41,83 @@ const ClubSlider = () => {
         >
           <MdOutlineArrowBackIosNew />
         </button>
-        <div className="flex gap-[16px] justify-center items-center w-full">
-          {clubs.map((club, index) => {
-            let adjustedIndex = (activeSliderIndex + index) % clubs.length;
+        {/* large screen slider */}
+        <div className="hidden lg:flex gap-[16px] justify-center items-center w-full">
+          {clubs?.slice(0, 5).map((club, i) => {
+            let adjustedIndex = (activeSliderIndex + i) % clubs.length;
             return (
               <div
-                key={index}
+                key={i}
                 className={`p-[16px] object-cover transition-all duration-500 ease-in-out transform flex flex-col gap-[16px] ${
-                  index === 2 ? "opacity-100 scale-125" : "opacity-50 scale-100"
+                  i === 2 ? "opacity-100 scale-125" : "opacity-50 scale-100"
                 }`}
-                style={{ left: `${index * (100 / clubs.length)}%` }}
+                style={{ left: `${i * (100 / clubs.length)}%` }}
               >
                 <img
                   src={clubs[adjustedIndex].image}
                   alt={clubs[adjustedIndex].name}
                   className={`w-[150px] h-[150px] p-[16px] rounded-full object-contain border ${
-                    index === 2 ? "border-[#A46E40] border-2" : ""
+                    i === 2 ? "border-[#A46E40] border-2" : ""
                   }`}
                 />
                 <h2
                   className={`text-center uppercase montserrat font-medium ${
-                    index === 2 ? "text-[#A46E40]" : ""
+                    i === 2 ? "text-[#A46E40]" : ""
                   }`}
+                >
+                  {clubs[adjustedIndex].name}
+                </h2>
+              </div>
+            );
+          })}
+        </div>
+        {/* medium screen slider */}
+        <div className="hidden md:flex lg:hidden gap-[16px] justify-center items-center w-full">
+          {clubs?.slice(0, 3)?.map((club, i) => {
+            let adjustedIndex = (activeSliderIndex + i) % clubs.length;
+            return (
+              <div
+                key={i}
+                className={`p-[16px] object-cover transition-all duration-500 ease-in-out transform flex flex-col gap-[16px] ${
+                  i === 1 ? "opacity-100 scale-125" : "opacity-50 scale-100"
+                }`}
+                style={{ left: `${i * (100 / clubs.length)}%` }}
+              >
+                <img
+                  src={clubs[adjustedIndex].image}
+                  alt={clubs[adjustedIndex].name}
+                  className={`w-[150px] h-[150px] p-[16px] rounded-full object-contain border ${
+                    i === 1 ? "border-[#A46E40] border-2" : ""
+                  }`}
+                />
+                <h2
+                  className={`text-center uppercase montserrat font-medium ${
+                    i === 1 ? "text-[#A46E40]" : ""
+                  }`}
+                >
+                  {clubs[adjustedIndex].name}
+                </h2>
+              </div>
+            );
+          })}
+        </div>
+        {/* small screen slider */}
+        <div className="flex md:hidden gap-[16px] justify-center items-center w-full">
+          {clubs?.slice(0, 1)?.map((club, i) => {
+            let adjustedIndex = (activeSliderIndex + i) % clubs.length;
+            return (
+              <div
+                key={i}
+                className={`p-[16px] object-cover transition-all duration-500 ease-in-out transform flex flex-col gap-[16px] opacity-100 scale-125`}
+                style={{ left: `${i * (100 / clubs.length)}%` }}
+              >
+                <img
+                  src={clubs[adjustedIndex].image}
+                  alt={clubs[adjustedIndex].name}
+                  className={`w-[150px] h-[150px] p-[16px] rounded-full object-contain border-[#A46E40] border-2`}
+                />
+                <h2
+                  className={`text-center uppercase montserrat font-medium text-[#A46E40] `}
                 >
                   {clubs[adjustedIndex].name}
                 </h2>
