@@ -27,11 +27,15 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Rubik', sans-serif; 
 */
 
+.container {
+  @apply !max-w-[1512px] mx-auto  px-6;
+}
+
 li::marker {
-    color: #ABABAB;
-    width: 8px;
-    height: 8px;
+  color: #ababab;
+  width: 8px;
+  height: 8px;
 }
 input::placeholder {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
