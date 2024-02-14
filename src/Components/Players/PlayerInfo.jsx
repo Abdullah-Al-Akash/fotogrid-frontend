@@ -1,3 +1,4 @@
+import CareerHighLights from "./CareerHighLights";
 import PlayerPersonalInfo from "./PlayerPersonalInfo";
 
 const PlayerInfo = () => {
@@ -56,6 +57,7 @@ const PlayerInfo = () => {
             </p>
           </div>
         </div>
+        <CareerHighLights />
       </div>
     </section>
   );
