@@ -39,11 +39,7 @@ const PlayerInfo = () => {
           </div>
           <div className="border-x-[1px] border-b-[1px] border-[#333333] bebas-Neue flex md:flex-row flex-col items-center">
             <div className="px-[30px] py-[18px] flex gap-[6px] items-center ">
-              <img
-                className="w-[28px] h-[28px]"
-                src="../../../public/ball.png"
-                alt="ball"
-              />
+              <img className="w-[28px] h-[28px]" src="/ball.png" alt="ball" />
               <h3 className="text-[48px] leading-[60px] text-[#F2F2F2]">6</h3>
               <p className="text-[20px] text-[#ABABAB] leading-[20px]">
                 Recorded Events <br /> Played
@@ -51,11 +47,7 @@ const PlayerInfo = () => {
             </div>
             <hr className=" w-[30%] h-[1px] md:w-[1px] md:h-[60px] bg-[#4A4A4A] " />
             <div className="px-[30px] py-[18px] flex gap-[6px] items-center  ">
-              <img
-                className="w-[28px] h-[28px]"
-                src="/../../public/cup.png"
-                alt="cup"
-              />
+              <img className="w-[28px] h-[28px]" src="/cup.png" alt="cup" />
               <h3 className="text-[48px] leading-[60px] text-[#F2F2F2]">45</h3>
               <p className="text-[20px] text-[#ABABAB] leading-[20px]">
                 Total FotogritPins <br /> Earned
@@ -72,42 +64,42 @@ const PlayerInfo = () => {
             <div className="mt-[24px]  sm:gap-[18px] sm:grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 ">
               <img
                 className="w-[200px] mx-auto mt-[18px] sm:w-full "
-                src="../../../public/Logo (3).png"
+                src="/Logo (3).png"
                 alt="icon"
               />
               <img
                 className="w-[200px] mx-auto mt-[18px] sm:w-full "
-                src="../../../public/Logo (4).png"
+                src="/Logo (4).png"
                 alt="icon"
               />
               <img
                 className="w-[200px] mx-auto mt-[18px] sm:w-full "
-                src="../../../public/Logo (5).png"
+                src="/Logo (5).png"
                 alt="icon"
               />
               <img
                 className="w-[200px] mx-auto mt-[18px] sm:w-full "
-                src="../../../public/Logo (6).png"
+                src="/Logo (6).png"
                 alt="icon"
               />
               <img
                 className="w-[200px] mx-auto mt-[18px] sm:w-full "
-                src="../../../public/Logo (7).png"
+                src="/Logo (7).png"
                 alt="icon"
               />
               <img
                 className="w-[200px] mx-auto mt-[18px] sm:w-full "
-                src="../../../public/Logo (8).png"
+                src="/Logo (8).png"
                 alt="icon"
               />
               <img
                 className="w-[200px] mx-auto mt-[18px] sm:w-full "
-                src="../../../public/Logo (9).png"
+                src="/Logo (9).png"
                 alt="icon"
               />
               <img
                 className="w-[200px] mx-auto mt-[18px] sm:w-full "
-                src="../../../public/Logo (10).png"
+                src="/Logo (10).png"
                 alt="icon"
               />
             </div>
