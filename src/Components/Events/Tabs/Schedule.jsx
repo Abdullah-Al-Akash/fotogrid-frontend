@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { IoSearchOutline } from "react-icons/io5";
 import AgeGroupDropDown from "../AgeGroupDropDown/AgeGroupDropDown";
 import GenderDropDown from "../GenderDropDown/GenderDropDown";
@@ -58,7 +59,7 @@ const Schedule = () => {
             <tbody>
               <tr>
                 <td className="px-[17px]  text-center py-[20px] text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                  LIL |Li'l Warriors Cup 2020 KU-8
+                  LIL | Li'l Warriors Cup 2020 KU-8
                 </td>
                 <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
                   AirOne
