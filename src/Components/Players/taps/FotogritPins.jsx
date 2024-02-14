@@ -5,10 +5,13 @@ const FotogritPins = () => {
         You Have 12 Fotogrit Pins
       </h2>
 
-      <div className="md:grid  md:grid-cols-3 lg:grid-cols-6 gap-[16px] mt-[16px]">
+      <div className="sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-[16px] mt-[16px]">
         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map((item) => {
           return (
-            <article key={item} className="bg-white p-[24px] rounded-[6px]">
+            <article
+              key={item}
+              className="bg-white my-[18px] sm:my-auto p-[24px] rounded-[6px]"
+            >
               <img
                 className="w-full"
                 src="../../../../public/Logo (3).png"
