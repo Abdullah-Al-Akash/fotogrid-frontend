@@ -14,7 +14,7 @@ const TournamentDropdown = () => {
     setIsOpen(false);
   };
   return (
-    <div className="relative inline-block text-left mt-[16px] montserrat">
+    <div className="relative inline-block text-left montserrat">
       <div>
         <button
           type="button"

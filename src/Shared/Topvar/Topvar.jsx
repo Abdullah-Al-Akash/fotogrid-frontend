@@ -3,11 +3,11 @@ import logo from "../../assets/Logo.png";
 
 const Topvar = () => {
   return (
-    <div class="flex items-center rubik bg-[#1A1A1A] h-[100px] px-[64px]">
+    <div class="flex items-center justify-between rubik bg-[#1A1A1A] h-[100px] md:px-[64px] gap-[8px] px-[8px]">
       <div class="">
         <img class="w-[72px] h-[85.5px]" src={logo} alt="" />
       </div>
-      <div class="px-[48px] w-full">
+      <div class="px-[48px] w-full hidden md:block">
         <h3 class="tracking-widest text-[#D9C2AB]">
           Making memories of those giving their best
         </h3>
