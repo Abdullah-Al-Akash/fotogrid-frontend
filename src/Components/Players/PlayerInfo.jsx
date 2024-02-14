@@ -58,6 +58,55 @@ const PlayerInfo = () => {
           </div>
         </div>
         <CareerHighLights />
+        {/* Recent in Game Fotogrit Pins  */}
+
+        <div className="p-[24px]  bg-[#222222] border-[1px] border-[#333333]">
+          <h2 className="uppercase text-[24px] leading-[32px] text-white font-bold">
+            Recent in Game Fotogrit Pins
+          </h2>
+          <div className="flex mt-[24px] items-center flex-wrap justify-between">
+            <img
+              className="w-[109px]"
+              src="../../../public/Logo (3).png"
+              alt="icon"
+            />
+            <img
+              className="w-[109px]"
+              src="../../../public/Logo (4).png"
+              alt="icon"
+            />
+            <img
+              className="w-[109px]"
+              src="../../../public/Logo (5).png"
+              alt="icon"
+            />
+            <img
+              className="w-[109px]"
+              src="../../../public/Logo (6).png"
+              alt="icon"
+            />
+            <img
+              className="w-[109px]"
+              src="../../../public/Logo (7).png"
+              alt="icon"
+            />
+            <img
+              className="w-[109px]"
+              src="../../../public/Logo (8).png"
+              alt="icon"
+            />
+            <img
+              className="w-[109px]"
+              src="../../../public/Logo (9).png"
+              alt="icon"
+            />
+            <img
+              className="w-[109px]"
+              src="../../../public/Logo (10).png"
+              alt="icon"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );

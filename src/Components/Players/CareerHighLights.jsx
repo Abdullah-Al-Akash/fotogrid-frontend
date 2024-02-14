@@ -1,6 +1,6 @@
 import { defaultOptions } from "../../constants/player.constants";
 import DarkDropdown from "../ui/dark-dropdown";
-import Dropdown from "../ui/dropdown";
+
 import TableWrapper from "../ui/table-wrapper";
 
 const CareerHighLights = () => {
@@ -10,7 +10,7 @@ const CareerHighLights = () => {
         Career highlights
       </h2>
       <TableWrapper>
-        <table className="w-[1050px] border-[#333333] border-[1px] !rounded-[6px]">
+        <table className="min-w-[1050px] !w-full border-[#333333] border-[1px] !rounded-[6px]">
           <thead className="bg-[#242424] rounded-[6px] overflow-hidden">
             <tr>
               <th className="uppercase border-[1px] border-[#333333] text-center py-[18px] text-[20px] leading-[20px] text-[#D0A885] ">
@@ -63,7 +63,7 @@ const CareerHighLights = () => {
         <DarkDropdown options={defaultOptions} label="Months" />
       </div>
       <TableWrapper>
-        <table className="w-[1050px] border-[#333333] border-[1px] !rounded-[6px]">
+        <table className="min-w-[1050px] !w-full border-[#333333] border-[1px] !rounded-[6px]">
           <thead className="bg-[#242424] rounded-[6px] overflow-hidden">
             <tr>
               <th className="uppercase border-[1px] border-[#333333] text-center py-[18px] text-[20px] leading-[20px] text-[#D0A885] ">
