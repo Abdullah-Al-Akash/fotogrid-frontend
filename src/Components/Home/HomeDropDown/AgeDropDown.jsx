@@ -14,7 +14,7 @@ const AgeDropDown = () => {
     setIsOpen(false);
   };
   return (
-    <div className="relative inline-block text-left mt-[16px] montserrat">
+    <div className="relative inline-block text-left montserrat">
       <div>
         <button
           type="button"
@@ -35,7 +35,7 @@ const AgeDropDown = () => {
           aria-orientation="vertical"
           aria-labelledby="options-menu"
         >
-          <div className="py-1" role="none">
+          <div className="py-1 z-10" role="none">
             <button
               onClick={() => handleOptionClick("Age Group")}
               className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"

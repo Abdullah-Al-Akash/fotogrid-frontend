@@ -7,8 +7,8 @@ import { IoSearchOutline } from "react-icons/io5";
 
 const HomeDropDown = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-[16px] md:gap-0 md:justify-between md:items-center">
-      <div className="flex gap-[16px]">
+    <div className="flex flex-col md:flex-row md:gap-0 md:justify-between md:items-center px-[8px] my-[16px]">
+      <div className="flex-1 md:flex md:flex-row flex-col gap-[16px]">
         <BasketDropDown />
         <DateDropDown />
         <TournamentDropdown></TournamentDropdown>
