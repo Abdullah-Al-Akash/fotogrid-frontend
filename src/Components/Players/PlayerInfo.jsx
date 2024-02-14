@@ -2,6 +2,7 @@ import { useState } from "react";
 import CareerHighLights from "./CareerHighLights";
 import PlayerPersonalInfo from "./PlayerPersonalInfo";
 import PlayerTaps from "./PlayerTaps";
+import playerImg from "../../assets/Players/player.png";
 
 const PlayerInfo = () => {
   const [tab, setTab] = useState("tab1");
@@ -12,7 +13,7 @@ const PlayerInfo = () => {
           <div className="p-[28px]">
             <img
               className="max-w-[272px] mx-auo max-h-[272px] h-full w-full rounded-full overflow-hidden"
-              src="../../../public/player.png"
+              src={playerImg}
               alt=""
             />
           </div>
