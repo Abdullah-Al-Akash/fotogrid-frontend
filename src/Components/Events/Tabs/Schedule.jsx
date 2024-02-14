@@ -28,56 +28,118 @@ const Schedule = () => {
             <thead className="bg-primary">
               <tr>
                 <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
-                  Event
+                  Date / Time
                 </th>
                 <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
-                  Team
+                  Location
                 </th>
                 <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
-                  Opponent Team
+                  Event Categories
+                </th>
+
+                <th className="text-[14px] text-[#7D7D7D] border-[#E8E8E8]  border">
+                  <tr className="p-[16px] flex justify-center items-center border-b">
+                    Club A
+                  </tr>
+                  <tr>
+                    <th className="p-[16px] text-center w-full">Name</th>
+                    <th className="border-l p-[15.5px] w-full">Score</th>
+                    <th className="border-l p-[15px] w-full">Win/Lose</th>
+                  </tr>
+                </th>
+                <th className="text-[14px] text-[#7D7D7D] border-[#E8E8E8] border">
+                  <tr className="p-[16px] flex justify-center items-center border-b">
+                    Club B
+                  </tr>
+                  <tr>
+                    <th className="p-[16px] text-center w-full">Name</th>
+                    <th className="border-l p-[15.5px] w-full">Score</th>
+                    <th className="border-l p-[15px] w-full">Win/Lose</th>
+                  </tr>
                 </th>
                 <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
-                  PPG
+                  Hall of Fame
                 </th>
                 <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
-                  RPG
-                </th>
-                <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
-                  BPG
-                </th>
-                <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
-                  APG
-                </th>
-                <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
-                  SPG
-                </th>
-                <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
-                  3RT
+                  Link to Event Detail
                 </th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td className="px-[17px]  text-center py-[20px] text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                  LIL | Li'l Warriors Cup 2020 KU-8
+                  29 May 2023 15:00
                 </td>
                 <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                  AirOne
+                  GOR Lokasi
                 </td>
                 <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                  Warriors
+                  Final
                 </td>
-                <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                  0
+
+                <td className="border-b border-r">
+                  <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] w-full border-r">
+                    Name
+                  </td>
+                  <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] w-full border-r">
+                    Score
+                  </td>
+                  <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px]   border-[#E8E8E8] w-full">
+                    Win/Lose
+                  </td>
                 </td>
-                <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                  100
+
+                <td className="border-b">
+                  <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px]   border-[#E8E8E8] w-full border-r">
+                    Name
+                  </td>
+                  <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] w-full border-r">
+                    Score
+                  </td>
+                  <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] w-full">
+                    Win/Lose
+                  </td>
                 </td>
                 <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
                   50
                 </td>
                 <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
                   50
+                </td>
+              </tr>
+              <tr>
+                <td className="px-[17px]  text-center py-[20px] text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+                  29 May 2023 15:00
+                </td>
+                <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+                  GOR Lokasi
+                </td>
+                <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+                  Final
+                </td>
+
+                <td className="border-b border-r">
+                  <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] w-full border-r">
+                    Name
+                  </td>
+                  <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] w-full border-r">
+                    Score
+                  </td>
+                  <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px]   border-[#E8E8E8] w-full">
+                    Win/Lose
+                  </td>
+                </td>
+
+                <td className="border-b">
+                  <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px]   border-[#E8E8E8] w-full border-r">
+                    Name
+                  </td>
+                  <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] w-full border-r">
+                    Score
+                  </td>
+                  <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] w-full">
+                    Win/Lose
+                  </td>
                 </td>
                 <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
                   50
