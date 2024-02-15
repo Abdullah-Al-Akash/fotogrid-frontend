@@ -7,49 +7,49 @@ const LeaderBoard = () => {
         Leaderboard
       </h2>
       <TableWrapper>
-        <table className="rounded-[2px] mt-[8px] w-full mx-auto">
+        <table className="!w-full rounded-[2px] mt-[8px]  mx-auto">
           <thead className="bg-primary ">
             <tr>
-              <th className="text-[14px] text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
+              <th className="text-[14px] text-[#7D7D7D] p-[17px]  border border-[#E8E8E8]">
                 Profile Picture
               </th>
-              <th className="text-[14px] text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
+              <th className="text-[14px] text-[#7D7D7D] p-[17px] border border-[#E8E8E8]">
                 Name
               </th>
-              <th className="text-[14px] text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
+              <th className="text-[14px] text-[#7D7D7D] p-[17px] border border-[#E8E8E8]">
                 Age
               </th>
-              <th className="text-[14px] text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
+              <th className="text-[14px] text-[#7D7D7D] p-[17px] border border-[#E8E8E8]">
                 Points per Game (PPG)
               </th>
-              <th className="text-[14px] text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
+              <th className="text-[14px] text-[#7D7D7D] p-[17px] border border-[#E8E8E8]">
                 Rebounds per Game (RPG)
               </th>
-              <th className="text-[14px] text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
+              <th className="text-[14px] text-[#7D7D7D] p-[17px] border border-[#E8E8E8]">
                 Assist per Game (APG)
               </th>
-              <th className="text-[14px] text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
+              <th className="text-[14px] text-[#7D7D7D] p-[17px] border border-[#E8E8E8]">
                 Steals per Game (SPG)
               </th>
-              <th className="text-[14px] text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
+              <th className="text-[14px] text-[#7D7D7D] p-[17px] border border-[#E8E8E8]">
                 Turnovers per Game (TPG)
               </th>
-              <th className="text-[14px] text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
+              <th className="text-[14px] text-[#7D7D7D] p-[17px] border border-[#E8E8E8]">
                 Blocks per Game (BPG)
               </th>
-              <th className="text-[14px] text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
+              <th className="text-[14px] text-[#7D7D7D] p-[17px] border border-[#E8E8E8]">
                 Fouls per Game (FPG)
               </th>
-              <th className="text-[14px] text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
+              <th className="text-[14px] text-[#7D7D7D] p-[17px] border border-[#E8E8E8]">
                 Field Goal Percentage
               </th>
-              <th className="text-[14px] text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
+              <th className="text-[14px] text-[#7D7D7D] p-[17px] border border-[#E8E8E8]">
                 3 Point Percentage
               </th>
-              <th className="text-[14px] text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
+              <th className="text-[14px] text-[#7D7D7D] p-[17px] border border-[#E8E8E8]">
                 Free Throw Percentage
               </th>
-              <th className="text-[14px] text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
+              <th className="text-[14px] text-[#7D7D7D] p-[17px] border border-[#E8E8E8]">
                 Efficiencies per Game
               </th>
             </tr>
