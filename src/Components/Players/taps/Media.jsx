@@ -47,11 +47,7 @@ const Media = () => {
                     Age Group
                   </button>
                 </div>
-                <img
-                  className="w-full"
-                  src="../../../../public/img.png"
-                  alt="player image"
-                />
+                <img className="w-full" src="/img.png" alt="player image" />
               </article>
             );
           })}
