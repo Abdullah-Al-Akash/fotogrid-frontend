@@ -1,9 +1,8 @@
-import React from "react";
 import ScoreDetail from "../../Components/ScoreDetail/ScoreDetail";
 
 const ScoreDetailPage = () => {
   return (
-    <div>
+    <div className="container">
       <ScoreDetail></ScoreDetail>
     </div>
   );
