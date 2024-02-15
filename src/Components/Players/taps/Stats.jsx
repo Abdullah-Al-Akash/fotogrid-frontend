@@ -39,72 +39,74 @@ const Stats = () => {
             Share
           </button>
         </div>
-        <TableWrapper>
-          <table className="rounded-[2px] mt-[8px] min-w-[1416px] w-full mx-auto">
-            <thead className="bg-primary ">
-              <tr>
-                <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
-                  Event
-                </th>
-                <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
-                  Team
-                </th>
-                <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
-                  Opponent Team
-                </th>
-                <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
-                  PPG
-                </th>
-                <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
-                  RPG
-                </th>
-                <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
-                  BPG
-                </th>
-                <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
-                  APG
-                </th>
-                <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
-                  SPG
-                </th>
-                <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8]">
-                  3RT
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="px-[17px]  text-center py-[20px] text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                  LIL |Li'l Warriors Cup 2020 KU-8
-                </td>
-                <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                  AirOne
-                </td>
-                <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                  Warriors
-                </td>
-                <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                  0
-                </td>
-                <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                  100
-                </td>
-                <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                  50
-                </td>
-                <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                  50
-                </td>
-                <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                  50
-                </td>
-                <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                  50
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </TableWrapper>
+        <div className="mt-[8px]">
+          <TableWrapper>
+            <table className="rounded-[2px] min-w-[1416px] w-full mx-auto">
+              <thead className="bg-primary ">
+                <tr>
+                  <th className="text-[14px]  text-[#7D7D7D] p-[24px] border-t-0 border-l-0 border border-[#E8E8E8]">
+                    Event
+                  </th>
+                  <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8] border-t-0">
+                    Team
+                  </th>
+                  <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8] border-t-0">
+                    Opponent Team
+                  </th>
+                  <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8] border-t-0">
+                    PPG
+                  </th>
+                  <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8] border-t-0">
+                    RPG
+                  </th>
+                  <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8] border-t-0">
+                    BPG
+                  </th>
+                  <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8] border-t-0">
+                    APG
+                  </th>
+                  <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8] border-t-0">
+                    SPG
+                  </th>
+                  <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8] border-r-0 border-t-0">
+                    3RT
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="px-[17px] border-t-0 border-l-0 border-b-0 text-center py-[20px] text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+                    LIL |Li'l Warriors Cup 2020 KU-8
+                  </td>
+                  <td className="px-[17px] text-center py-[20px] border-b-0 text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+                    AirOne
+                  </td>
+                  <td className="px-[17px] text-center py-[20px] border-b-0 text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+                    Warriors
+                  </td>
+                  <td className="px-[17px] text-center py-[20px] border-b-0 text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+                    0
+                  </td>
+                  <td className="px-[17px] text-center py-[20px] border-b-0 text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+                    100
+                  </td>
+                  <td className="px-[17px] text-center py-[20px] border-b-0 text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+                    50
+                  </td>
+                  <td className="px-[17px] text-center py-[20px] border-b-0 text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+                    50
+                  </td>
+                  <td className="px-[17px] text-center py-[20px] border-b-0 text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+                    50
+                  </td>
+                  <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8] border-r-0 border-b-0">
+                    50
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </TableWrapper>
+        </div>
       </section>
     </div>
   );

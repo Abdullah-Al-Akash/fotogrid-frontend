@@ -14,11 +14,11 @@ const HeadingOfScore = () => {
           </h1>
         </div>
         <div className="flex gap-[8px] md:my-[0] my-[16px]">
-          <button class=" bg-[#e8e8e8] uppercase sharePrintBtn">
+          <button className=" bg-[#e8e8e8] uppercase sharePrintBtn">
             <CiShare2 />
             Share
           </button>
-          <button class=" bg-[#e8e8e8] uppercase sharePrintBtn">
+          <button className=" bg-[#e8e8e8] uppercase sharePrintBtn">
             <FiPrinter />
             Print in Pdf
           </button>

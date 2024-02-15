@@ -1,10 +1,9 @@
-import React from "react";
 import { GrDownload } from "react-icons/gr";
 
 const Footer = () => {
   return (
     <div className="">
-      <footer className="footer footer-content bg-[#1A1A1A] text-neutral-content md:px-[64px]  md:py-[32px] p-10">
+      <footer className="footer footer-content bg-[#1A1A1A] text-neutral-content  md:py-[32px] p-10">
         <div className="flex items-center cursor-pointer">
           <h3 className="text-[40px] bebas-Neue font-normal leading-10 text-[#CCC]">
             Download App

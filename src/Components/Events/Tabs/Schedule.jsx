@@ -25,7 +25,7 @@ const Schedule = () => {
         <h2 className="text-[24px] bebas-Neue">Schedule & results</h2>
         <TableWrapper>
           <table
-            className="min-w-[1438px] w-full mx-auto"
+            className="w-full mx-auto"
             cellSpacing="0"
             cellPadding="0"
           >
