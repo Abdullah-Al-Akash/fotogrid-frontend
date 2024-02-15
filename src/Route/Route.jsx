@@ -7,6 +7,7 @@ import Events from "../Pages/Events/Events";
 import LeaderBoard from "../Pages/LeaderBoard/LeaderBoard";
 import Players from "../Pages/Players/Players";
 import Home from "../Pages/Home/Home";
+import ScoreDetailPage from "../Pages/ScoreDetailPage/ScoreDetailPage";
 
 export const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ export const router = createBrowserRouter([
       {
         path: "/players",
         element: <Players></Players>,
+      },
+      {
+        path: "/score",
+        element: <ScoreDetailPage></ScoreDetailPage>,
       },
     ],
   },

@@ -141,9 +141,12 @@ const NavBar = () => {
         </div>
       </li>
       <li className="md:ms-[56px]">
-        <a className="bebas-Neue font-normal text-2xl leading-8 uppercase">
-          Service
-        </a>
+        <Link
+          to="/score"
+          className="bebas-Neue font-normal text-2xl leading-8 uppercase"
+        >
+          Score
+        </Link>
       </li>
       <li className="md:ms-[56px]">
         <a className="bebas-Neue font-normal text-2xl leading-8 uppercase">
