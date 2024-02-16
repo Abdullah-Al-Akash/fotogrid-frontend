@@ -5,7 +5,7 @@ const Legends = () => {
     <div className="bg-[#F2F2F2] rounded-md py-[16px] px-[24px]">
       <h3 className="bebas-Neue font-normal text-[20px] py-[16px]">Legends</h3>
       <div className="grid md:grid-cols-5 gap-4">
-        <div className="grid grid-cols-5 md:grid-cols-5 md:grid-cols-4 gap[16px]">
+        <div className="grid grid-cols-5 md:grid-cols-4 gap[16px]">
           <div className="col-span-1">
             <h3 className="font-medium	rubik text-[14px] text-[#1A1A1A]">No</h3>
             <h3 className="font-medium	rubik text-[14px] text-[#1A1A1A]">DR</h3>
