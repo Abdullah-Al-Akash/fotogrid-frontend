@@ -15,56 +15,74 @@ const ResultsAndStanding = () => {
       </div>
       <div className="my-[8px] bg-[#F2F2F2] rounded-[6px]">
         <div className="py-[16px] px-[24px]">
-          <div className="flex items-start justify-start gap-[48px]">
-            <div className="">
+          <div className="grid grid-cols-1 md:grid-cols-7">
+            <div className="border-e pe-[48px]">
               <p className="montserrat text-[#7D7D7D] font-medium text-[16px] whitespace-nowrap">
                 Top Rebound
               </p>
               <h2 className="bebas-Neue text-[20px]">Jason L</h2>
+              <div className="">
+                <div className="divider divider-horizontal hidden md:flex !m-0"></div>
+                <div className="divider flex md:hidden !m-0"></div>
+              </div>
             </div>
-            <div className="divider divider-horizontal hidden md:flex !m-0"></div>
-            <div className="divider flex md:hidden !m-0"></div>
-            <div className="">
+
+            <div className="border-s border-e  pe-[48px] ps-[48px]">
               <p className="montserrat text-[#7D7D7D] font-medium text-[16px] whitespace-nowrap">
                 Top Score
               </p>
               <h2 className="bebas-Neue text-[20px]">Juan</h2>
+              <div className="mx-[48px]">
+                <div className="divider divider-horizontal hidden md:flex !m-0"></div>
+                <div className="divider flex md:hidden !m-0"></div>
+              </div>
             </div>
-            <div className="divider divider-horizontal hidden md:flex !m-0"></div>
-            <div className="divider flex md:hidden !m-0"></div>
-            <div className="">
+
+            <div className="border-s border-e  pe-[48px] ps-[48px]">
               <p className="montserrat text-[#7D7D7D] font-medium text-[16px] whitespace-nowrap">
                 MVP Final
               </p>
               <h2 className="bebas-Neue text-[20px]">Louis</h2>
+              <div className="mx-[48px]">
+                <div className="divider divider-horizontal hidden md:flex !m-0"></div>
+                <div className="divider flex md:hidden !m-0"></div>
+              </div>
             </div>
-            <div className="divider divider-horizontal hidden md:flex !m-0"></div>
-            <div className="divider flex md:hidden !m-0"></div>
-            <div className="">
+
+            <div className="border-s border-e  pe-[48px] ps-[48px]">
               <p className="montserrat text-[#7D7D7D] font-medium text-[16px] whitespace-nowrap">
                 Top Block
               </p>
               <h2 className="bebas-Neue text-[20px]">Louis</h2>
+              <div className="mx-[48px]">
+                <div className="divider divider-horizontal hidden md:flex !m-0"></div>
+                <div className="divider flex md:hidden !m-0"></div>
+              </div>
             </div>
-            <div className="divider divider-horizontal hidden md:flex !m-0"></div>
-            <div className="divider flex md:hidden !m-0"></div>
-            <div className="">
+
+            <div className="border-s border-e  pe-[48px] ps-[48px]">
               <p className="montserrat text-[#7D7D7D] font-medium text-[16px] whitespace-nowrap">
                 Top Assists
               </p>
               <h2 className="bebas-Neue text-[20px]">Edwin</h2>
+              <div className="mx-[48px]">
+                <div className="divider divider-horizontal hidden md:flex !m-0"></div>
+                <div className="divider flex md:hidden !m-0"></div>
+              </div>
             </div>
-            <div className="divider divider-horizontal hidden md:flex !m-0"></div>
-            <div className="divider flex md:hidden !m-0"></div>
-            <div className="">
+
+            <div className="border-s border-e  pe-[48px] ps-[48px]">
               <p className="montserrat text-[#7D7D7D] font-medium text-[16px] whitespace-nowrap">
                 Top Steal
               </p>
               <h2 className="bebas-Neue text-[20px]">Joel</h2>
+              <div className="mx-[48px]">
+                <div className="divider divider-horizontal hidden md:flex !m-0"></div>
+                <div className="divider flex md:hidden !m-0"></div>
+              </div>
             </div>
-            <div className="divider divider-horizontal hidden md:flex !m-0"></div>
-            <div className="divider flex md:hidden !m-0"></div>
-            <div className="">
+
+            <div className="border-s pe-[48px] ps-[48px]">
               <p className="montserrat text-[#7D7D7D] font-medium text-[16px] whitespace-nowrap">
                 Overall MVP
               </p>

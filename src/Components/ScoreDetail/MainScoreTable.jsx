@@ -1,11 +1,10 @@
-import React from "react";
 import TableWrapper from "../ui/table-wrapper";
 
 const MainScoreTable = () => {
   return (
     <div className="mt-[8px]">
       <TableWrapper>
-        <table className="!w-full mx-auto" cellSpacing="0" cellPadding="0">
+        <table className="!w-full mx-auto table-auto" cellSpacing="0" cellPadding="0">
           <thead className="bg-primary">
             <tr>
               <th className="text-[14px] border-l-0  text-[#7D7D7D] p-[16px] border border-t-0 border-[#E8E8E8]">
