@@ -112,7 +112,7 @@ const HallOfDonors = () => {
                 return (
                   <div
                     key={i}
-                    className="p-[16px] pb-[35px] bg-[#E8E8E8] rounded-[6px]"
+                    className="p-[16px] pb-[35px] bg-[#EDDDC0] rounded-[6px]"
                   >
                     <img
                       src={image}
