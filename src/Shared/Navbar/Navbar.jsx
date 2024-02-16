@@ -143,7 +143,7 @@ const NavBar = () => {
   );
   return (
     <div className="bg-white">
-      <div className="container">
+      <div className="fotogrit-container">
         <div className="navbar mx-auto">
           <div className="navbar-start">
             <div className="dropdown">

@@ -14,7 +14,7 @@ const PlayerTaps = ({ tab, setTab }) => {
         <div className="">
           <div className="border-b">
             <div className="bg-[#FBFBFB]  rounded-t-[8px]">
-              <div className="md:flex container hidden items-start gap-[16px] px-[24px] text-[20px] text-[#7D7D7D] rubik ">
+              <div className="md:flex fotogrit-container hidden items-start gap-[16px] px-[24px] text-[20px] text-[#7D7D7D] rubik ">
                 <p
                   onClick={() => setTab("tab1")}
                   className={`py-[12px] px-[20px] cursor-pointer duration-200   ${
@@ -61,7 +61,7 @@ const PlayerTaps = ({ tab, setTab }) => {
               </div>
             </div>
           </div>
-          <div className="  rounded-[8px] px-[24px] container">
+          <div className="  rounded-[8px] px-[24px] fotogrit-container">
             {tab === "tab1" ? (
               <Stats />
             ) : tab === "tab2" ? (

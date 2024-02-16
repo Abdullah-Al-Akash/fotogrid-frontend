@@ -27,7 +27,7 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Rubik', sans-serif; 
 */
 
-.container {
+.fotogrit-container {
   @apply !max-w-[1512px] mx-auto  px-3;
 }
 

@@ -5,7 +5,7 @@ import TableWrapper from "../ui/table-wrapper";
 
 const CareerHighLights = () => {
   return (
-    <div className="border-x-[1px] border-[#333333] p-[30px]">
+    <div className="border-l-[1px] border-[#333333] p-[30px]">
       <h2 className="uppercase mb-[18px] text-[#F2F2F2] bebas-Neue text-[24px] leading-[32px] font-bold">
         Career highlights
       </h2>
