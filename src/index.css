@@ -28,7 +28,7 @@ font-family: 'Rubik', sans-serif;
 */
 
 .fotogrit-container {
-  @apply !max-w-[1512px] mx-auto  px-3;
+  @apply !max-w-[1384px] mx-auto  px-3;
 }
 
 li::marker {

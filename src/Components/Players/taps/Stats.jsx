@@ -14,7 +14,7 @@ const Stats = () => {
           <Dropdown options={defaultOptions} label="January" />
         </div>
         <div className="h-[46px] mt-[18px] lg:mt-auto relative border-[#CCCCCC] overflow-hidden border-[1px] rounded-[6px] bg-white w-[90%] md:w-[70%] lg:max-w-[300px]">
-          <FiSearch className=" text-[#636363] text-[18px] font-bold left-[17px] absolute top-1/2 -translate-y-1/2" />
+          <FiSearch className=" text-[#636363] text-[18px] bebas-Neue left-[17px] absolute top-1/2 -translate-y-1/2" />
           <input
             className="w-full h-full placeholder:text-[#636363] px-[48px] border-none outline-none"
             placeholder="Search here"
@@ -23,10 +23,10 @@ const Stats = () => {
       </div>
       <section className="bg-white p-[24px] rounded ">
         <div className="flex justify-between items-center">
-          <h2 className="uppercase font-bold bebas-Neue text-[#1A1A1A] leading-[32px] text-[24px]">
+          <h2 className="uppercase bebas-Neue text-[#1A1A1A] leading-[32px] text-[24px]">
             List of Games Played
           </h2>
-          <button className="bg-[#E8E8E8] text-[#8A8A8A] rounded-[6px] uppercase bebas-Neue font-bold text-[20px] leading-[20px] px-[35px] py-[12px]">
+          <button className="bg-[#E8E8E8] text-[#8A8A8A] rounded-[6px] uppercase bebas-Neue text-[20px] leading-[20px] px-[35px] py-[12px]">
             Share
           </button>
         </div>

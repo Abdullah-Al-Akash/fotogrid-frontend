@@ -57,7 +57,7 @@ const PlayerInfo = () => {
             {/* Recent in Game Fotogrit Pins  */}
 
             <div className="p-[24px]  bg-[#222222] border-t-[1px] border-b-[1px] border-l-[1px] border-0 border-[#333333]">
-              <h2 className="uppercase text-[24px] leading-[32px] text-white font-bold">
+              <h2 className="uppercase text-[24px] leading-[32px] text-white">
                 Recent in Game Fotogrit Pins
               </h2>
               <div className="  sm:gap-[18px] sm:grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 ">
