@@ -23,16 +23,18 @@ const HomeCard = () => {
       </div>
       <div className="flex justify-center items-center px-[24px]">
         <div className="p-2 w-[155px]">
-          <img
-            className="md:w-[80px] mx-auto rounded-full border-2"
-            src={logo1}
-            alt=""
-          />
+          <div className="h-[100px] w-[100px] flex items-center">
+            <img
+              className="md:w-[80px] mx-auto rounded-full border-2"
+              src={logo1}
+              alt=""
+            />
+          </div>
           <h3 className="text-center team-name mt-1">Los Angeles Lakers</h3>
         </div>
         <div className="mid-content px-2">
           <div className="flex items-center">
-            <h3 className="score">104</h3>
+            <h3 className="score text-[30px] md:text-[48px]">104</h3>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="12"
@@ -47,14 +49,16 @@ const HomeCard = () => {
             </svg>
           </div>
           <p className="final">Final</p>
-          <h3 className="score">104</h3>
+          <h3 className="score  text-[30px] md:text-[48px]">104</h3>
         </div>
         <div className="p-2 w-[155px]">
-          <img
-            className="w-[80px] rounded-full border-2 mx-auto"
-            src={logo2}
-            alt=""
-          />
+          <div className="h-[100px] w-[100px] flex items-center">
+            <img
+              className="w-[80px] rounded-full border-2 mx-auto"
+              src={logo2}
+              alt=""
+            />
+          </div>
           <h3 className="text-center team-name mt-1">Newyork Knicks</h3>
         </div>
       </div>
@@ -66,10 +70,11 @@ const HomeCard = () => {
           <SlControlPlay />
           Watch
         </button>
-        <Link to="/score">
-          <button className="md:w-[235px] w-full py-[10px] px-[36px] btn-outline border-[#A46E40] text-[#A46E40] hover:text-white btn uppercase hover:bg-[#A46E40] hover:border-[#A46E40] bebas-Neue font-normal leading-5 text-xl">
-            Box Score
-          </button>
+        <Link
+          to="/score"
+          className="md:w-[235px] w-full py-[10px] px-[36px] btn-outline border-[#A46E40] text-[#A46E40] hover:text-white btn uppercase hover:bg-[#A46E40] hover:border-[#A46E40] bebas-Neue font-normal leading-5 text-xl"
+        >
+          <button>Box Score</button>
         </Link>
       </div>
     </div>
