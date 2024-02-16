@@ -139,30 +139,6 @@ const NavBar = () => {
           )}
         </div>
       </li>
-      <li className="">
-        <Link
-          to="/score"
-          className="bebas-Neue font-normal text-2xl leading-8 uppercase"
-        >
-          Score
-        </Link>
-      </li>
-      <li className="">
-        <Link
-          to="/leader-board"
-          className="bebas-Neue font-normal text-2xl leading-8 uppercase"
-        >
-          Leader board
-        </Link>
-      </li>
-      {/* <li className="">
-        <Link
-          to="#"
-          className="bebas-Neue font-normal text-2xl leading-8 uppercase"
-        >
-          About Fotogrit
-        </Link>
-      </li> */}
     </>
   );
   return (

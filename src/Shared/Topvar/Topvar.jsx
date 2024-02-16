@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../../assets/Logo.png";
 
 const Topvar = () => {
@@ -7,7 +8,13 @@ const Topvar = () => {
         <div className="flex items-center justify-between rubik  h-[100px] px-[8px]">
           <div className="flex items-center gap-[48px]">
             <div className="w-[72px] h-[85.5px]">
-              <img className="w-full h-full object-contain" src={logo} alt="" />
+              <Link to="/">
+                <img
+                  className="w-full h-full object-contain"
+                  src={logo}
+                  alt=""
+                />
+              </Link>
             </div>
             <div className="w-full hidden md:block">
               <h3 className="tracking-widest text-[#D9C2AB]">
