@@ -45,7 +45,7 @@ const Schedule = () => {
               cellPadding="0"
               cellSpacing="0"
             >
-              <tr className=" bg-[#f2f2f2] font-medium text-[#688cac]">
+              <tr className=" bg-[#f2f2f2] font-medium text-[#7D7D7D]">
                 <td rowSpan="2" className="border-b">
                   <button className="flex items-center justify-center gap-[10px] text-center w-full px-[8px] py-[16px]">
                     <span>Event Name</span>{" "}
@@ -87,7 +87,7 @@ const Schedule = () => {
                   </button>
                 </td>
               </tr>
-              <tr className="bg-[#f2f2f2] font-medium text-[#688cac]">
+              <tr className="bg-[#f2f2f2] font-medium text-[#7D7D7D]">
                 <td className="border-r border-b py-[12px] px-[16px] text-[14px] leading-[24px]">
                   <button className="flex items-center justify-center gap-[10px] text-center w-full px-[8px] py-[16px]">
                     <span>Name</span> <img src="/Arrow.png" alt="drop down" />
