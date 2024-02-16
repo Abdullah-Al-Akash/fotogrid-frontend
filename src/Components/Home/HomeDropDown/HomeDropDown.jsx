@@ -1,4 +1,3 @@
-import React from "react";
 import BasketDropDown from "./BasketDropDown";
 import DateDropDown from "./DateDropDown";
 import TournamentDropdown from "./TournamentDropdown";

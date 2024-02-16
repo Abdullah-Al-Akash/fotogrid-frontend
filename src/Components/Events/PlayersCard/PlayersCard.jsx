@@ -1,9 +1,10 @@
 import player1 from "../../../../public/Images/events-players/player-1.png";
-import player2 from "../../../../public/Images/events-players/player-2.png";
+// import player2 from "../../../../public/Images/events-players/player-2.png";
 import player3 from "../../../../public/Images/events-players/player-3.png";
-import player4 from "../../../../public/Images/events-players/player-4.png";
+// import player4 from "../../../../public/Images/events-players/player-4.png";
 import jersey from "../../../../public/Images/events-players/Jersey.png";
 import line from "../../../../public/Images/events-players/Line.png";
+import defaultImage from "../../../../public/Images/events-players/default.png";
 
 const PlayersCard = () => {
   const players = [
@@ -24,15 +25,15 @@ const PlayersCard = () => {
     },
     {
       _id: "player-two",
-      image: player2,
-      playerName: "Robert De Niro",
+      image: "",
+      playerName: "",
       playJerseyNumber: 32,
-      playerAge: 9,
-      BloodGroup: "KU 10",
+      playerAge: "--",
+      BloodGroup: "KU--",
       playerPosition: {
         isCaptain: false,
         isShootingGuard: false,
-        center: true,
+        center: false,
         pointGuard: false,
       },
       itsYou: true,
@@ -54,14 +55,14 @@ const PlayersCard = () => {
     },
     {
       _id: "player-four",
-      image: player4,
-      playerName: "Ben Gutama",
+      image: "",
+      playerName: "",
       playJerseyNumber: 47,
-      playerAge: 9,
-      BloodGroup: "KU 10",
+      playerAge: "",
+      BloodGroup: "",
       playerPosition: {
         isCaptain: false,
-        isShootingGuard: true,
+        isShootingGuard: false,
         center: false,
         pointGuard: false,
       },
@@ -91,7 +92,7 @@ const PlayersCard = () => {
               <div className="pt-[10px] md:pt-[24px] px-[10px] md:px-[24px]">
                 <img
                   className="sm:h-[242px] sm:w-[242px] mx-auto object-contain"
-                  src={image}
+                  src={image || defaultImage}
                   alt=""
                 />
               </div>
@@ -118,11 +119,16 @@ const PlayersCard = () => {
                   <img className="sm:mx-[15px] mx-[8px]" src={line} alt="" />
                   <div>
                     <h2 className="montserrat sm:text-[20px]">{playerName}</h2>
-                    <div className="flex items-center montserrat  sm:text-[20px] text-[#7D7D7D]">
-                      <p>
-                        Age {playerAge}, {BloodGroup}
-                      </p>
-                    </div>
+                    {
+                      <div className="montserrat  sm:text-[20px] text-[#7D7D7D]">
+                        {playerAge && (
+                          <p>
+                            Age {playerAge}
+                            {playerAge > 0 && ","} {BloodGroup}
+                          </p>
+                        )}
+                      </div>
+                    }
                   </div>
                 </div>
                 <div className="mt-[16px] flex flex-col sm:flex-row gap-[10px] items-start sm:items-center">
