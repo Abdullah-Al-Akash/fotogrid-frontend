@@ -62,7 +62,7 @@ const HomeCard = () => {
           <h3 className="text-center team-name mt-1">Newyork Knicks</h3>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-between items-center gap-[16px] py-[12px]">
+      <div className="flex flex-col md:flex-row justify-between items-center py-[12px] gap-[16px] md:gap-[0]">
         <button className="md:w-[147px] w-full py-[10px] px-[36px] btn-outline border-[#A46E40] text-[#A46E40] hover:text-white btn uppercase hover:bg-[#A46E40] hover:border-[#A46E40] bebas-Neue font-normal leading-5 text-xl">
           Media
         </button>
