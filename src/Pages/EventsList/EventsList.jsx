@@ -6,7 +6,7 @@ import MonthDropDown from "../../Components/EventList/MonthDropDown";
 
 const EventsList = () => {
   return (
-    <div className="container mb-[12px]">
+    <div className="fotogrit-container mb-[12px]">
       <div className="mt-[16px] mb-[24px]">
         <div className="flex items-center gap-[24px]">
           <BasketBallDropDown />

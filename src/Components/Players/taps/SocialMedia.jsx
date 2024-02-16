@@ -4,7 +4,7 @@ import { FaTiktok } from "react-icons/fa6";
 const SocialMedia = () => {
   return (
     <div className="bebas-Neue py-[64px]">
-      <h2 className="uppercase text-[32px] leading-[40px] font-bold  text-center">
+      <h2 className="uppercase text-[32px] leading-[40px] bebas-Neue  text-center">
         Avery Freeman Social Media
       </h2>
       <div className="flex gap-[12px] justify-center items-center mt-[32px]">

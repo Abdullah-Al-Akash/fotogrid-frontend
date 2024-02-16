@@ -25,7 +25,7 @@ const TotalScoreTable = () => {
           </thead>
           <tbody>
             <tr>
-              <td className="px-[24px]  text-center py-[12px] text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8] font-bold border-l-0">
+              <td className="px-[24px]  text-center py-[12px] text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8] border-l-0">
                 Roar
               </td>
               <td className="px-[24px]   text-center py-[12px] text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
@@ -42,7 +42,7 @@ const TotalScoreTable = () => {
               </td>
             </tr>
             <tr>
-              <td className="px-[24px] border-l-0 border-b-0 text-center py-[12px] text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8] font-bold">
+              <td className="px-[24px] border-l-0 border-b-0 text-center py-[12px] text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8] ">
                 Warriors
               </td>
               <td className="px-[24px]  text-center border-b-0 py-[12px] text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">

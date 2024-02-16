@@ -3,7 +3,7 @@ import TableWrapper from "../ui/table-wrapper";
 const LeaderBoard = () => {
   return (
     <section className="bg-white p-[24px] rounded mt-[24px]">
-      <h2 className="uppercase font-bold bebas-Neue text-[#1A1A1A] leading-[32px] text-[24px]">
+      <h2 className="uppercase font-normal bebas-Neue text-[#1A1A1A] leading-[32px] text-[24px]">
         Leaderboard
       </h2>
       <div className=" mt-[8px] ">
@@ -60,7 +60,7 @@ const LeaderBoard = () => {
                 <td className="border border-[#E8E8E8]  border-b-0 border-l-0">
                   <img
                     className="h-[44px] w-[44px] rounded-full mx-auto my-[5px]"
-                    src="../../../public/user.png"
+                    src="/user.png"
                   />
                 </td>
                 <td className="px-[17px] text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]  border-b-0">

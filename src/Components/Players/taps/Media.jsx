@@ -23,7 +23,7 @@ const Media = () => {
   return (
     <div>
       <div className="py-[24px]">
-        <h2 className="uppercase text-[24px] md:text-[36px] bebas-Neue font-bold leading-[44px] text-[#1A1A1A]">
+        <h2 className="uppercase text-[24px] md:text-[36px] bebas-Neue bebas-Neue leading-[44px] text-[#1A1A1A]">
           Avery Freeman Media Highlights
         </h2>
         <div className="flex  bebas-Neue lg:flex-row flex-col justify-between items-center">
@@ -33,7 +33,7 @@ const Media = () => {
             <Dropdown options={defaultOptions} label="January" />
           </div>
           <div className="h-[46px]  lg:mt-auto relative border-[#CCCCCC] overflow-hidden border-[1px] rounded-[6px] bg-white w-[90%] md:w-[70%] lg:max-w-[300px]">
-            <FiSearch className=" text-[#636363] text-[18px] font-bold left-[17px] absolute top-1/2 -translate-y-1/2" />
+            <FiSearch className=" text-[#636363] text-[18px]  left-[17px] absolute top-1/2 -translate-y-1/2" />
             <input
               className="w-full h-full placeholder:text-[#636363] px-[48px] border-none outline-none"
               placeholder="Search here"

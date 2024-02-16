@@ -24,7 +24,7 @@ const FotogritPins = () => {
                 <h3 className="text-[14px] mt-[24px] leading-[24px] text-[#7D7D7D]">
                   Event Group TitIe
                 </h3>
-                <h2 className="bebas-Neue mt-[12px] uppercase text-[#1A1A1A] font-bold">
+                <h2 className="bebas-Neue mt-[12px] uppercase text-[#1A1A1A] bebas-Neue">
                   Fotogrit Pins Name Name
                 </h2>
                 <p className="text-[#4A4A4A] mt-[16px] text-[16px] leading-[28px]">

@@ -7,8 +7,10 @@ const ResultsAndStanding = () => {
     <div className="flex flex-col gap-[16px]">
       <div className="my-[8px]">
         <div className="flex flex-col md:flex-row items-start justify-between md:justify-start md:items-center gap-[24px]">
-          <KUDropDown />
-          <GenderDropDown />
+          <div className="flex items-center gap-[24px]">
+            <KUDropDown />
+            <GenderDropDown />
+          </div>
         </div>
       </div>
       <div className="my-[8px] bg-[#F2F2F2] rounded-[6px]">

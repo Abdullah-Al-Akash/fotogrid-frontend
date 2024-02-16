@@ -17,7 +17,7 @@ const PlayerTopbar = () => {
         <Dropdown options={defaultOptions} label="KejurprovDKI 2023" />
       </div>
       <div className="h-[46px] relative border-[#CCCCCC] overflow-hidden mt-[18px] lg:mt-auto border-[1px] rounded-[6px] bg-white w-full sm:w-[60%] lg:w-[235px]">
-        <FiSearch className=" text-[#636363] text-[18px] font-bold left-[17px] absolute top-1/2 -translate-y-1/2" />
+        <FiSearch className=" text-[#636363] text-[18px] left-[17px] absolute top-1/2 -translate-y-1/2" />
         <input
           className="w-full h-full placeholder:text-[#636363] px-[48px] border-none outline-none"
           placeholder="Search here"
