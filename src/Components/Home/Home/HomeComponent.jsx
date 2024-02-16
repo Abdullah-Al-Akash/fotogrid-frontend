@@ -5,7 +5,7 @@ const HomeComponent = () => {
     <div className="bg-[#F2F2F2] border-[#E8E8E8]">
       <div className="container">
         <HomeDropDown></HomeDropDown>
-        <div className="grid md:grid-cols-2 gap-[24px] pb-[24px]">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-[24px] pb-[24px]">
           <HomeCard></HomeCard>
           <HomeCard></HomeCard>
           <HomeCard></HomeCard>
