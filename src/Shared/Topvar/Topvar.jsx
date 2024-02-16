@@ -4,7 +4,7 @@ import logo from "../../assets/Logo.png";
 const Topvar = () => {
   return (
     <div className="bg-[#1A1A1A]">
-      <div className="container">
+      <div className="fotogrit-container">
         <div className="flex items-center justify-between rubik  h-[100px] px-[8px]">
           <div className="flex items-center gap-[48px]">
             <div className="w-[72px] h-[85.5px]">
