@@ -8,14 +8,14 @@ import { Link } from "react-router-dom";
 const HomeCard = () => {
   return (
     <div className="w-full p-[16px] rounded-2xl bg-[#FFF]">
-      <div className="md:flex items-center">
-        <div className="md:w-[430px]">
+      <div className="md:flex items-center justify-between">
+        <div className="">
           <h1 className="headline">Kejuaraan Provinsi DKI 2023</h1>
         </div>
-        <div className="flex">
+        <div className="flex items-center gap-[12px]">
           <h3 className="sub-heading border-r-2 pe-2">12 January 2024 </h3>
           <h3 className="sub-heading border-r-2 pe-2"> KU 10 </h3>
-          <h3 className="sub-heading ps-2">Girl</h3>
+          <h3 className="sub-heading">Girl</h3>
         </div>
       </div>
       <div className="py-[5px]">
