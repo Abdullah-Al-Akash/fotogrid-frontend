@@ -3,7 +3,7 @@ import TableWrapper from "../ui/table-wrapper";
 const LeaderBoard = () => {
   return (
     <section className="bg-white p-[24px] rounded mt-[24px]">
-      <h2 className="uppercase font-bold bebas-Neue text-[#1A1A1A] leading-[32px] text-[24px]">
+      <h2 className="uppercase font-normal bebas-Neue text-[#1A1A1A] leading-[32px] text-[24px]">
         Leaderboard
       </h2>
       <div className=" mt-[8px] ">

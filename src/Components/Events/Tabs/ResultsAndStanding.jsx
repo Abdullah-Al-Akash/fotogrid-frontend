@@ -8,7 +8,7 @@ const ResultsAndStanding = () => {
       <div className="my-[8px]">
         <div className="flex flex-col md:flex-row items-start justify-between md:justify-start md:items-center gap-[24px]">
           <div className="flex items-center gap-[24px]">
-            <AgeGroupDropDown />
+            {/* <AgeGroupDropDown /> */}
             <GenderDropDown />
           </div>
         </div>

@@ -26,15 +26,15 @@ const PlayerInfo = () => {
                 Avery FreeMan
               </h2>
 
-              <div className="bg-[#636363] rounded-[6px] text-white montserrat font-bold text-[24px] leading-[32px] py-[8px] px-[18px]">
+              {/* <div className="bg-[#636363] rounded-[6px] text-white montserrat font-bold text-[24px] leading-[32px] py-[8px] px-[18px]">
                 <span>KU</span>
                 <span className="ml-[9px]">12</span>
                 <span className="ml-[7px]">/</span>
                 <span className="ml-[4px]">8</span>
                 <sup className="ml-[4px]">th</sup>
-              </div>
+              </div> */}
             </div>
-            <div className="border-l-[1px] border-b-[1px] border-[#333333] bebas-Neue flex md:flex-row flex-col items-center">
+            <div className="border-l-[1px] border-b-[1px] border-[#333333] bebas-Neue flex md:flex-row flex-col justify-between items-center">
               <div className="px-[30px] py-[18px] flex gap-[6px] items-center ">
                 <img className="w-[28px] h-[28px]" src="/ball.png" alt="ball" />
                 <h3 className="text-[48px] leading-[60px] text-[#F2F2F2]">6</h3>
