@@ -91,11 +91,18 @@ const HallOfDonors = () => {
                     key={i}
                     className="p-[16px] pb-[35px] bg-[#E8E8E8] rounded-[6px]"
                   >
-                    <img
-                      src={image}
-                      className="h-[129px] mx-auto mb-[16px]"
-                      alt=""
-                    />
+                    <div
+                      style={{
+                        boxShadow: "0px 1px 1px 0px rgba(46, 46, 48, 0.44)",
+                      }}
+                      className="bg-[#fff] rounded-full p-[21px] h-[129px] w-[129px] border-[4px] border-[#CCC] mb-[16px] flex justify-center items-center "
+                    >
+                      <img
+                        src={image}
+                        className="w-[88px] mx-auto object-cover"
+                        alt=""
+                      />
+                    </div>
                     <h2 className=" bebas-Neue text-[20px] text-center">
                       {name}
                     </h2>
@@ -114,11 +121,18 @@ const HallOfDonors = () => {
                     key={i}
                     className="p-[16px] pb-[35px] bg-[#EDDDC0] rounded-[6px]"
                   >
-                    <img
-                      src={image}
-                      className="h-[129px] mx-auto mb-[16px]"
-                      alt=""
-                    />
+                    <div
+                      style={{
+                        boxShadow: "0px 1px 1px 0px rgba(46, 46, 48, 0.44)",
+                      }}
+                      className="bg-[#fff] rounded-full p-[21px] h-[129px] w-[129px] border-[4px] border-[#D1AE61] mb-[16px] flex justify-center items-center "
+                    >
+                      <img
+                        src={image}
+                        className="w-[88px] mx-auto object-cover"
+                        alt=""
+                      />
+                    </div>
                     <h2 className=" bebas-Neue text-[20px] text-center">
                       {name}
                     </h2>
