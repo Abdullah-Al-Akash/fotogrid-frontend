@@ -50,3 +50,13 @@
   font-weight: 400;
   line-height: 20px; /* 100% */
 }
+
+.team-name {
+  color: var(--BrandColor-Dark-Grey600, #636363);
+  /* Bodyxsmall/Medium */
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 171.429% */
+}

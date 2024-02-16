@@ -3,6 +3,7 @@ import cardImg from "../../../assets/Home/card.png";
 import logo1 from "../../../assets/Home/logo1.png";
 import logo2 from "../../../assets/Home/logo2.png";
 import { SlControlPlay } from "react-icons/sl";
+import { Link } from "react-router-dom";
 
 const HomeCard = () => {
   return (
@@ -20,9 +21,14 @@ const HomeCard = () => {
       <div className="py-[5px]">
         <img className="w-full md:h-[346px] rounded-sm" src={cardImg} alt="" />
       </div>
-      <div className="flex justify-between items-center px-[24px]">
-        <div className="p-2">
-          <img className="md:h-[132px] md:w-[136px]" src={logo1} alt="" />
+      <div className="flex justify-center items-center px-[24px]">
+        <div className="p-2 w-[155px]">
+          <img
+            className="md:w-[80px] mx-auto rounded-full border-2"
+            src={logo1}
+            alt=""
+          />
+          <h3 className="text-center team-name mt-1">Los Angeles Lakers</h3>
         </div>
         <div className="mid-content px-2">
           <div className="flex items-center">
@@ -43,8 +49,13 @@ const HomeCard = () => {
           <p className="final">Final</p>
           <h3 className="score">104</h3>
         </div>
-        <div className="p-2">
-          <img className="md:h-[132px] md:w-[136px]" src={logo2} alt="" />
+        <div className="p-2 w-[155px]">
+          <img
+            className="w-[80px] rounded-full border-2 mx-auto"
+            src={logo2}
+            alt=""
+          />
+          <h3 className="text-center team-name mt-1">Newyork Knicks</h3>
         </div>
       </div>
       <div className="flex flex-col md:flex-row justify-between items-center gap-[16px] py-[12px]">
@@ -55,9 +66,11 @@ const HomeCard = () => {
           <SlControlPlay />
           Watch
         </button>
-        <button className="md:w-[235px] w-full py-[10px] px-[36px] btn-outline border-[#A46E40] text-[#A46E40] hover:text-white btn uppercase hover:bg-[#A46E40] hover:border-[#A46E40] bebas-Neue font-normal leading-5 text-xl">
-          Box Score
-        </button>
+        <Link to="/score">
+          <button className="md:w-[235px] w-full py-[10px] px-[36px] btn-outline border-[#A46E40] text-[#A46E40] hover:text-white btn uppercase hover:bg-[#A46E40] hover:border-[#A46E40] bebas-Neue font-normal leading-5 text-xl">
+            Box Score
+          </button>
+        </Link>
       </div>
     </div>
   );
