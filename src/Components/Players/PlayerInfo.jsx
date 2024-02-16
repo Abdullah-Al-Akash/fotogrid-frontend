@@ -24,17 +24,13 @@ const PlayerInfo = () => {
             <h2 className="uppercase text-[48px] leading-[60px] bebas-Neue text-[#F2F2F2]">
               Avery FreeMan
             </h2>
-            <div className="flex items-center gap-[37px] ">
-              <p className="bebas-Neue text-[20px] font-bold text-[#ABABAB]">
-                Age Group
-              </p>
-              <div className="bg-[#636363] rounded-[6px] text-white montserrat font-bold text-[24px] leading-[32px] py-[8px] px-[18px]">
-                <span>KU</span>
-                <span className="ml-[9px]">12</span>
-                <span className="ml-[7px]">/</span>
-                <span className="ml-[4px]">8</span>
-                <sup className="ml-[4px]">th</sup>
-              </div>
+
+            <div className="bg-[#636363] rounded-[6px] text-white montserrat font-bold text-[24px] leading-[32px] py-[8px] px-[18px]">
+              <span>KU</span>
+              <span className="ml-[9px]">12</span>
+              <span className="ml-[7px]">/</span>
+              <span className="ml-[4px]">8</span>
+              <sup className="ml-[4px]">th</sup>
             </div>
           </div>
           <div className="border-x-[1px] border-b-[1px] border-[#333333] bebas-Neue flex md:flex-row flex-col items-center">
@@ -61,45 +57,45 @@ const PlayerInfo = () => {
             <h2 className="uppercase text-[24px] leading-[32px] text-white font-bold">
               Recent in Game Fotogrit Pins
             </h2>
-            <div className="mt-[24px]  sm:gap-[18px] sm:grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 ">
+            <div className="  sm:gap-[18px] sm:grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 ">
               <img
-                className="w-[200px] mx-auto mt-[18px] sm:w-full "
-                src="/Logo (3).png"
+                className="w-[200px] border-[3px] border-[#636363] rounded-full mx-auto mt-[18px] sm:w-full "
+                src="/pins/Logo1.png"
                 alt="icon"
               />
               <img
-                className="w-[200px] mx-auto mt-[18px] sm:w-full "
-                src="/Logo (4).png"
+                className="w-[200px] border-[3px] border-[#636363] rounded-full mx-auto mt-[18px] sm:w-full "
+                src="/pins/Logo2.png"
                 alt="icon"
               />
               <img
-                className="w-[200px] mx-auto mt-[18px] sm:w-full "
-                src="/Logo (5).png"
+                className="w-[200px] border-[3px] border-[#636363] rounded-full mx-auto mt-[18px] sm:w-full "
+                src="/pins/Logo3.png"
                 alt="icon"
               />
               <img
-                className="w-[200px] mx-auto mt-[18px] sm:w-full "
-                src="/Logo (6).png"
+                className="w-[200px] border-[3px] border-[#636363] rounded-full mx-auto mt-[18px] sm:w-full "
+                src="/pins/Logo4.png"
                 alt="icon"
               />
               <img
-                className="w-[200px] mx-auto mt-[18px] sm:w-full "
-                src="/Logo (7).png"
+                className="w-[200px] border-[3px] border-[#636363] rounded-full mx-auto mt-[18px] sm:w-full "
+                src="/pins/Logo5.png"
                 alt="icon"
               />
               <img
-                className="w-[200px] mx-auto mt-[18px] sm:w-full "
-                src="/Logo (8).png"
+                className="w-[200px] border-[3px] border-[#636363] rounded-full mx-auto mt-[18px] sm:w-full "
+                src="/pins/Logo6.png"
                 alt="icon"
               />
               <img
-                className="w-[200px] mx-auto mt-[18px] sm:w-full "
-                src="/Logo (9).png"
+                className="w-[200px] border-[3px] border-[#636363] rounded-full mx-auto mt-[18px] sm:w-full "
+                src="/pins/Logo7.png"
                 alt="icon"
               />
               <img
-                className="w-[200px] mx-auto mt-[18px] sm:w-full "
-                src="/Logo (10).png"
+                className="w-[200px] border-[3px] border-[#636363] rounded-full mx-auto mt-[18px] sm:w-full "
+                src="/pins/Logo8.png"
                 alt="icon"
               />
             </div>

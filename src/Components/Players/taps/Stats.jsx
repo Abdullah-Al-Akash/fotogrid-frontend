@@ -7,20 +7,11 @@ import TableWrapper from "../../ui/table-wrapper";
 const Stats = () => {
   return (
     <div>
-      <div className="flex  bebas-Neue lg:flex-row flex-col justify-between items-center">
-        <div className="flex flex-col md:flex-row items-center bebas-Neue gap-[24px]">
-          <div className="flex items-center gap-[24px]">
-            <h3 className="text-[24px] leading-[32px]">Age Group</h3>
-            <Dropdown options={defaultOptions} label="KU 10" />
-          </div>
-          <div className="flex items-center gap-[24px]">
-            <h3 className="text-[24px] leading-[32px]">Event Group</h3>
-            <Dropdown options={defaultOptions} label="Male" />
-          </div>
-          <div className="flex items-center gap-[24px]">
-            <h3 className="text-[24px] leading-[32px]">Month</h3>
-            <Dropdown options={defaultOptions} label="January" />
-          </div>
+      <div className="flex py-[24px]  bebas-Neue lg:flex-row flex-col justify-between items-center ">
+        <div className="flex flex-col md:flex-row items-center bebas-Neue gap-[24px] py-[8px]">
+          <Dropdown options={defaultOptions} label="KU 10" />
+          <Dropdown options={defaultOptions} label="Male" />
+          <Dropdown options={defaultOptions} label="January" />
         </div>
         <div className="h-[46px] mt-[18px] lg:mt-auto relative border-[#CCCCCC] overflow-hidden border-[1px] rounded-[6px] bg-white w-[90%] md:w-[70%] lg:max-w-[300px]">
           <FiSearch className=" text-[#636363] text-[18px] font-bold left-[17px] absolute top-1/2 -translate-y-1/2" />
@@ -30,7 +21,7 @@ const Stats = () => {
           />
         </div>
       </div>
-      <section className="bg-white p-[24px] rounded mt-[24px]">
+      <section className="bg-white p-[24px] rounded ">
         <div className="flex justify-between items-center">
           <h2 className="uppercase font-bold bebas-Neue text-[#1A1A1A] leading-[32px] text-[24px]">
             List of Games Played

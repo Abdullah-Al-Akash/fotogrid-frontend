@@ -1,18 +1,25 @@
 const FotogritPins = () => {
   return (
     <div>
-      <h2 className="uppercase text-[32px] leading-[42px] bebas-Neue text-[#1A1A1A]">
+      <h2 className="uppercase text-[32px] leading-[42px] bebas-Neue text-[#1A1A1A] py-[24px]">
         You Have 12 Fotogrit Pins
       </h2>
 
-      <div className="sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-[16px] mt-[16px]">
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map((item) => {
+      <div className="sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-[16px]">
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((item) => {
           return (
             <article
               key={item}
               className="bg-white my-[18px] sm:my-auto p-[24px] rounded-[6px]"
             >
-              <img className="w-full" src="/Logo (3).png" alt="player image" />
+              <div>
+                <img
+                  className="w-[160px] border-[3px] border-[#CCCCCC] rounded-full mx-auto mt-[18px]  "
+                  src={`/fotogrit-pins/logo${item}.png`}
+                  alt="icon"
+                />
+              </div>
+
               <div className="text-center">
                 <h3 className="text-[14px] mt-[24px] leading-[24px] text-[#7D7D7D]">
                   Event Group TitIe

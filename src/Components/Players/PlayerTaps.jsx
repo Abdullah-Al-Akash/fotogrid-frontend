@@ -61,7 +61,7 @@ const PlayerTaps = ({ tab, setTab }) => {
               </div>
             </div>
           </div>
-          <div className="mt-[15px]  rounded-[8px] px-[24px] container">
+          <div className="  rounded-[8px] px-[24px] container">
             {tab === "tab1" ? (
               <Stats />
             ) : tab === "tab2" ? (
