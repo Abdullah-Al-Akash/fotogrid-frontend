@@ -4,6 +4,8 @@ import AgeGroupDropDown from "../AgeGroupDropDown/AgeGroupDropDown";
 import GenderDropDown from "../GenderDropDown/GenderDropDown";
 import TableWrapper from "../../ui/table-wrapper";
 import ScheduleDateDropDown from "../ScheduleDateDropDown/ScheduleDateDropDown";
+import { IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown } from "react-icons/io";
 
 const Schedule = () => {
   return (
@@ -29,51 +31,133 @@ const Schedule = () => {
           <table className="w-full mx-auto" cellSpacing="0" cellPadding="0">
             <thead className="bg-primary">
               <tr>
-                <th className="text-[14px] border-l-0  text-[#7D7D7D] p-[24px] border border-t-0 border-[#E8E8E8]">
-                  Date / Time
+                <th className="text-[#7D7D7D] text-[14px] border-l-0 p-[16px]  h-full  border-t-0 border-[#E8E8E8] ">
+                  <span className="flex justify-center items-center gap-[4px]">
+                    <span className="inline-block">Date / Time</span>
+                    <span className="inline-block">
+                      <IoIosArrowUp />
+                      <IoIosArrowDown />
+                    </span>
+                  </span>
                 </th>
-                <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-t-0 border-[#E8E8E8]">
-                  Location
+                <th className="text-[14px]  text-[#7D7D7D] p-[16px] border border-t-0 border-[#E8E8E8]">
+                  <span className="flex justify-center items-center gap-[4px]">
+                    <span className="inline-block">Location</span>
+                    <span className="inline-block">
+                      <IoIosArrowUp />
+                      <IoIosArrowDown />
+                    </span>
+                  </span>
                 </th>
-                <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-t-0 border-[#E8E8E8]">
-                  Event Categories
+                <th className="text-[14px]  text-[#7D7D7D] p-[16px] border border-t-0 border-[#E8E8E8]">
+                  <span className="flex justify-center items-center gap-[4px]">
+                    <span className="inline-block">Event Categories</span>
+                    <span className="inline-block">
+                      <IoIosArrowUp />
+                      <IoIosArrowDown />
+                    </span>
+                  </span>
                 </th>
 
                 <th className="text-[14px] text-[#7D7D7D] border-[#E8E8E8] border-t-0 text-center border">
                   <th className="p-[16px] flex justify-center items-center border-b">
-                    Club A
+                    <span className="flex justify-center items-center gap-[4px]">
+                      <span className="inline-block">Club A</span>
+                      <span className="inline-block">
+                        <IoIosArrowUp />
+                        <IoIosArrowDown />
+                      </span>
+                    </span>
                   </th>
                   <tr>
-                    <th className="p-[16px] w-full">Name</th>
+                    <th className="p-[16px] w-full">
+                      <span className="flex justify-center items-center gap-[4px]">
+                        <span className="inline-block">Name</span>
+                        <span className="inline-block">
+                          <IoIosArrowUp />
+                          <IoIosArrowDown />
+                        </span>
+                      </span>
+                    </th>
                     <th className="border-l py-[16px] px-[16.12px] w-full">
-                      Score
+                      <span className="flex justify-center items-center gap-[4px]">
+                        <span className="inline-block">Score</span>
+                        <span className="inline-block">
+                          <IoIosArrowUp />
+                          <IoIosArrowDown />
+                        </span>
+                      </span>
                     </th>
                     <th className="border-l py-[16px] px-[14.8px] w-full">
-                      Win/Lose
+                      <span className="flex justify-center items-center gap-[4px]">
+                        <span className="inline-block">Win/Lose</span>
+                        <span className="inline-block">
+                          <IoIosArrowUp />
+                          <IoIosArrowDown />
+                        </span>
+                      </span>
                     </th>
                   </tr>
                 </th>
 
                 <th className="text-[14px] text-[#7D7D7D] border-[#E8E8E8] text-center border border-t-0">
                   <th className="p-[16px] flex justify-center items-center border-b">
-                    Club A
+                    <span className="flex justify-center items-center gap-[4px]">
+                      <span className="inline-block">Club B</span>
+                      <span className="inline-block">
+                        <IoIosArrowUp />
+                        <IoIosArrowDown />
+                      </span>
+                    </span>
                   </th>
                   <tr>
-                    <th className="p-[16px] w-full">Name</th>
+                    <th className="p-[16px] w-full">
+                      <span className="flex justify-center items-center gap-[4px]">
+                        <span className="inline-block">Name</span>
+                        <span className="inline-block">
+                          <IoIosArrowUp />
+                          <IoIosArrowDown />
+                        </span>
+                      </span>
+                    </th>
                     <th className="border-l py-[16px] px-[16px] w-full">
-                      Score
+                      <span className="flex justify-center items-center gap-[4px]">
+                        <span className="inline-block">Score</span>
+                        <span className="inline-block">
+                          <IoIosArrowUp />
+                          <IoIosArrowDown />
+                        </span>
+                      </span>
                     </th>
                     <th className="border-l py-[16px] px-[14.8px] w-full">
-                      Win/Lose
+                      <span className="flex justify-center items-center gap-[4px]">
+                        <span className="inline-block">Win/Lose</span>
+                        <span className="inline-block">
+                          <IoIosArrowUp />
+                          <IoIosArrowDown />
+                        </span>
+                      </span>
                     </th>
                   </tr>
                 </th>
 
-                <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8] border-t-0">
-                  Hall of Fame
+                <th className="text-[14px]  text-[#7D7D7D] p-[16px] border border-[#E8E8E8] border-t-0">
+                  <span className="flex justify-center items-center gap-[4px]">
+                    <span className="inline-block">Hall of Fame</span>
+                    <span className="inline-block">
+                      <IoIosArrowUp />
+                      <IoIosArrowDown />
+                    </span>
+                  </span>
                 </th>
-                <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8] border-t-0 border-r-0">
-                  Link to Event Detail
+                <th className="text-[14px]  text-[#7D7D7D] p-[16px] border border-[#E8E8E8] border-t-0 border-r-0">
+                  <span className="flex justify-center items-center gap-[4px]">
+                    <span className="inline-block">Link to Event Detail</span>
+                    <span className="inline-block">
+                      <IoIosArrowUp />
+                      <IoIosArrowDown />
+                    </span>
+                  </span>
                 </th>
               </tr>
             </thead>
