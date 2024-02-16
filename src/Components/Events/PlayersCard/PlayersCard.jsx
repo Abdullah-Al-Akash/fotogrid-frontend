@@ -20,6 +20,7 @@ const PlayersCard = () => {
         center: false,
         pointGuard: false,
       },
+      itsYou: false,
     },
     {
       _id: "player-two",
@@ -34,6 +35,7 @@ const PlayersCard = () => {
         center: true,
         pointGuard: false,
       },
+      itsYou: true,
     },
     {
       _id: "player-three",
@@ -48,6 +50,7 @@ const PlayersCard = () => {
         center: false,
         pointGuard: true,
       },
+      itsYou: false,
     },
     {
       _id: "player-four",
@@ -62,10 +65,11 @@ const PlayersCard = () => {
         center: false,
         pointGuard: false,
       },
+      itsYou: true,
     },
   ];
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-[24px] xl:px-24 py-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-[24px] py-8">
       {players?.map((player) => {
         const {
           _id,
@@ -75,23 +79,33 @@ const PlayersCard = () => {
           playerAge,
           BloodGroup,
           playerPosition: { isCaptain, isShootingGuard, center, pointGuard },
+          itsYou,
         } = player || {};
 
         return (
           <div
             key={_id}
-            className="sm:h-[460px] sm:w-[316px] mx-auto bg-[#E5D5C9] "
+            className="sm:h-[460px] sm:w-[316px] mx-auto bg-[#E5D5C9] rounded-t-[6px]"
           >
-            <div className="sm:h-[60%] pt-[10px] md:pt-[24px] px-[10px] md:px-[24px]">
-              <img
-                className="sm:h-[242px] sm:w-[242px] mx-auto object-contain"
-                src={image}
-                alt=""
-              />
+            <div className="relative sm:h-[60%]">
+              <div className="pt-[10px] md:pt-[24px] px-[10px] md:px-[24px]">
+                <img
+                  className="sm:h-[242px] sm:w-[242px] mx-auto object-contain"
+                  src={image}
+                  alt=""
+                />
+              </div>
+              {itsYou ? (
+                <p className="absolute top-[8px] right-[8px] opacity-[77%] px-[16px] py-[4px] rounded-[100px] bg-[#A46E40] montserrat font-medium text-[12px] text-[#FFFFFF]">
+                  This is me. Please link to my ID
+                </p>
+              ) : (
+                ""
+              )}
             </div>
             <div
               style={{ clipPath: "polygon(0 0, 100% 25%, 100% 100%, 0 100%)" }}
-              className="sm:h-[40%] bg-[#1A1A1A]"
+              className="sm:h-[40%] bg-[#1A1A1A] rounded-b-[6px]"
             >
               <div className="pb-[24px] px-[24px] text-white pt-[45px] flex flex-col justify-between items-start">
                 <div className="flex items-center h-full">
