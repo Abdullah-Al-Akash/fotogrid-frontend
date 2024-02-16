@@ -1,4 +1,3 @@
-import React from "react";
 import MainScoreTable from "./MainScoreTable";
 
 const WarriorsTable = () => {

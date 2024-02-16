@@ -87,15 +87,12 @@ const HallOfDonors = () => {
               {platinumArray?.map((platinum, i) => {
                 const { image, name } = platinum || {};
                 return (
-                  <div
-                    key={i}
-                    className="p-[16px] pb-[35px] bg-[#E8E8E8] rounded-[6px]"
-                  >
+                  <div key={i} className="p-[16px] bg-[#E8E8E8] rounded-[6px]">
                     <div
                       style={{
                         boxShadow: "0px 1px 1px 0px rgba(46, 46, 48, 0.44)",
                       }}
-                      className="bg-[#fff] rounded-full p-[21px] h-[129px] w-[129px] border-[4px] border-[#CCC] mb-[16px] flex justify-center items-center "
+                      className="bg-[#fff] rounded-full p-[21px] h-[115px] border-[4px] border-[#CCC] mb-[16px] flex justify-center items-center object-contain"
                     >
                       <img
                         src={image}
@@ -119,13 +116,13 @@ const HallOfDonors = () => {
                 return (
                   <div
                     key={i}
-                    className="p-[16px] pb-[35px] bg-[#EDDDC0] rounded-[6px]"
+                    className="p-[16px] bg-[#EDDDC0] rounded-[6px]"
                   >
                     <div
                       style={{
                         boxShadow: "0px 1px 1px 0px rgba(46, 46, 48, 0.44)",
                       }}
-                      className="bg-[#fff] rounded-full p-[21px] h-[129px] w-[129px] border-[4px] border-[#D1AE61] mb-[16px] flex justify-center items-center "
+                      className="bg-[#fff] rounded-full p-[21px] h-[115px] border-[4px] border-[#D1AE61] mb-[16px] flex justify-center items-center "
                     >
                       <img
                         src={image}
