@@ -36,31 +36,52 @@ const Stats = () => {
               <thead className="bg-primary ">
                 <tr>
                   <th className="text-[14px]  text-[#7D7D7D] p-[24px] border-t-0 border-l-0 border border-[#E8E8E8]">
-                    Event
+                    <button className="flex items-center justify-center gap-[10px] text-center w-full">
+                      <span>Event</span>{" "}
+                      <img src="/Arrow.png" alt="drop down" />
+                    </button>
                   </th>
                   <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8] border-t-0">
-                    Team
+                    <button className="flex items-center justify-center gap-[10px] text-center w-full">
+                      <span>Team</span> <img src="/Arrow.png" alt="drop down" />
+                    </button>
                   </th>
                   <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8] border-t-0">
-                    Opponent Team
+                    <button className="flex items-center justify-center gap-[10px] text-center w-full">
+                      <span>Opponent Team</span>{" "}
+                      <img src="/Arrow.png" alt="drop down" />
+                    </button>
                   </th>
                   <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8] border-t-0">
-                    PPG
+                    <button className="flex items-center justify-center gap-[10px] text-center w-full">
+                      <span>PPG</span> <img src="/Arrow.png" alt="drop down" />
+                    </button>
                   </th>
                   <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8] border-t-0">
-                    RPG
+                    <button className="flex items-center justify-center gap-[10px] text-center w-full">
+                      <span>RPG</span> <img src="/Arrow.png" alt="drop down" />
+                    </button>
                   </th>
                   <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8] border-t-0">
-                    BPG
+                    <button className="flex items-center justify-center gap-[10px] text-center w-full">
+                      <span>BPG</span> <img src="/Arrow.png" alt="drop down" />
+                    </button>
                   </th>
                   <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8] border-t-0">
-                    APG
+                    <button className="flex items-center justify-center gap-[10px] text-center w-full">
+                      <span>APG</span> <img src="/Arrow.png" alt="drop down" />
+                    </button>
                   </th>
                   <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8] border-t-0">
-                    SPG
+                    <button className="flex items-center justify-center gap-[10px] text-center w-full">
+                      {" "}
+                      <span>SPG</span> <img src="/Arrow.png" alt="drop down" />
+                    </button>
                   </th>
                   <th className="text-[14px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8] border-r-0 border-t-0">
-                    3RT
+                    <button className="flex items-center justify-center gap-[10px] text-center w-full">
+                      <span>3RT</span> <img src="/Arrow.png" alt="drop down" />
+                    </button>
                   </th>
                 </tr>
               </thead>
