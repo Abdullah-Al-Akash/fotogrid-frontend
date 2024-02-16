@@ -9,13 +9,7 @@ const ClubAndPlayers = () => {
       <div className="mx-[15px]">
         <div className="flex flex-col md:flex-row items-start justify-between md:justify-start md:items-center gap-[24px] py-[8px]">
           <div className="flex items-center gap-[24px]">
-            <h3 className="uppercase bebas-Neue text-[24px]">
-              Participating Teams{" "}
-            </h3>
             <ParticipatingTeamsDropDown />
-          </div>
-          <div className="flex items-center gap-[24px]">
-            <h3 className="uppercase bebas-Neue text-[24px]">Gender </h3>
             <GenderDropDown />
           </div>
         </div>
@@ -24,7 +18,7 @@ const ClubAndPlayers = () => {
         <div>
           <ClubSlider />
         </div>
-          <PlayersCard />
+        <PlayersCard />
       </div>
     </div>
   );

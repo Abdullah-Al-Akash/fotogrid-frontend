@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
-const AgeDropDown = () => {
+const EventListAgeGroupDropDown = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
 
@@ -18,7 +18,7 @@ const AgeDropDown = () => {
       <div>
         <button
           type="button"
-          className="rounded-[6px] text-[#1A1A1A] border-gray-300 shadow-sm py-[10px] my-[8px] px-[16px] bg-white text-sm  hover:bg-gray-50  flex item-center justify-between text-[16px] montserrat"
+          className="rounded-[6px] text-[#1A1A1A] border-gray-300 shadow-sm py-[10px] px-[16px] bg-white text-sm  hover:bg-gray-50  flex item-center justify-between text-[16px] montserrat"
           onClick={toggleDropdown}
         >
           {selectedOption ? selectedOption : "Age Group"}
@@ -30,7 +30,7 @@ const AgeDropDown = () => {
 
       {isOpen && (
         <div
-          className="origin-top-right absolute left-0 mt-2 w-56  rounded-[6px] shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+          className="origin-top-right absolute left-0 mt-2  w-36  rounded-[6px] shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="options-menu"
@@ -64,4 +64,4 @@ const AgeDropDown = () => {
   );
 };
 
-export default AgeDropDown;
+export default EventListAgeGroupDropDown;

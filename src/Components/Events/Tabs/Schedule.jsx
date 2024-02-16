@@ -3,6 +3,7 @@ import { IoSearchOutline } from "react-icons/io5";
 import AgeGroupDropDown from "../AgeGroupDropDown/AgeGroupDropDown";
 import GenderDropDown from "../GenderDropDown/GenderDropDown";
 import TableWrapper from "../../ui/table-wrapper";
+import ScheduleDateDropDown from "../ScheduleDateDropDown/ScheduleDateDropDown";
 
 const Schedule = () => {
   return (
@@ -11,6 +12,7 @@ const Schedule = () => {
         <div className="flex gap-[16px]">
           <AgeGroupDropDown />
           <GenderDropDown />
+          <ScheduleDateDropDown />
         </div>
         <div className="border flex items-center py-[8px] px-[16px] rounded-[4px]">
           <IoSearchOutline className="mt-[2px] me-[8px]" />
@@ -24,11 +26,7 @@ const Schedule = () => {
       <div className="py-[8px]">
         <h2 className="text-[24px] bebas-Neue">Schedule & results</h2>
         <TableWrapper>
-          <table
-            className="w-full mx-auto"
-            cellSpacing="0"
-            cellPadding="0"
-          >
+          <table className="w-full mx-auto" cellSpacing="0" cellPadding="0">
             <thead className="bg-primary">
               <tr>
                 <th className="text-[14px] border-l-0  text-[#7D7D7D] p-[24px] border border-t-0 border-[#E8E8E8]">
