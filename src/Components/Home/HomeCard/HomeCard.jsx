@@ -23,7 +23,7 @@ const HomeCard = () => {
       </div>
       <div className="flex justify-center items-center px-[24px]">
         <div className="p-2 w-[155px]">
-          <div className="h-[100px] w-[100px] flex items-center">
+          <div className="h-[100px] w-[100px] flex items-center mx-auto">
             <img
               className="md:w-[80px] mx-auto rounded-full border-2"
               src={logo1}
@@ -52,7 +52,7 @@ const HomeCard = () => {
           <h3 className="score  text-[30px] md:text-[48px]">104</h3>
         </div>
         <div className="p-2 w-[155px]">
-          <div className="h-[100px] w-[100px] flex items-center">
+          <div className="h-[100px] w-[100px] mx-auto flex items-center">
             <img
               className="w-[80px] rounded-full border-2 mx-auto"
               src={logo2}

@@ -20,10 +20,10 @@ const ParticipatingTeamsDropDown = () => {
       <div>
         <button
           type="button"
-          className="rounded-[6px] border-gray-300 shadow-sm py-[8px] px-[16px] bg-[#F2F2F2] text-sm text-gray-700 hover:bg-gray-50 flex item-center justify-between text-[16px] font-medium"
+          className="rounded-[6px] border-gray-300 shadow-sm py-[8px] px-[16px] bg-[#F2F2F2] text-sm text-gray-700 hover:bg-gray-50 flex item-center justify-between text-[16px] font-bold"
           onClick={toggleDropdown}
         >
-          {selectedOption ? selectedOption : "Select Team"}
+          {selectedOption ? selectedOption : "KU 10"}
           <span className={`mt-[2px] ms-[26px]`}>
             {isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
           </span>
@@ -39,25 +39,25 @@ const ParticipatingTeamsDropDown = () => {
         >
           <div className="py-1" role="none">
             <button
-              onClick={() => handleOptionClick("KU 1")}
+              onClick={() => handleOptionClick("KU 10")}
               className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
               role="menuitem"
             >
-              KU 1
+              KU 10
             </button>
             <button
-              onClick={() => handleOptionClick("KU 2")}
+              onClick={() => handleOptionClick("KU 20")}
               className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
               role="menuitem"
             >
-              KU 2
+              KU 20
             </button>
             <button
-              onClick={() => handleOptionClick("KU 3")}
+              onClick={() => handleOptionClick("KU 30")}
               className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
               role="menuitem"
             >
-              KU 3
+              KU 30
             </button>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 const TournamentDropdown = () => {
@@ -18,7 +18,7 @@ const TournamentDropdown = () => {
       <div>
         <button
           type="button"
-          className="rounded-[6px] text-[#1A1A1A] border-gray-300 shadow-sm py-[10px] my-[8px] px-[16px] bg-white text-sm  hover:bg-gray-50  flex item-center justify-between text-[16px] montserrat"
+          className="rounded-[6px] text-[#1A1A1A] border-gray-300 shadow-sm py-[10px] my-[8px] px-[16px] bg-white text-sm  hover:bg-gray-50  flex item-center justify-between text-[16px] montserrat font-bold"
           onClick={toggleDropdown}
         >
           {selectedOption ? selectedOption : "Kejuaraan Provinsi DKI 2023"}

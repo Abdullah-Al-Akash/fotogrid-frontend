@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { FaArrowUp } from "react-icons/fa";
-import { FaArrowDown } from "react-icons/fa6";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 const EventsTopDropDown = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,15 +19,16 @@ const EventsTopDropDown = () => {
       <div>
         <button
           type="button"
-          className="rounded-[6px] border-gray-300 shadow-sm py-[10px] my-[8px] px-[16px] bg-white text-sm text-gray-700 hover:bg-gray-50  flex item-center justify-between text-[16px]"
+          className="rounded-[6px] border-gray-300 shadow-sm py-[10px] my-[8px] px-[16px] bg-white text-sm text-gray-700 hover:bg-gray-50  flex item-center justify-between text-[16px] font-bold"
           onClick={toggleDropdown}
         >
-          {selectedOption ? selectedOption : "Select an option"}
+          {selectedOption ? selectedOption : "Cakra Sakti Cup 2023"}
           <span className={`mt-[2px] ms-[26px]`}>
-            {isOpen ? <FaArrowUp /> : <FaArrowDown />}
+            {isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
           </span>
         </button>
       </div>
+      
 
       {isOpen && (
         <div

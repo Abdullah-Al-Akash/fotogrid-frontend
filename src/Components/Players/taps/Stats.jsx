@@ -1,6 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import { FiSearch } from "react-icons/fi";
-import { defaultOptions } from "../../../constants/player.constants";
+import {
+  CakraSaktiCup,
+  JakartaOption,
+  genderOptions,
+  Month,
+} from "../../../constants/player.constants";
 import Dropdown from "../../ui/dropdown";
 import TableWrapper from "../../ui/table-wrapper";
 
@@ -9,9 +14,10 @@ const Stats = () => {
     <div>
       <div className="flex py-[24px]  bebas-Neue lg:flex-row flex-col justify-between items-center ">
         <div className="flex flex-col md:flex-row items-center bebas-Neue gap-[24px] py-[8px]">
-          <Dropdown options={defaultOptions} label="KU 10" />
-          <Dropdown options={defaultOptions} label="Male" />
-          <Dropdown options={defaultOptions} label="January" />
+          <Dropdown options={CakraSaktiCup} label="Cakra Sakti Cup 2023" />
+          <Dropdown options={JakartaOption} label="Jakarta" />
+          <Dropdown options={genderOptions} label="Male" />
+          <Dropdown options={Month} label="January" />
         </div>
         <div className="h-[46px] mt-[18px] lg:mt-auto relative border-[#CCCCCC] overflow-hidden border-[1px] rounded-[6px] bg-white w-[90%] md:w-[70%] lg:max-w-[300px]">
           <FiSearch className=" text-[#636363] text-[18px] bebas-Neue left-[17px] absolute top-1/2 -translate-y-1/2" />
@@ -54,28 +60,33 @@ const Stats = () => {
                   </th>
                   <th className="text-[14px] md:w-[103px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8] border-t-0">
                     <button className="flex items-center justify-center gap-[10px] text-center w-full">
-                      <span>PPG</span> <img src="/Arrow.png" alt="drop down" />
+                      <span>Points per game(PPG)</span>{" "}
+                      <img src="/Arrow.png" alt="drop down" />
                     </button>
                   </th>
                   <th className="text-[14px]  md:w-[103px] text-[#7D7D7D] p-[24px] border border-[#E8E8E8] border-t-0">
                     <button className="flex items-center justify-center gap-[10px] text-center w-full">
-                      <span>RPG</span> <img src="/Arrow.png" alt="drop down" />
+                      <span>Rebounds per game (RPG)</span>{" "}
+                      <img src="/Arrow.png" alt="drop down" />
                     </button>
                   </th>
                   <th className="text-[14px] md:w-[103px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8] border-t-0">
                     <button className="flex items-center justify-center gap-[10px] text-center w-full">
-                      <span>BPG</span> <img src="/Arrow.png" alt="drop down" />
+                      <span>Block per game (BPG)</span>{" "}
+                      <img src="/Arrow.png" alt="drop down" />
                     </button>
                   </th>
                   <th className="text-[14px] md:w-[103px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8] border-t-0">
                     <button className="flex items-center justify-center gap-[10px] text-center w-full">
-                      <span>APG</span> <img src="/Arrow.png" alt="drop down" />
+                      <span>Assist per game (APG)</span>{" "}
+                      <img src="/Arrow.png" alt="drop down" />
                     </button>
                   </th>
                   <th className="text-[14px] md:w-[103px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8] border-t-0">
                     <button className="flex items-center justify-center gap-[10px] text-center w-full">
                       {" "}
-                      <span>SPG</span> <img src="/Arrow.png" alt="drop down" />
+                      <span>Steal per game (SPG)</span>{" "}
+                      <img src="/Arrow.png" alt="drop down" />
                     </button>
                   </th>
                   <th className="text-[14px] md:w-[103px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8] border-r-0 border-t-0">
