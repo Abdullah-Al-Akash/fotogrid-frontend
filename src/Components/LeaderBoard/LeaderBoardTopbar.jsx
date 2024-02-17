@@ -1,5 +1,4 @@
 import {
-  defaultOptions,
   gameOptions,
   genderOptions,
   boyAndGirl,

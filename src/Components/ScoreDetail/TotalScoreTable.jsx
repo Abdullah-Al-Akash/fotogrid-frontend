@@ -8,7 +8,7 @@ const TotalScoreTable = () => {
         Total Score
       </h3>
       <TableWrapper>
-        <table className="rounded-[6px] w-full mx-auto montserrat">
+        <table className="rounded-[6px] w-full mx-auto montserrat ">
           <thead className="">
             <tr>
               <th className="text-[14px]  text-[#1A1A1A] p-[16px] border border-t-0 border-l-0 border-[#E8E8E8]"></th>

@@ -38,10 +38,10 @@ const Stats = () => {
         </div>
         <div className="mt-[8px]">
           <TableWrapper>
-            <table className="rounded-[2px] w-full mx-auto">
+            <table className="rounded-[2px] w-full mx-auto table-ui table">
               <thead className="bg-primary ">
                 <tr>
-                  <th className="text-[14px] md:w-[317px]  text-[#7D7D7D] p-[24px] border-t-0 border-l-0 border border-[#E8E8E8]">
+                  <th className="border-r-[1px]  text-[14px] md:w-[317px] bg-[#F2F2F2]  text-[#7D7D7D] p-[24px] border-t-0 border-l-0 border border-[#E8E8E8]">
                     <button className="flex items-center justify-center gap-[10px] text-center w-full">
                       <span>Event</span>{" "}
                       <img src="/Arrow.png" alt="drop down" />
@@ -98,7 +98,36 @@ const Stats = () => {
               </thead>
               <tbody>
                 <tr>
-                  <td className="px-[17px] border-t-0 border-l-0 border-b-0 text-center py-[20px] text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+                  <td className="px-[17px] border-t-0 bg-white border-l-0 border-b-0 text-center py-[20px] text-[#1A1A1A] leading-[24px] text-[14px] border-r-[1px] border border-[#E8E8E8]">
+                    LIL |Li'l Warriors Cup 2020 KU-8
+                  </td>
+                  <td className="px-[17px] text-center py-[20px] border-b-0 text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+                    AirOne
+                  </td>
+                  <td className="px-[17px] text-center py-[20px] border-b-0 text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+                    Warriors
+                  </td>
+                  <td className="px-[17px] text-center py-[20px] border-b-0 text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+                    0
+                  </td>
+                  <td className="px-[17px] text-center py-[20px] border-b-0 text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+                    100
+                  </td>
+                  <td className="px-[17px] text-center py-[20px] border-b-0 text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+                    50
+                  </td>
+                  <td className="px-[17px] text-center py-[20px] border-b-0 text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+                    50
+                  </td>
+                  <td className="px-[17px] text-center py-[20px] border-b-0 text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+                    50
+                  </td>
+                  <td className="px-[17px] text-center py-[20px]  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8] border-r-0 border-b-0">
+                    50
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-[17px] border-t-0 bg-white border-l-0 border-b-0 text-center py-[20px] text-[#1A1A1A] leading-[24px] text-[14px] border-r-[1px] border border-[#E8E8E8]">
                     LIL |Li'l Warriors Cup 2020 KU-8
                   </td>
                   <td className="px-[17px] text-center py-[20px] border-b-0 text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
