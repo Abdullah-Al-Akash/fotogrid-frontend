@@ -1,46 +1,49 @@
-import { useState } from "react";
-import { IoIosArrowDown } from "react-icons/io";
-import { IoIosArrowUp } from "react-icons/io";
+// import { useState } from "react";
+// import { IoIosArrowDown } from "react-icons/io";
+// import { IoIosArrowUp } from "react-icons/io";
 import { Link } from "react-router-dom";
+import EventDropdown from "../../Components/ui/event-dropdown";
+import PlayerDropdown from "../../Components/ui/players-dropdown";
+import LocationDropdown from "../../Components/ui/location-dropdown";
 
 const NavBar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState(null);
+  // const [isOpen, setIsOpen] = useState(false);
+  // const [selectedOption, setSelectedOption] = useState(null);
 
   //For Player dropdown:
-  const [isPlayerOpen, setIsPlayerOpen] = useState(false);
-  const [playerSelected, setPlayerSelected] = useState(null);
+  // const [isPlayerOpen, setIsPlayerOpen] = useState(false);
+  // const [playerSelected, setPlayerSelected] = useState(null);
   //For Location dropdown:
-  const [isLocationOpen, setIsLocationOpen] = useState(false);
-  const [locationSelected, setLocationSelected] = useState(null);
+  // const [isLocationOpen, setIsLocationOpen] = useState(false);
+  // const [locationSelected, setLocationSelected] = useState(null);
 
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
+  // const toggleDropdown = () => {
+  //   setIsOpen(!isOpen);
+  // };
 
-  const handleOptionClick = (option) => {
-    setSelectedOption(option);
-    setIsOpen(false);
-  };
+  // const handleOptionClick = (option) => {
+  //   setSelectedOption(option);
+  //   setIsOpen(false);
+  // };
 
-  //   For Player:
-  const toggleDropdownForPlayer = () => {
-    setIsPlayerOpen(!isPlayerOpen);
-  };
+  // //   For Player:
+  // const toggleDropdownForPlayer = () => {
+  //   setIsPlayerOpen(!isPlayerOpen);
+  // };
 
-  const handleOptionClickForPlayer = (option) => {
-    setPlayerSelected(option);
-    setIsPlayerOpen(false);
-  };
+  // const handleOptionClickForPlayer = (option) => {
+  //   setPlayerSelected(option);
+  //   setIsPlayerOpen(false);
+  // };
   //   For Location:
-  const toggleDropdownForLocation = () => {
-    setIsLocationOpen(!isLocationOpen);
-  };
+  // const toggleDropdownForLocation = () => {
+  //   setIsLocationOpen(!isLocationOpen);
+  // };
 
-  const handleOptionClickForLocation = (option) => {
-    setLocationSelected(option);
-    setIsLocationOpen(false);
-  };
+  // const handleOptionClickForLocation = (option) => {
+  //   setLocationSelected(option);
+  //   setIsLocationOpen(false);
+  // };
   const navOptions = (
     <>
       <li>
@@ -52,147 +55,13 @@ const NavBar = () => {
         </Link>
       </li>
       <li className="">
-        <div className="relative text-left montserrat">
-          <div>
-            <button
-              type="button"
-              className="flex item-center justify-between bebas-Neue font-normal text-2xl leading-8	uppercase"
-              onClick={toggleDropdown}
-            >
-              {selectedOption ? selectedOption : "Event"}
-              <span className={`mt-[2px] ms-[5px]`}>
-                {isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
-              </span>
-            </button>
-          </div>
-
-          {isOpen && (
-            <div
-              className="origin-top-right absolute left-0 mt-2 w-36  rounded-[6px] shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-[999999999]"
-              role="menu"
-              aria-orientation="vertical"
-              aria-labelledby="options-menu"
-            >
-              <div className="py-1" role="none">
-                <Link
-                  to="/events"
-                  onClick={() => handleOptionClick("Event list")}
-                  className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
-                  role="menuitem"
-                >
-                  Event list
-                </Link>
-                <Link
-                  to="/event-details"
-                  onClick={() => handleOptionClick("Event Details")}
-                  className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
-                  role="menuitem"
-                >
-                  Event Details
-                </Link>
-              </div>
-            </div>
-          )}
-        </div>
+        <EventDropdown />
       </li>
       <li className="">
-        <div className="relative inline-block text-left montserrat">
-          <div>
-            <button
-              type="button"
-              className="flex item-center justify-between bebas-Neue font-normal text-2xl leading-8	uppercase"
-              onClick={toggleDropdownForPlayer}
-            >
-              {playerSelected ? playerSelected : "Players"}
-              <span className={`mt-[2px] ms-[5px]`}>
-                {isPlayerOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
-              </span>
-            </button>
-          </div>
-
-          {isPlayerOpen && (
-            <div
-              className="origin-top-right absolute left-0 mt-2 w-44  rounded-[6px] shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-[999999999]"
-              role="menu"
-              aria-orientation="vertical"
-              aria-labelledby="options-menu"
-            >
-              <div className="py-1" role="none">
-                <Link
-                  to="#"
-                  onClick={() => handleOptionClickForPlayer("Player")}
-                  className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
-                  role="menuitem"
-                >
-                  Player
-                </Link>
-                <Link
-                  to="/leader-board"
-                  onClick={() => handleOptionClickForPlayer("Leader board")}
-                  className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
-                  role="menuitem"
-                >
-                  Leader board
-                </Link>
-
-                <Link
-                  to="/players"
-                  onClick={() =>
-                    handleOptionClickForPlayer("Individual Players")
-                  }
-                  className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
-                  role="menuitem"
-                >
-                  Individual Players
-                </Link>
-              </div>
-            </div>
-          )}
-        </div>
+        <PlayerDropdown />
       </li>
       <li className="">
-        <div className="relative inline-block text-left montserrat">
-          <div>
-            <button
-              type="button"
-              className="flex item-center justify-between bebas-Neue font-normal text-2xl leading-8	uppercase"
-              onClick={toggleDropdownForLocation}
-            >
-              {locationSelected ? locationSelected : "Location"}
-              <span className={`mt-[2px] ms-[5px]`}>
-                {isLocationOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
-              </span>
-            </button>
-          </div>
-
-          {isLocationOpen && (
-            <div
-              className="origin-top-right absolute left-0 mt-2 w-44  rounded-[6px] shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-[999999999]"
-              role="menu"
-              aria-orientation="vertical"
-              aria-labelledby="options-menu"
-            >
-              <div className="py-1" role="none">
-                <Link
-                  to="#"
-                  onClick={() => handleOptionClickForLocation("Location 1")}
-                  className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
-                  role="menuitem"
-                >
-                  Location 1
-                </Link>
-                <Link
-                  to="#"
-                  onClick={() => handleOptionClickForLocation("Location 2")}
-                  className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
-                  role="menuitem"
-                >
-                  Location 2
-                </Link>
-              </div>
-            </div>
-          )}
-        </div>
+        <LocationDropdown />
       </li>
     </>
   );
