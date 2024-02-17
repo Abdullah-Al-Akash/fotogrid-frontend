@@ -2,7 +2,7 @@
 const TableWrapper = ({ children, minWidth, borderStyle }) => {
   return (
     <section
-      className={`overflow-x-auto rounded-[6px] ${
+      className={`overflow-x-auto custom-table-class rounded-[6px] ${
         borderStyle ? borderStyle : "border"
       }`}
     >
