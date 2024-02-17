@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 import {
@@ -9,7 +9,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "./drop-down";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export default function PlayerDropdown() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,6 +23,17 @@ export default function PlayerDropdown() {
   const redirect = (path) => {
     navigate(path);
   };
+  const route = useLocation();
+  useEffect(() => {
+    if (
+      route.pathname.split("/")[1] === "leader-board" ||
+      route.pathname.split("/")[1] == "players"
+    ) {
+      return;
+    } else {
+      setSelectedOption("");
+    }
+  }, [route]);
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -38,7 +49,7 @@ export default function PlayerDropdown() {
         </button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="min-w-[120px] bg-white">
-        <DropdownMenuItem>
+        {/* <DropdownMenuItem>
           <button
             // to="/event-details"
             onClick={() => {
@@ -50,7 +61,7 @@ export default function PlayerDropdown() {
           >
             Player
           </button>
-        </DropdownMenuItem>
+        </DropdownMenuItem> */}
         <DropdownMenuItem>
           <button
             // to="/event-details"

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="bg-[#1A1A1A]">
       <div className="fotogrit-container py-[32px] px-[62px]">
-        <footer className="flex justify-between">
+        <footer className="flex flex-col gap-[20px] md:flex-row justify-between">
           <div className="flex items-center cursor-pointer gap-[12px]">
             <div className="flex gap-[20px] items-center">
               <div className="svg-icon">

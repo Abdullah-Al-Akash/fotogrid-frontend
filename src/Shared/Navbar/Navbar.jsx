@@ -1,49 +1,9 @@
-// import { useState } from "react";
-// import { IoIosArrowDown } from "react-icons/io";
-// import { IoIosArrowUp } from "react-icons/io";
 import { Link } from "react-router-dom";
 import EventDropdown from "../../Components/ui/event-dropdown";
 import PlayerDropdown from "../../Components/ui/players-dropdown";
-import LocationDropdown from "../../Components/ui/location-dropdown";
+// import LocationDropdown from "../../Components/ui/location-dropdown";
 
 const NavBar = () => {
-  // const [isOpen, setIsOpen] = useState(false);
-  // const [selectedOption, setSelectedOption] = useState(null);
-
-  //For Player dropdown:
-  // const [isPlayerOpen, setIsPlayerOpen] = useState(false);
-  // const [playerSelected, setPlayerSelected] = useState(null);
-  //For Location dropdown:
-  // const [isLocationOpen, setIsLocationOpen] = useState(false);
-  // const [locationSelected, setLocationSelected] = useState(null);
-
-  // const toggleDropdown = () => {
-  //   setIsOpen(!isOpen);
-  // };
-
-  // const handleOptionClick = (option) => {
-  //   setSelectedOption(option);
-  //   setIsOpen(false);
-  // };
-
-  // //   For Player:
-  // const toggleDropdownForPlayer = () => {
-  //   setIsPlayerOpen(!isPlayerOpen);
-  // };
-
-  // const handleOptionClickForPlayer = (option) => {
-  //   setPlayerSelected(option);
-  //   setIsPlayerOpen(false);
-  // };
-  //   For Location:
-  // const toggleDropdownForLocation = () => {
-  //   setIsLocationOpen(!isLocationOpen);
-  // };
-
-  // const handleOptionClickForLocation = (option) => {
-  //   setLocationSelected(option);
-  //   setIsLocationOpen(false);
-  // };
   const navOptions = (
     <>
       <li>
@@ -60,9 +20,9 @@ const NavBar = () => {
       <li className="">
         <PlayerDropdown />
       </li>
-      <li className="">
+      {/* <li className="">
         <LocationDropdown />
-      </li>
+      </li> */}
     </>
   );
   return (

@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 import {
@@ -9,7 +9,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "./drop-down";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export default function EventDropdown() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,9 +20,21 @@ export default function EventDropdown() {
     setIsOpen(isOpen);
   };
   const navigate = useNavigate();
+  const route = useLocation();
   const redirect = (path) => {
     navigate(path);
   };
+  useEffect(() => {
+    if (
+      route.pathname.split("/")[1] === "events" ||
+      route.pathname.split("/")[1] == "event-details"
+    ) {
+      return;
+    } else {
+      setSelectedOption("");
+    }
+  }, [route]);
+  console.log(route.pathname.split("/")[1]);
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
