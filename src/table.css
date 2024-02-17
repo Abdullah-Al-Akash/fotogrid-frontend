@@ -1,6 +1,22 @@
-.table-ui {
-  width: 100%;
-  min-width: 1000px;
-  border-radius: 6px;
-  appearance: none;
+.table-ui th:nth-child(1),
+.table-ui td:nth-child(1) {
+  position: sticky;
+  left: 0;
+  z-index: 10;
+}
+
+.table-ui-2-col th:nth-child(1),
+.table-ui-2-col td:nth-child(1) {
+  position: sticky;
+  left: 0;
+  width: 101px;
+  min-width: 101px;
+}
+
+.table-ui-2-col th:nth-child(2),
+.table-ui-2-col td:nth-child(2) {
+  position: sticky;
+  left: 101px;
+
+  min-width: 150px;
 }

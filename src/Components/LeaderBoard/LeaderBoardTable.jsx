@@ -8,10 +8,10 @@ const LeaderBoard = () => {
       </h2>
       <div className=" mt-[8px] ">
         <TableWrapper>
-          <table className="!w-full rounded-[2px] mx-auto">
+          <table className="!w-full rounded-[2px] mx-auto table-ui">
             <thead className="bg-primary ">
               <tr>
-                <th className="text-[14px] text-[#7D7D7D] p-[17px]  border border-t-0 border-l-0 border-[#E8E8E8]">
+                <th className="text-[14px] bg-[#F2F2F2] text-[#7D7D7D] p-[17px]  border border-t-0 border-l-0 border-[#E8E8E8]">
                   Profile Picture
                 </th>
                 <th className="text-[14px] text-[#7D7D7D] p-[17px] border border-t-0  border-[#E8E8E8]">
@@ -57,7 +57,7 @@ const LeaderBoard = () => {
             </thead>
             <tbody>
               <tr>
-                <td className="border border-[#E8E8E8]  border-b-0 border-l-0">
+                <td className="border bg-white border-[#E8E8E8]  border-b-0 border-l-0">
                   <img
                     className="h-[44px] w-[44px] rounded-full mx-auto my-[5px]"
                     src="/user.png"
