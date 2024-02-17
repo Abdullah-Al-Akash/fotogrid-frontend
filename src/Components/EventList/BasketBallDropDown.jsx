@@ -6,7 +6,7 @@ const BasketBallDropDown = () => {
   const [selectedOption, setSelectedOption] = useState(null);
 
   const toggleDropdown = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(!isOpen);  
   };
 
   const handleOptionClick = (option) => {
@@ -18,10 +18,10 @@ const BasketBallDropDown = () => {
       <div>
         <button
           type="button"
-          className="rounded-[6px] text-[#1A1A1A] border-gray-300 shadow-sm py-[10px] px-[16px] bg-white text-sm  hover:bg-gray-50  flex item-center justify-between text-[16px] montserrat"
+          className="rounded-[6px] text-[#1A1A1A] border-gray-300 shadow-sm py-[10px] px-[16px] bg-white text-sm  hover:bg-gray-50  flex item-center justify-between text-[16px] montserrat font-bold"
           onClick={toggleDropdown}
         >
-          {selectedOption ? selectedOption : "Selected Game"}
+          {selectedOption ? selectedOption : "Basketball"}
           <span className={`mt-[3px] ms-[20px]`}>
             {isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
           </span>
@@ -37,18 +37,18 @@ const BasketBallDropDown = () => {
         >
           <div className="py-1" role="none">
             <button
-              onClick={() => handleOptionClick("Basket ball")}
+              onClick={() => handleOptionClick("Basketball")}
               className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
               role="menuitem"
             >
-              Basket ball
+              Basketball
             </button>
             <button
               onClick={() => handleOptionClick("Option 2")}
               className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
               role="menuitem"
             >
-              Option 2
+              Basketball
             </button>
             <button
               onClick={() => handleOptionClick("Option 3")}

@@ -141,7 +141,7 @@ const HallOfDonors = () => {
         </div>
         <div className="md:col-span-4 col-span-12 border p-[24px] rounded-[6px]">
           <h2 className="text-[24px] bebas-Neue">
-            ndividual Sponsors / Donors
+            Individual Sponsors / Donors
           </h2>
           <div className="mt-[16px]">
             <div className="flex flex-col gap-[8px] montserrat text-[20px] font-medium text-[#4A4A4A]">
