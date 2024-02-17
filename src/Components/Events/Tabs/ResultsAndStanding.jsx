@@ -1,5 +1,8 @@
-import GenderDropDown from "../GenderDropDown/GenderDropDown";
-import KUDropDown from "../KUDropDown/KUDropDown";
+import {
+  ResultsStandingGender,
+  ResultsStandingKU10,
+} from "../../../constants/player.constants";
+import Dropdown from "../../ui/dropdown";
 import ResultTable from "../ResultTable";
 
 const ResultsAndStanding = () => {
@@ -8,8 +11,8 @@ const ResultsAndStanding = () => {
       <div className="my-[8px]">
         <div className="flex flex-col md:flex-row items-start justify-between md:justify-start md:items-center gap-[24px]">
           <div className="flex items-center gap-[24px]">
-            <KUDropDown />
-            <GenderDropDown />
+            <Dropdown options={ResultsStandingKU10} label="KU 10" />
+            <Dropdown options={ResultsStandingGender} label="Male" />
           </div>
         </div>
       </div>
