@@ -160,6 +160,7 @@ const Footer = () => {
             </div>
           </div>
         </footer>
+        {/* Footer Complete */}
       </div>
     </div>
   );

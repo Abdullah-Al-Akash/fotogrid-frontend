@@ -53,13 +53,10 @@ const PlayerInfo = () => {
                 Avery FreeMan
               </h2>
 
-              {/* <div className="bg-[#636363] rounded-[6px] text-white montserrat font-bold text-[24px] leading-[32px] py-[8px] px-[18px]">
+              <div className="bg-[#636363] rounded-[6px] text-white montserrat font-bold text-[24px] leading-[32px] py-[8px] px-[18px]">
                 <span>KU</span>
                 <span className="ml-[9px]">12</span>
-                <span className="ml-[7px]">/</span>
-                <span className="ml-[4px]">8</span>
-                <sup className="ml-[4px]">th</sup>
-              </div> */}
+              </div>
             </div>
             <div className="border-l-[1px] border-b-[1px] border-[#333333] bebas-Neue flex md:flex-row flex-col justify-evenly items-center">
               <div className="px-[30px] py-[18px] flex gap-[6px] items-center ">
@@ -112,7 +109,7 @@ const PlayerInfo = () => {
             </div>
             <div className="p-[24px]  bg-[#222222] border-t-[1px] border-b-[1px] border-l-[1px] border-0 border-[#333333]">
               <h2 className="uppercase text-[24px] leading-[32px] text-white bebas-Neue">
-                Recent in Game Fotogrit Pins
+                Fotogrit Pins Highlight
               </h2>
               <div className="  sm:gap-[18px] sm:grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 ">
                 <img

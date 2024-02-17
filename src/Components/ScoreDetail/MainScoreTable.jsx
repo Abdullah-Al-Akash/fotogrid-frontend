@@ -5,13 +5,13 @@ const MainScoreTable = () => {
     <div className="mt-[8px]">
       <TableWrapper>
         <table
-          className="!w-full mx-auto table-auto"
+          className="table-ui !w-full mx-auto table-auto"
           cellSpacing="0"
           cellPadding="0"
         >
           <thead className="bg-primary">
             <tr>
-              <th className="text-[14px] border-l-0  text-[#7D7D7D] p-[16px] border border-t-0 border-[#E8E8E8]">
+              <th className="text-[14px] border-l-0 bg-[#F2F2F2]  text-[#7D7D7D] p-[16px] border border-t-0 border-[#E8E8E8]">
                 Jersey No
               </th>
               <th className="text-[14px]  text-[#7D7D7D] p-[16px] border border-t-0 border-[#E8E8E8]">
@@ -93,7 +93,93 @@ const MainScoreTable = () => {
           </thead>
           <tbody>
             <tr>
+              <td className="bg-[white] p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+                1
+              </td>
+              <td className="p-[16px]  text-center  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+                Daffarel
+              </td>
+              <td className="p-[16px] text-center  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+                07:35
+              </td>
+
+              <td className="border">
+                <tr>
+                  <td className="p-[16px] border-r text-center  text-[#1A1A1A] leading-[24px] text-[14px]   border-[#E8E8E8] w-full">
+                    6/13
+                  </td>
+                  <td className="p-[16px]  text-center  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] w-full">
+                    46,2
+                  </td>
+                </tr>
+              </td>
+              <td className="border">
+                <tr>
+                  <td className="p-[16px] border-r text-center  text-[#1A1A1A] leading-[24px] text-[14px]   border-[#E8E8E8] w-full">
+                    6/13
+                  </td>
+                  <td className="p-[16px] border-r-0 text-center  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] w-full">
+                    46,2
+                  </td>
+                </tr>
+              </td>
+              <td className="border">
+                <tr>
+                  <td className="p-[16px] border-r text-center  text-[#1A1A1A] leading-[24px] text-[14px]   border-[#E8E8E8] w-full">
+                    6/13
+                  </td>
+                  <td className="p-[16px] text-center  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] border-r-0 w-full">
+                    46,2
+                  </td>
+                </tr>
+              </td>
+              <td className="border">
+                <tr>
+                  <td className="p-[16px] border-r text-center  text-[#1A1A1A] leading-[24px] text-[14px]   border-[#E8E8E8] w-full">
+                    6/13
+                  </td>
+                  <td className="p-[16px] text-center  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] border-r-0 w-full">
+                    46,2
+                  </td>
+                </tr>
+              </td>
+              <td className="border">
+                <tr>
+                  <td className="p-[16px] border-r text-center  text-[#1A1A1A] leading-[24px] text-[14px]   border-[#E8E8E8] w-full">
+                    Name
+                  </td>
+                  <td className="p-[16px] border-r text-center  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] w-full">
+                    Score
+                  </td>
+                  <td className="p-[16px] text-center  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] w-full">
+                    Win/Lose
+                  </td>
+                </tr>
+              </td>
               <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+                1
+              </td>
+              <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+                1
+              </td>
+              <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+                1
+              </td>
+              <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+                1
+              </td>
+              <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+                1
+              </td>
+              <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+                1
+              </td>
+              <td className="p-[16px] border-l-0 border-r-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+                1
+              </td>
+            </tr>
+            <tr>
+              <td className="bg-[white] p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
                 1
               </td>
               <td className="p-[16px] text-center  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
@@ -179,7 +265,7 @@ const MainScoreTable = () => {
               </td>
             </tr>
             <tr>
-              <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+              <td className="bg-[white] p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
                 1
               </td>
               <td className="p-[16px] text-center  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
@@ -265,7 +351,7 @@ const MainScoreTable = () => {
               </td>
             </tr>
             <tr>
-              <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+              <td className="bg-[white] p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
                 1
               </td>
               <td className="p-[16px] text-center  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
@@ -351,7 +437,7 @@ const MainScoreTable = () => {
               </td>
             </tr>
             <tr>
-              <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+              <td className="bg-[white] p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
                 1
               </td>
               <td className="p-[16px] text-center  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
@@ -437,7 +523,7 @@ const MainScoreTable = () => {
               </td>
             </tr>
             <tr>
-              <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+              <td className="bg-[white] p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
                 1
               </td>
               <td className="p-[16px] text-center  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
@@ -523,7 +609,7 @@ const MainScoreTable = () => {
               </td>
             </tr>
             <tr>
-              <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+              <td className="bg-[white] p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
                 1
               </td>
               <td className="p-[16px] text-center  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
@@ -609,7 +695,7 @@ const MainScoreTable = () => {
               </td>
             </tr>
             <tr>
-              <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+              <td className="bg-[white] p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
                 1
               </td>
               <td className="p-[16px] text-center  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
@@ -695,93 +781,7 @@ const MainScoreTable = () => {
               </td>
             </tr>
             <tr>
-              <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                1
-              </td>
-              <td className="p-[16px] text-center  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                Daffarel
-              </td>
-              <td className="p-[16px] text-center  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                07:35
-              </td>
-
-              <td className="border">
-                <tr>
-                  <td className="p-[16px] border-r text-center  text-[#1A1A1A] leading-[24px] text-[14px]   border-[#E8E8E8] w-full">
-                    6/13
-                  </td>
-                  <td className="p-[16px]  text-center  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] w-full">
-                    46,2
-                  </td>
-                </tr>
-              </td>
-              <td className="border">
-                <tr>
-                  <td className="p-[16px] border-r text-center  text-[#1A1A1A] leading-[24px] text-[14px]   border-[#E8E8E8] w-full">
-                    6/13
-                  </td>
-                  <td className="p-[16px] border-r-0 text-center  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] w-full">
-                    46,2
-                  </td>
-                </tr>
-              </td>
-              <td className="border">
-                <tr>
-                  <td className="p-[16px] border-r text-center  text-[#1A1A1A] leading-[24px] text-[14px]   border-[#E8E8E8] w-full">
-                    6/13
-                  </td>
-                  <td className="p-[16px] text-center  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] border-r-0 w-full">
-                    46,2
-                  </td>
-                </tr>
-              </td>
-              <td className="border">
-                <tr>
-                  <td className="p-[16px] border-r text-center  text-[#1A1A1A] leading-[24px] text-[14px]   border-[#E8E8E8] w-full">
-                    6/13
-                  </td>
-                  <td className="p-[16px] text-center  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] border-r-0 w-full">
-                    46,2
-                  </td>
-                </tr>
-              </td>
-              <td className="border">
-                <tr>
-                  <td className="p-[16px] border-r text-center  text-[#1A1A1A] leading-[24px] text-[14px]   border-[#E8E8E8] w-full">
-                    Name
-                  </td>
-                  <td className="p-[16px] border-r text-center  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] w-full">
-                    Score
-                  </td>
-                  <td className="p-[16px] text-center  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] w-full">
-                    Win/Lose
-                  </td>
-                </tr>
-              </td>
-              <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                1
-              </td>
-              <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                1
-              </td>
-              <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                1
-              </td>
-              <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                1
-              </td>
-              <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                1
-              </td>
-              <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                1
-              </td>
-              <td className="p-[16px] border-l-0 border-r-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                1
-              </td>
-            </tr>
-            <tr>
-              <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8] opacity-0">
+              <td className="bg-[white] p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8] opacity-0">
                 1
               </td>
               <td className="p-[16px] text-center  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8] opacity-0">
@@ -867,8 +867,8 @@ const MainScoreTable = () => {
               </td>
             </tr>
             <tr>
-              <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-              Total
+              <td className="bg-[white] p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+                Total
               </td>
               <td className="p-[16px] text-center  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
                 Daffarel
