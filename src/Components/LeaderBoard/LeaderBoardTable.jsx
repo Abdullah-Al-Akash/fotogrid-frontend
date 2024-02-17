@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import TableWrapper from "../ui/table-wrapper";
 
 const LeaderBoard = () => {
@@ -57,12 +58,14 @@ const LeaderBoard = () => {
             </thead>
             <tbody>
               <tr>
-                <td className="border bg-white border-[#E8E8E8]  border-b-0 border-l-0">
-                  <img
-                    className="h-[44px] w-[44px] rounded-full mx-auto my-[5px]"
-                    src="/user.png"
-                  />
-                </td>
+                <Link to="/players">
+                  <td className="border bg-white border-[#E8E8E8]  border-b-0 border-l-0">
+                    <img
+                      className="h-[44px] w-[44px] rounded-full mx-auto my-[5px]"
+                      src="/user.png"
+                    />
+                  </td>
+                </Link>
                 <td className="px-[17px] text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]  border-b-0">
                   Ben
                 </td>
