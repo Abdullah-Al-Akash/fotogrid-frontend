@@ -1,32 +1,22 @@
 /* eslint-disable react/no-unescaped-entities */
 import { IoSearchOutline } from "react-icons/io5";
-import AgeGroupDropDown from "../AgeGroupDropDown/AgeGroupDropDown";
-import GenderDropDown from "../GenderDropDown/GenderDropDown";
-// import TableWrapper from "../../ui/table-wrapper";
-import ScheduleDateDropDown from "../ScheduleDateDropDown/ScheduleDateDropDown";
-// import { IoIosArrowUp } from "react-icons/io";
-// import { IoIosArrowDown } from "react-icons/io";
 import { IoStarSharp } from "react-icons/io5";
 import TableWrapper from "../../ui/table-wrapper";
-
-{
-  /* <span className="flex justify-center items-center gap-[4px]">
-  <span className="inline-block">Event Name</span>
-  <span className="inline-block">
-    <IoIosArrowUp />
-    <IoIosArrowDown />
-  </span>
-</span>; */
-}
+import {
+  ScheduleBoyAndGirl,
+  ScheduleMonth,
+  ScheduleStandingGender,
+} from "../../../constants/player.constants";
+import Dropdown from "../../ui/dropdown";
 
 const Schedule = () => {
   return (
     <div className="flex flex-col gap-[16px]">
       <div className="flex flex-col md:flex-row gap-[15px] md:gap-0 md:justify-between md:items-center">
         <div className="flex gap-[16px]">
-          <AgeGroupDropDown />
-          <GenderDropDown />
-          <ScheduleDateDropDown />
+          <Dropdown options={ScheduleBoyAndGirl} label="KU 12 Girl" />
+          <Dropdown options={ScheduleStandingGender} label="Male" />
+          <Dropdown options={ScheduleMonth} label="Jan 12 2024" />
         </div>
         <div className="border flex items-center py-[8px] px-[16px] rounded-[4px]">
           <IoSearchOutline className="mt-[2px] me-[8px]" />

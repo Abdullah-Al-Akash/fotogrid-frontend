@@ -1,18 +1,19 @@
-import AgeGroupDropDown from "../AgeGroupDropDown/AgeGroupDropDown";
-import GenderDropDown from "../GenderDropDown/GenderDropDown";
 import { IoSearchOutline } from "react-icons/io5";
-
 import platinum1 from "../../../../public/Images/Platinum-1.png";
 import platinum2 from "../../../../public/Images/Platinum-2.png";
 import platinum3 from "../../../../public/Images/Platinum-3.png";
 import platinum4 from "../../../../public/Images/Platinum-4.png";
 import platinum5 from "../../../../public/Images/Platinum-5.png";
-
 import gold1 from "../../../../public/Images/Gold-1.png";
 import gold2 from "../../../../public/Images/Gold-2.png";
 import gold3 from "../../../../public/Images/Gold-3.png";
 import gold4 from "../../../../public/Images/Gold-4.png";
 import gold5 from "../../../../public/Images/Gold-5.png";
+import Dropdown from "../../ui/dropdown";
+import {
+  HallOfDonorsGender,
+  HallOfDonorsKu12Girl,
+} from "../../../constants/player.constants";
 
 const HallOfDonors = () => {
   const platinumArray = [
@@ -64,8 +65,8 @@ const HallOfDonors = () => {
       <div className="">
         <div className="flex flex-col md:flex-row gap-[15px] md:gap-0 md:justify-between md:items-center">
           <div className="flex gap-[16px]">
-            <AgeGroupDropDown />
-            <GenderDropDown />
+            <Dropdown options={HallOfDonorsKu12Girl} label="KU 12 Girl" />
+            <Dropdown options={HallOfDonorsGender} label="Male" />
           </div>
           <div className="border flex items-center py-[8px] px-[16px] rounded-[4px]">
             <IoSearchOutline className="mt-[2px] me-[8px]" />
@@ -114,10 +115,7 @@ const HallOfDonors = () => {
               {goldArray?.map((platinum, i) => {
                 const { image, name } = platinum || {};
                 return (
-                  <div
-                    key={i}
-                    className="p-[16px] bg-[#EDDDC0] rounded-[6px]"
-                  >
+                  <div key={i} className="p-[16px] bg-[#EDDDC0] rounded-[6px]">
                     <div
                       style={{
                         boxShadow: "0px 1px 1px 0px rgba(46, 46, 48, 0.44)",

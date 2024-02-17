@@ -47,7 +47,7 @@ input::placeholder {
 }
 
 
-@media only screen and (max-width: 3200px) and (min-width: 2558px) {
+@media only screen and (max-width: 3200px) and (min-width: 1394px) {
   .custom-table-class{
     overflow-x: hidden;
   }
