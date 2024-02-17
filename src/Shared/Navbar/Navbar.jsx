@@ -68,7 +68,7 @@ const NavBar = () => {
 
           {isOpen && (
             <div
-              className="origin-top-right absolute left-0 mt-2 w-24  rounded-[6px] shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-[999999999]"
+              className="origin-top-right absolute left-0 mt-2 w-36  rounded-[6px] shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-[999999999]"
               role="menu"
               aria-orientation="vertical"
               aria-labelledby="options-menu"
@@ -76,26 +76,20 @@ const NavBar = () => {
               <div className="py-1" role="none">
                 <Link
                   to="/events"
-                  onClick={() => handleOptionClick("Event")}
+                  onClick={() => handleOptionClick("Event list")}
                   className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
                   role="menuitem"
                 >
-                  Event
+                  Event list
                 </Link>
-                <button
-                  onClick={() => handleOptionClick("Event1")}
+                <Link
+                  to="/event-details"
+                  onClick={() => handleOptionClick("Event Details")}
                   className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
                   role="menuitem"
                 >
-                  Event2
-                </button>
-                <button
-                  onClick={() => handleOptionClick("Event2")}
-                  className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
-                  role="menuitem"
-                >
-                  Event3
-                </button>
+                  Event Details
+                </Link>
               </div>
             </div>
           )}

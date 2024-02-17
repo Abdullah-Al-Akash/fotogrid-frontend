@@ -8,21 +8,21 @@ import img2 from "../../assets/Players/img2.png";
 import img3 from "../../assets/Players/img3.png";
 import img4 from "../../assets/Players/img4.png";
 import img5 from "../../assets/Players/img5.png";
-import youtube from "../../assets/Players/youtube.png";
+import youtubeImage from "../../assets/Players/youtube.png";
 const PlayerInfo = () => {
   const [tab, setTab] = useState("tab1");
   const media = [
     {
       image: img1,
-      youtube: youtube,
+      youtube: true,
     },
     {
       image: img2,
-      youtube: youtube,
+      youtube: true,
     },
     {
       image: img3,
-      youtube: youtube,
+      youtube: true,
     },
     {
       image: img4,
@@ -98,9 +98,13 @@ const PlayerInfo = () => {
                           alt=""
                         />
                       </div>
-                      <div className="w-[32px] h-[32px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]">
-                        <img src={youtube} alt="" />
-                      </div>
+                      {youtube == true ? (
+                        <div className="w-[32px] h-[32px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] cursor-pointer">
+                          <img src={youtubeImage} alt="" />
+                        </div>
+                      ) : (
+                        <></>
+                      )}
                     </div>
                   );
                 })}
