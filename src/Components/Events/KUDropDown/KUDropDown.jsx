@@ -20,7 +20,7 @@ const KUDropDown = () => {
       <div>
         <button
           type="button"
-          className="rounded-[6px] border-gray-300 shadow-sm py-[8px] px-[16px] bg-[#F2F2F2] text-sm text-gray-700 hover:bg-gray-50 flex item-center justify-between text-[16px] font-medium"
+          className="rounded-[6px] border-gray-300 shadow-sm py-[8px] px-[16px] bg-[#F2F2F2] text-sm text-gray-700 hover:bg-gray-50 flex item-center justify-between text-[16px] font-bold"
           onClick={toggleDropdown}
         >
           {selectedOption ? selectedOption : "KU 10"}

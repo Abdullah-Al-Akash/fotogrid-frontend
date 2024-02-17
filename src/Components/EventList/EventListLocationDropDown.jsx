@@ -18,10 +18,10 @@ const EventListLocationDropDown = () => {
       <div>
         <button
           type="button"
-          className="rounded-[6px] text-[#1A1A1A] border-gray-300 shadow-sm py-[10px] px-[16px] bg-white text-sm  hover:bg-gray-50  flex item-center justify-between text-[16px] montserrat"
+          className="rounded-[6px] text-[#1A1A1A] border-gray-300 shadow-sm py-[10px] px-[16px] bg-white text-sm  hover:bg-gray-50  flex item-center justify-between text-[16px] montserrat font-bold"
           onClick={toggleDropdown}
         >
-          {selectedOption ? selectedOption : "Locations"}
+          {selectedOption ? selectedOption : "Jakarta"}
           <span className={`mt-[3px] ms-[20px]`}>
             {isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
           </span>
@@ -37,25 +37,25 @@ const EventListLocationDropDown = () => {
         >
           <div className="py-1" role="none">
             <button
-              onClick={() => handleOptionClick("Basketball")}
+              onClick={() => handleOptionClick("Jakarta")}
               className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
               role="menuitem"
             >
-              Basketball
+              Jakarta
             </button>
             <button
-              onClick={() => handleOptionClick("Option 2")}
+              onClick={() => handleOptionClick("Jakarta 1")}
               className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
               role="menuitem"
             >
-              Option 2
+              Jakarta 1
             </button>
             <button
-              onClick={() => handleOptionClick("Option 3")}
+              onClick={() => handleOptionClick("Jakarta 2")}
               className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
               role="menuitem"
             >
-              Option 3
+              Jakarta 2
             </button>
           </div>
         </div>

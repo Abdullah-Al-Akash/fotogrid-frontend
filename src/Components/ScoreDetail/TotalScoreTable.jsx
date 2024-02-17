@@ -4,8 +4,11 @@ import MainScoreTable from "./MainScoreTable";
 const TotalScoreTable = () => {
   return (
     <div className="mt-[8px]">
+      <h3 className="text-[32px]  py-[16px] leading-5 font-normal bebas-Neue">
+        Total Score
+      </h3>
       <TableWrapper>
-        <table className="rounded-[6px] w-full mx-auto montserrat">
+        <table className="rounded-[6px] w-full mx-auto montserrat ">
           <thead className="">
             <tr>
               <th className="text-[14px]  text-[#1A1A1A] p-[16px] border border-t-0 border-l-0 border-[#E8E8E8]"></th>
@@ -61,6 +64,9 @@ const TotalScoreTable = () => {
           </tbody>
         </table>
       </TableWrapper>
+      <h3 className="text-[32px]  py-[16px] mt-[8px] leading-5 font-normal bebas-Neue">
+        Team Name
+      </h3>
       <MainScoreTable></MainScoreTable>
     </div>
   );

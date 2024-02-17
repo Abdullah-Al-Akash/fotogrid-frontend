@@ -1,12 +1,13 @@
-import { GrDownload } from "react-icons/gr";
-
+import { FaTiktok, FaYoutube } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
+import line from "../../../public/Footer/line.png";
 const Footer = () => {
   return (
     <div className="bg-[#1A1A1A]">
-      <div className="fotogrit-container">
-        <footer className="footer footer-content  text-neutral-content  md:py-[32px] p-10 md:p-0">
-          <div className="flex items-center cursor-pointer">
-            <div className="flex gap-[10px]">
+      <div className="fotogrit-container py-[32px] px-[62px]">
+        <footer className="flex justify-between">
+          <div className="flex items-center cursor-pointer gap-[12px]">
+            <div className="flex gap-[20px] items-center">
               <div className="svg-icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -26,6 +27,7 @@ const Footer = () => {
                   />
                 </svg>
               </div>
+              <img src={line} alt="" />
               <div className="svg-icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -66,13 +68,13 @@ const Footer = () => {
               <path
                 d="M21.4644 15V16.2C21.4644 17.8802 21.4644 18.7202 21.1374 19.362C20.8498 19.9265 20.3908 20.3854 19.8263 20.673C19.1846 21 18.3445 21 16.6644 21H8.26436C6.5842 21 5.74412 21 5.10238 20.673C4.5379 20.3854 4.07896 19.9265 3.79134 19.362C3.46436 18.7202 3.46436 17.8802 3.46436 16.2V15M17.4644 10L12.4644 15M12.4644 15L7.46436 10M12.4644 15V3"
                 stroke="#D0A885"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </div>
-          <div className="flex md:ms-auto">
+          {/* <div className="flex md:ms-auto">
             <div className="cursor-pointer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -144,6 +146,17 @@ const Footer = () => {
                   fill="white"
                 />
               </svg>
+            </div>
+          </div> */}
+          <div className="flex items-center gap-[20px]">
+            <div className="text-black cursor-pointer bg-[#fff] text-[20px] p-[10px] rounded-full">
+              <FaTiktok />
+            </div>
+            <div className="bg-pink-500 cursor-pointer text-[20px] p-[10px] text-white rounded-2xl">
+              <AiFillInstagram />
+            </div>
+            <div className="text-white cursor-pointer bg-red-700 text-[20px] p-[10px] rounded-full">
+              <FaYoutube />
             </div>
           </div>
         </footer>

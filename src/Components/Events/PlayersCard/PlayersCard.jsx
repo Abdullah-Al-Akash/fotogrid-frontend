@@ -97,7 +97,7 @@ const PlayersCard = () => {
                 />
               </div>
               {itsYou ? (
-                <p className="absolute top-[8px] right-[8px] opacity-[77%] px-[16px] py-[4px] rounded-[100px] bg-[#A46E40] montserrat font-medium text-[12px] text-[#FFFFFF]">
+                <p className="absolute top-[6px] right-[50%] whitespace-nowrap opacity-[77%] px-[16px] py-[4px] rounded-[100px] bg-[#A46E40] translate-x-[50%] montserrat font-medium text-[12px] text-[#FFFFFF]">
                   This is me. Please link to my ID
                 </p>
               ) : (

@@ -1,6 +1,14 @@
 import Dropdown from "../../ui/dropdown";
-import { defaultOptions } from "../../../constants/player.constants";
+import {
+  genderOptions,
+  CakraSaktiCup,
+  JakartaBali,
+  Month,
+} from "../../../constants/player.constants";
 import { FiSearch } from "react-icons/fi";
+import { TbFilter } from "react-icons/tb";
+
+
 const Media = () => {
   const players = [
     { color: "#EEA74F", color2: "#C29637" },
@@ -28,16 +36,22 @@ const Media = () => {
         </h2>
         <div className="flex  bebas-Neue lg:flex-row flex-col justify-between items-center">
           <div className="flex flex-col md:flex-row items-center bebas-Neue gap-[24px] py-[8px] mt-[8px]">
-            <Dropdown options={defaultOptions} label="KU 10" />
-            <Dropdown options={defaultOptions} label="Male" />
-            <Dropdown options={defaultOptions} label="January" />
+            <Dropdown options={CakraSaktiCup} label="Cakra Sakti Cup 2023" />
+            <Dropdown options={JakartaBali} label="Jakarta Bali" />
+            <Dropdown options={genderOptions} label="Male" />
+            <Dropdown options={Month} label="January" />
           </div>
-          <div className="h-[46px]  lg:mt-auto relative border-[#CCCCCC] overflow-hidden border-[1px] rounded-[6px] bg-white w-[90%] md:w-[70%] lg:max-w-[300px]">
-            <FiSearch className=" text-[#636363] text-[18px]  left-[17px] absolute top-1/2 -translate-y-1/2" />
-            <input
-              className="w-full h-full placeholder:text-[#636363] px-[48px] border-none outline-none"
-              placeholder="Search here"
-            />
+          <div className="flex justify-between items-center gap-[8px]">
+            <div className="h-[46px]  lg:mt-auto relative border-[#CCCCCC] overflow-hidden border-[1px] rounded-[6px] bg-white w-full md:w-[272px] lg:max-w-[300px]">
+              <FiSearch className=" text-[#636363] text-[18px]  left-[17px] absolute top-1/2 -translate-y-1/2" />
+              <input
+                className="w-full h-full placeholder:text-[#636363] px-[48px] border-none outline-none"
+                placeholder="Search here"
+              />
+            </div>
+            <div className="text-[24px] font-bold bg-[#fff] py-[9px] px-[16px] border rounded-[4px] text-[#636363] border-[#ccc]">
+              <TbFilter  />
+            </div>
           </div>
         </div>
       </div>
@@ -46,12 +60,15 @@ const Media = () => {
         <h3 className="text-[24px] leading-[32px] bebas-Neue ">
           Kejuaraan Provinsi DkI 2023
         </h3>
+        <small className="rubik text-[20px] text-[#4A4A4A]">
+          Warriors vs AirOne KU 12 PA
+        </small>
         <div className="sm:grid sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-[16px] mt-[16px]">
           {players.map((item, key) => {
             return (
               <article key={key} className="relative  w-full">
                 {/* card  */}
-                <div className="flex items-center gap-[8px] absolute top-[8px] right-[8px]">
+                {/* <div className="flex items-center gap-[8px] absolute top-[8px] right-[8px]">
                   <button
                     style={{ background: `${item.color}` }}
                     className={`px-[12px] py-[8px] rounded-[6px]  text-white text-[12px] leading-[20px] uppercase`}
@@ -64,7 +81,7 @@ const Media = () => {
                   >
                     Age Group
                   </button>
-                </div>
+                </div> */}
                 <img className="w-full" src="/img.png" alt="player image" />
               </article>
             );

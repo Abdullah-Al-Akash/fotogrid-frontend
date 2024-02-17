@@ -7,10 +7,6 @@ const Dropdown = ({ options, label }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
 
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
-
   const handleOptionClick = (option) => {
     setSelectedOption(option);
     setIsOpen(false);
@@ -22,7 +18,7 @@ const Dropdown = ({ options, label }) => {
         <button
           type="button"
           className="h-[48px] rounded-[6px]   border-gray-300 shadow-sm py-[8px] px-[16px] bg-white text-sm text-gray-700  flex items-center justify-between text-[16px] font-medium"
-          onClick={toggleDropdown}
+          onClick={() => setIsOpen(!isOpen)}
         >
           {selectedOption ? selectedOption : label}
           <span className={`mt-[2px] ms-[26px]`}>
@@ -33,7 +29,7 @@ const Dropdown = ({ options, label }) => {
 
       {isOpen && (
         <div
-          className="origin-top-right absolute left-0 mt-2 w-24  rounded-[6px] shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-[999999999]"
+          className="origin-top-right absolute left-0 mt-2 w-48  rounded-[6px] shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-[999999999]"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="options-menu"

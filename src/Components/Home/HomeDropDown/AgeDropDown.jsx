@@ -18,10 +18,10 @@ const AgeDropDown = () => {
       <div>
         <button
           type="button"
-          className="rounded-[6px] text-[#1A1A1A] border-gray-300 shadow-sm py-[10px] my-[8px] px-[16px] bg-white text-sm  hover:bg-gray-50  flex item-center justify-between text-[16px] montserrat"
+          className="rounded-[6px] text-[#1A1A1A] border-gray-300 shadow-sm py-[10px] my-[8px] px-[16px] bg-white text-sm  hover:bg-gray-50  flex item-center justify-between text-[16px] montserrat font-bold"
           onClick={toggleDropdown}
         >
-          {selectedOption ? selectedOption : "Age Group"}
+          {selectedOption ? selectedOption : "KU 10 Mix"}
           <span className={`mt-[3px] ms-[20px]`}>
             {isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
           </span>
@@ -37,25 +37,25 @@ const AgeDropDown = () => {
         >
           <div className="py-1 z-10" role="none">
             <button
-              onClick={() => handleOptionClick("Age Group")}
+              onClick={() => handleOptionClick("KU 10 Mix")}
               className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
               role="menuitem"
             >
-              Age Group
+              KU 10 Mix
             </button>
             <button
-              onClick={() => handleOptionClick("Option 2")}
+              onClick={() => handleOptionClick("KU 10 Mix")}
               className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
               role="menuitem"
             >
-              Option 2
+              KU 10 Mix
             </button>
             <button
-              onClick={() => handleOptionClick("Option 3")}
+              onClick={() => handleOptionClick("KU 10 Mix")}
               className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
               role="menuitem"
             >
-              Option 3
+              KU 10 Mix
             </button>
           </div>
         </div>

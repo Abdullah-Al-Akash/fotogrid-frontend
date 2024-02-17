@@ -3,9 +3,36 @@ import CareerHighLights from "./CareerHighLights";
 import PlayerPersonalInfo from "./PlayerPersonalInfo";
 import PlayerTaps from "./PlayerTaps";
 import playerImg from "../../assets/Players/player.png";
-
+import img1 from "../../assets/Players/img1.png";
+import img2 from "../../assets/Players/img2.png";
+import img3 from "../../assets/Players/img3.png";
+import img4 from "../../assets/Players/img4.png";
+import img5 from "../../assets/Players/img5.png";
+import youtubeImage from "../../assets/Players/youtube.png";
 const PlayerInfo = () => {
   const [tab, setTab] = useState("tab1");
+  const media = [
+    {
+      image: img1,
+      youtube: true,
+    },
+    {
+      image: img2,
+      youtube: true,
+    },
+    {
+      image: img3,
+      youtube: true,
+    },
+    {
+      image: img4,
+      youtube: false,
+    },
+    {
+      image: img5,
+      youtube: false,
+    },
+  ];
   return (
     <>
       <main className="fotogrit-container">
@@ -34,7 +61,7 @@ const PlayerInfo = () => {
                 <sup className="ml-[4px]">th</sup>
               </div> */}
             </div>
-            <div className="border-l-[1px] border-b-[1px] border-[#333333] bebas-Neue flex md:flex-row flex-col justify-between items-center">
+            <div className="border-l-[1px] border-b-[1px] border-[#333333] bebas-Neue flex md:flex-row flex-col justify-evenly items-center">
               <div className="px-[30px] py-[18px] flex gap-[6px] items-center ">
                 <img className="w-[28px] h-[28px]" src="/ball.png" alt="ball" />
                 <h3 className="text-[48px] leading-[60px] text-[#F2F2F2]">6</h3>
@@ -55,9 +82,36 @@ const PlayerInfo = () => {
             </div>
             <CareerHighLights />
             {/* Recent in Game Fotogrit Pins  */}
-
+            <div className="p-[24px] border-t-[1px] border-b-[1px] border-l-[1px] border-0 border-[#333333]">
+              <h2 className="uppercase text-[24px] leading-[32px] text-white bebas-Neue">
+                Media Highlight
+              </h2>
+              <div className="flex md:flex-row gap-[24px] items-center mt-[6px]">
+                {media?.map((card, i) => {
+                  const { image, youtube } = card || {};
+                  return (
+                    <div key={i} className="relative">
+                      <div className="">
+                        <img
+                          src={image}
+                          className="w-[120px] h-full rounded-[6px]"
+                          alt=""
+                        />
+                      </div>
+                      {youtube == true ? (
+                        <div className="w-[32px] h-[32px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] cursor-pointer">
+                          <img src={youtubeImage} alt="" />
+                        </div>
+                      ) : (
+                        <></>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
             <div className="p-[24px]  bg-[#222222] border-t-[1px] border-b-[1px] border-l-[1px] border-0 border-[#333333]">
-              <h2 className="uppercase text-[24px] leading-[32px] text-white">
+              <h2 className="uppercase text-[24px] leading-[32px] text-white bebas-Neue">
                 Recent in Game Fotogrit Pins
               </h2>
               <div className="  sm:gap-[18px] sm:grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 ">
