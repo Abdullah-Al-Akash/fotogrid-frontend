@@ -60,32 +60,42 @@ const Stats = () => {
                   </th>
                   <th className="text-[14px] md:w-[103px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8] border-t-0">
                     <button className="flex items-center justify-center gap-[10px] text-center w-full">
-                      <span>Points per game(PPG)</span>{" "}
+                      <span className="whitespace-normal">
+                        Points per game(PPG)
+                      </span>{" "}
                       <img src="/Arrow.png" alt="drop down" />
                     </button>
                   </th>
                   <th className="text-[14px]  md:w-[103px] text-[#7D7D7D] p-[24px] border border-[#E8E8E8] border-t-0">
                     <button className="flex items-center justify-center gap-[10px] text-center w-full">
-                      <span>Rebounds per game (RPG)</span>{" "}
+                      <span className="whitespace-normal">
+                        Rebounds per game (RPG)
+                      </span>{" "}
                       <img src="/Arrow.png" alt="drop down" />
                     </button>
                   </th>
                   <th className="text-[14px] md:w-[103px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8] border-t-0">
                     <button className="flex items-center justify-center gap-[10px] text-center w-full">
-                      <span>Block per game (BPG)</span>{" "}
+                      <span className="whitespace-normal">
+                        Block per game (BPG)
+                      </span>{" "}
                       <img src="/Arrow.png" alt="drop down" />
                     </button>
                   </th>
                   <th className="text-[14px] md:w-[103px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8] border-t-0">
                     <button className="flex items-center justify-center gap-[10px] text-center w-full">
-                      <span>Assist per game (APG)</span>{" "}
+                      <span className="whitespace-normal">
+                        Assist per game (APG)
+                      </span>{" "}
                       <img src="/Arrow.png" alt="drop down" />
                     </button>
                   </th>
                   <th className="text-[14px] md:w-[103px]  text-[#7D7D7D] p-[24px] border border-[#E8E8E8] border-t-0">
                     <button className="flex items-center justify-center gap-[10px] text-center w-full">
                       {" "}
-                      <span>Steal per game (SPG)</span>{" "}
+                      <span className="whitespace-normal">
+                        Steal per game (SPG)
+                      </span>{" "}
                       <img src="/Arrow.png" alt="drop down" />
                     </button>
                   </th>
@@ -98,7 +108,7 @@ const Stats = () => {
               </thead>
               <tbody>
                 <tr>
-                  <td className="px-[17px] border-t-0 bg-white border-l-0 border-b-0 text-center py-[20px] text-[#1A1A1A] leading-[24px] text-[14px] border-r-[1px] border border-[#E8E8E8]">
+                  <td className="px-[17px] border-t-0 bg-white border-l-0 border-b-0 text-center py-[20px] text-[#1A1A1A] leading-[24px] text-[14px] border-r-[1px] border border-[#E8E8E8] whitespace-nowrap">
                     LIL |Li'l Warriors Cup 2020 KU-8
                   </td>
                   <td className="px-[17px] text-center py-[20px] border-b-0 text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
