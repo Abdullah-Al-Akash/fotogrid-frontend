@@ -1,4 +1,3 @@
-import React from "react";
 import "./HeadingOfScore.css";
 import { CiShare2 } from "react-icons/ci";
 import { FiPrinter } from "react-icons/fi";
@@ -50,6 +49,7 @@ const HeadingOfScore = () => {
         </div>
       </div>
       {/*  */}
+      <hr />
       <div className="p-[16px]">
         <h3 className="match-subheading text-center p-[16px]">
           Kejuaraan Provinsi Bola Basket DKI Jakarta 2023
