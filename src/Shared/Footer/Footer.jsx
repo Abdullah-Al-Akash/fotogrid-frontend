@@ -147,7 +147,7 @@ const Footer = () => {
             </div>
           </div>
         </footer>
-        {/* Hello */}
+        {/* Footer Complete */}
       </div>
     </div>
   );
