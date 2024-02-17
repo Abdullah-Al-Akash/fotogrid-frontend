@@ -6,7 +6,7 @@ const BasketBallDropDown = () => {
   const [selectedOption, setSelectedOption] = useState(null);
 
   const toggleDropdown = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(!isOpen); 
   };
 
   const handleOptionClick = (option) => {
