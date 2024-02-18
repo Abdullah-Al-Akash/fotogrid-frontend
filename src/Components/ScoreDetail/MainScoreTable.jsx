@@ -867,7 +867,7 @@ const MainScoreTable = () => {
               </td>
             </tr>
             <tr>
-              <td className="bg-[white] p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
+              <td className="!bg-white p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[rgb(232,232,232)] z-[999999]">
                 Total
               </td>
               <td className="p-[16px] text-center  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">

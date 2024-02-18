@@ -21,6 +21,10 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
+input[type="checkbox"]:checked {
+  accent-color: #A46E40;
+}
+
 /* 
 font-family: 'Bebas Neue', sans-serif;
 font-family: 'Montserrat', sans-serif;
@@ -28,7 +32,7 @@ font-family: 'Rubik', sans-serif;
 */
 
 .fotogrit-container {
-  @apply !max-w-[1384px] mx-auto px-[24px];
+  @apply !max-w-[1409px] mx-auto px-[24px];
 }
 
 li::marker {
@@ -41,8 +45,8 @@ input::placeholder {
   font-family: "Montserrat", sans-serif;
 }
 
-@media only screen and (max-width: 3200px) and (min-width: 1394px) {
+/* @media only screen and (max-width: 3200px) and (min-width: 1394px) {
   .custom-table-class {
     overflow-x: hidden;
   }
-}
+} */
