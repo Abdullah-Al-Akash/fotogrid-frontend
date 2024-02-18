@@ -30,7 +30,7 @@ const NavBar = () => {
       <div className="fotogrit-container">
         <div className="navbar mx-auto">
           <div className="navbar-start">
-            <div className="drawer grid md:hidden">
+            <div className="drawer grid md:hidden z-[999999999999999999]">
               <input id="my-drawer" type="checkbox" className="drawer-toggle" />
               <div className="drawer-content">
                 {/* Page content here */}

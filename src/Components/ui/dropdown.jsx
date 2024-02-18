@@ -15,10 +15,11 @@ export default function Dropdown({ options, label }) {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
 
-  console.log({ isOpen });
+  
   const handleOptionClick = (option) => {
     setSelectedOption(option);
     setIsOpen(!isOpen);
+    console.log({ isOpen });
   };
   return (
     <DropdownMenu>
