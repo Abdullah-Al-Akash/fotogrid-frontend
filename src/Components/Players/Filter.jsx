@@ -25,14 +25,14 @@ const Filter = () => {
   };
 
   return (
-    <div
-      ref={dropdownRef}
-      className="relative text-[24px] font-bold bg-[#fff] py-[9px] px-[16px] border rounded-[4px] text-[#636363] border-[#ccc]"
-    >
-      <div onClick={handleFilterOption} className="cursor-pointer">
+    <div ref={dropdownRef} className="relative">
+      <div
+        onClick={handleFilterOption}
+        className="cursor-pointer text-[24px] font-bold bg-[#fff] py-[9px] px-[16px] border rounded-[4px] text-[#636363] border-[#ccc]"
+      >
         <TbFilter />
       </div>
-      <div className="absolute top-[15px] right-[190px] text-[20px] text-[#7D7D7D]]">
+      <div className="absolute top-[15px] right-[190px] text-[20px] ">
         {filterOpen && (
           <div className="cursor-pointer whitespace-nowrap absolute top-[30px] p-[32px] bg-[#fff] z-[9999] left-[50%] -translate-x-[50%] rounded-[8px] border shadow-md">
             <div className="w-[351px]">
@@ -43,11 +43,11 @@ const Filter = () => {
                 <input
                   type="checkbox"
                   value=""
-                  className="w-4 h-4 text-[#D5D7D7] bg-gray-100 border-gray-300 rounded focus:ring-[#D5D7D7] dark:focus:ring-[#D5D7D7] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-4 h-4 text-[#D5D7D7] border-gray-300 rounded  focus:ring-0 cursor-pointer"
                 />
                 <label
                   htmlFor="default-checkbox"
-                  className="ms-2 text-[16px] font-normal rubik text-[#4A4A4A] dark:text-gray-300"
+                  className="ms-2 text-[16px] font-normal rubik text-[#4a4a4a]"
                 >
                   Filter Option #01
                 </label>
@@ -56,11 +56,11 @@ const Filter = () => {
                 <input
                   type="checkbox"
                   value=""
-                  className="w-4 h-4 text-[#D5D7D7] bg-gray-100 border-gray-300 rounded focus:ring-[#D5D7D7] dark:focus:ring-[#D5D7D7] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-4 h-4 text-[#D5D7D7] border-gray-300 rounded  focus:ring-0 cursor-pointer"
                 />
                 <label
                   htmlFor="default-checkbox"
-                  className="ms-2 text-[16px] font-normal rubik text-[#4A4A4A] dark:text-gray-300"
+                  className="ms-2 text-[16px] font-normal rubik text-[#4a4a4a]"
                 >
                   Filter Option #01
                 </label>
@@ -69,11 +69,11 @@ const Filter = () => {
                 <input
                   type="checkbox"
                   value=""
-                  className="w-4 h-4 text-[#D5D7D7] bg-gray-100 border-gray-300 rounded focus:ring-[#D5D7D7] dark:focus:ring-[#D5D7D7] dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-4 h-4 text-[#D5D7D7] border-gray-300 rounded  focus:ring-0 cursor-pointer"
                 />
                 <label
                   htmlFor="default-checkbox"
-                  className="ms-2 text-[16px] font-normal rubik text-[#4A4A4A] dark:text-gray-300"
+                  className="ms-2 text-[16px] font-normal rubik text-[#4A4A4A]"
                 >
                   Filter Option #01
                 </label>
