@@ -9,6 +9,7 @@ import Home from "../Pages/Home/Home";
 import ScoreDetailPage from "../Pages/ScoreDetailPage/ScoreDetailPage";
 import EventsList from "../Pages/EventsList/EventsList";
 import Events from "../Pages/Events/Events";
+import TopVarForLogIn from "../Shared/Topvar/TopVarForLogIn";
 
 export const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ export const router = createBrowserRouter([
       {
         path: "/score",
         element: <ScoreDetailPage></ScoreDetailPage>,
+      },
+      {
+        path: "/pronov",
+        element: <TopVarForLogIn></TopVarForLogIn>,
       },
     ],
   },

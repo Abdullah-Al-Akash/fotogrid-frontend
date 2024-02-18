@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { LuInfo } from "react-icons/lu";
 import { TbFilter } from "react-icons/tb";
+import "./Filter.css";
 
 const Filter = () => {
   const [filterOpen, setFilterOpen] = useState(false);
@@ -10,6 +11,7 @@ const Filter = () => {
   const applyFilter = () => {
     setFilterOpen(!filterOpen);
   };
+
   return (
     <div className="relative text-[24px] font-bold bg-[#fff] py-[9px] px-[16px] border rounded-[4px] text-[#636363] border-[#ccc]">
       <div onClick={handleFilterOption} className="cursor-pointer">
