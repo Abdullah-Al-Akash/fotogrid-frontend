@@ -58,14 +58,14 @@ const LeaderBoard = () => {
             </thead>
             <tbody>
               <tr>
-                <Link to="/players">
-                  <td className="border bg-white border-[#E8E8E8]  border-b-0 border-l-0">
+                <td className="border border-r-0 bg-white border-[#E8E8E8]  border-b-0 border-l-0">
+                  <Link to="/players">
                     <img
                       className="h-[44px] w-[44px] rounded-full mx-auto my-[5px]"
                       src="/user.png"
                     />
-                  </td>
-                </Link>
+                  </Link>
+                </td>
                 <td className="px-[17px] text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]  border-b-0">
                   Ben
                 </td>

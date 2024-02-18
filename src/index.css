@@ -28,28 +28,21 @@ font-family: 'Rubik', sans-serif;
 */
 
 .fotogrit-container {
-  @apply !max-w-[1384px] mx-auto px-3;
+  @apply !max-w-[1384px] mx-auto px-[24px];
 }
 
 li::marker {
   color: #ababab;
   width: 8px;
   height: 8px;
-  
 }
 
 input::placeholder {
   font-family: "Montserrat", sans-serif;
 }
 
-.transition-colors {
-  transition-timing-function: "cubic-bezier(0.4, 0, 0.2, 1)";
-  transition-duration: 150ms;
-}
-
-
 @media only screen and (max-width: 3200px) and (min-width: 1394px) {
-  .custom-table-class{
+  .custom-table-class {
     overflow-x: hidden;
   }
 }
