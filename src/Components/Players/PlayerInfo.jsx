@@ -81,7 +81,7 @@ const PlayerInfo = () => {
             {/* Recent in Game Fotogrit Pins  */}
             <div className="p-[24px] border-t-[1px] border-b-[1px] border-l-[1px] border-0 border-[#333333]">
               <h2 className="uppercase text-[24px] leading-[32px] text-white bebas-Neue">
-                Media Highlight
+                Media Highlight 21
               </h2>
               <div className="flex md:flex-row gap-[24px] items-center mt-[6px]">
                 {media?.map((card, i) => {
