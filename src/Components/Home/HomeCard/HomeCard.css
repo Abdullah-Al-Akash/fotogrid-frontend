@@ -87,20 +87,10 @@
 }
 
 @media only screen and (max-width: 362px) and (min-width: 0px) {
-  .top-bar-content-group {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    gap: 10px;
-    height: 100%;
-  }
-
-  .top-button-group {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding-bottom: 10px;
+  .top-bar-button {
+    font-size: 14px !important;
+    padding: 0px 12px !important;
+    line-height: 0px !important;
   }
 
   .card-content {
@@ -123,8 +113,19 @@
   .final {
     line-height: 10px;
   }
-  .footer-download-group{
+
+  .footer-download-group {
     display: flex;
     flex-direction: column;
   }
+  .team-list-card-Heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .team-list-card-Heading h2{
+    font-size: 25px;
+  }
+  
 }

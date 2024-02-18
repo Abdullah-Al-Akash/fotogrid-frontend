@@ -23,10 +23,10 @@ const Topvar = () => {
             </div>
           </div>
           <div className="top-button-group flex items-center justify-center gap-[8px]">
-            <button className="btn text-[#7D7D7D] border-[#A46E40] bg-[#1A1A1A] px-[28px] py-[12px] uppercase">
+            <button className="btn top-bar-button text-[#7D7D7D] border-[#A46E40] bg-[#1A1A1A] px-[28px] py-[12px] uppercase">
               Sign Up
             </button>
-            <button className="btn px-[36px] py-[12px] bg-[#A46E40] border-[#A46E40] text-[#FFF] uppercase">
+            <button className="btn top-bar-button px-[36px] py-[12px] bg-[#A46E40] border-[#A46E40] text-[#FFF] uppercase">
               Login
             </button>
           </div>

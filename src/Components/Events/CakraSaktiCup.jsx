@@ -8,7 +8,7 @@ const CakraSaktiCup = ({ tab }) => {
   return (
     <div className="mt-[32px]  bg-white rounded-[6px]">
       <div className="flex flex-col md:flex-row justify-between gap-[15px] md:gap-0 md:items-center px-[24px] py-[16px]">
-        <div className="flex items-center justify-start gap-[17px]">
+        <div className="team-list-card-Heading flex items-center justify-start gap-[17px]">
           <div className="w-[64px] h-[64px]">
             <img src={cakraImage} alt="" className="w-full" />
           </div>
