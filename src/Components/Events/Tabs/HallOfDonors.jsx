@@ -14,6 +14,7 @@ import {
   HallOfDonorsGender,
   HallOfDonorsKu12Girl,
 } from "../../../constants/player.constants";
+import Filter from "../../Players/Filter";
 
 const HallOfDonors = () => {
   const platinumArray = [
@@ -68,13 +69,16 @@ const HallOfDonors = () => {
             <Dropdown options={HallOfDonorsKu12Girl} label="KU 12 Girl" />
             <Dropdown options={HallOfDonorsGender} label="Male" />
           </div>
-          <div className="border flex items-center py-[8px] px-[16px] rounded-[4px]">
-            <IoSearchOutline className="mt-[2px] me-[8px]" />
-            <input
-              type="text"
-              placeholder="Search here"
-              className="outline-none"
-            />
+          <div className="flex items-center gap-[8px]">
+            <div className="border flex items-center py-[8px] px-[16px] rounded-[4px]">
+              <IoSearchOutline className="mt-[2px] me-[8px]" />
+              <input
+                type="text"
+                placeholder="Search here"
+                className="outline-none"
+              />
+            </div>
+            <Filter></Filter>
           </div>
         </div>
       </div>

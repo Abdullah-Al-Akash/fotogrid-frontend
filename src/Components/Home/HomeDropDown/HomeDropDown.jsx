@@ -7,6 +7,7 @@ import {
   HomeKu10MixGirl,
   HomeMonth,
 } from "../../../constants/player.constants";
+import Filter from "../../Players/Filter";
 
 const HomeDropDown = () => {
   return (
@@ -21,9 +22,16 @@ const HomeDropDown = () => {
         <Dropdown options={HomeKu10MixGirl} label="KU 10 Mix" />
         <Dropdown options={HomeJakartaOption} label="Jakarta" />
       </div>
-      <div className="border flex items-center bg-white py-[8px] px-[16px] rounded-[4px] mt-[16px] lg:mt-[0px]">
-        <IoSearchOutline className="mt-[2px] me-[8px]" />
-        <input type="text" placeholder="Search here" className="outline-none" />
+      <div className="flex items-center gap-[8px]">
+        <div className="border flex items-center bg-white py-[8px] px-[16px] rounded-[4px]">
+          <IoSearchOutline className="mt-[2px] me-[8px]" />
+          <input
+            type="text"
+            placeholder="Search here"
+            className="outline-none"
+          />
+        </div>
+        <Filter></Filter>
       </div>
     </div>
   );

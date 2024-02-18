@@ -8,6 +8,7 @@ import {
   ScheduleStandingGender,
 } from "../../../constants/player.constants";
 import Dropdown from "../../ui/dropdown";
+import Filter from "../../Players/Filter";
 
 const Schedule = () => {
   return (
@@ -18,13 +19,16 @@ const Schedule = () => {
           <Dropdown options={ScheduleStandingGender} label="Male" />
           <Dropdown options={ScheduleMonth} label="Jan 12 2024" />
         </div>
-        <div className="border flex items-center py-[8px] px-[16px] rounded-[4px]">
-          <IoSearchOutline className="mt-[2px] me-[8px]" />
-          <input
-            type="text"
-            placeholder="Search here"
-            className="outline-none"
-          />
+        <div className="flex items-center gap-[8px]">
+          <div className="border flex items-center py-[8px] px-[16px] rounded-[4px]">
+            <IoSearchOutline className="mt-[2px] me-[8px]" />
+            <input
+              type="text"
+              placeholder="Search here"
+              className="outline-none"
+            />
+          </div>
+          <Filter></Filter>
         </div>
       </div>
       <div className="py-[8px]">

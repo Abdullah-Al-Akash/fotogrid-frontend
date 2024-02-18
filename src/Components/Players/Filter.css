@@ -1,0 +1,43 @@
+input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.checkboxOne {
+  width: 40px;
+  height: 10px;
+  background: #9c9d9d;
+  margin: 20px 80px;
+  position: relative;
+  border-radius: 3px;
+  box-shadow: inset 0px 0px 2px #565656;
+}
+
+.checkboxOne label {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  position: absolute;
+  top: -4px;
+  left: -3px;
+  border: 1px solid #9b9b9b;
+  background: #fff;
+}
+
+.checkboxOne input[type="checkbox"]:checked + input {
+  background: #21ae56;
+}
+
+.checkboxOne input[type="checkbox"]:checked ~ div {
+  background: #21ae56;
+}
+
+.checkboxOne input[type="checkbox"]:checked + label {
+  left: 27px;
+}
