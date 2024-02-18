@@ -8,6 +8,7 @@ import {
 } from "../../../constants/player.constants";
 import Dropdown from "../../ui/dropdown";
 import TableWrapper from "../../ui/table-wrapper";
+import Filter from "../Filter";
 
 const Stats = () => {
   return (
@@ -19,12 +20,15 @@ const Stats = () => {
           <Dropdown options={genderOptions} label="Male" />
           <Dropdown options={Month} label="January" />
         </div>
-        <div className="h-[46px] mt-[18px] lg:mt-auto relative border-[#CCCCCC] overflow-hidden border-[1px] rounded-[6px] bg-white w-[90%] md:w-[70%] lg:max-w-[300px]">
-          <FiSearch className=" text-[#636363] text-[18px] bebas-Neue left-[17px] absolute top-1/2 -translate-y-1/2" />
-          <input
-            className="w-full h-full placeholder:text-[#636363] px-[48px] border-none outline-none"
-            placeholder="Search here"
-          />
+        <div className="flex items-center gap-[8px]">
+          <div className="h-[46px] mt-[18px] lg:mt-auto relative border-[#CCCCCC] overflow-hidden border-[1px] rounded-[6px] bg-white w-[90%] md:w-[70%] lg:max-w-[300px]">
+            <FiSearch className=" text-[#636363] text-[18px] bebas-Neue left-[17px] absolute top-1/2 -translate-y-1/2" />
+            <input
+              className="w-full h-full placeholder:text-[#636363] px-[48px] border-none outline-none"
+              placeholder="Search here"
+            />
+          </div>
+          <Filter></Filter>
         </div>
       </div>
       <section className="bg-white p-[24px] rounded ">

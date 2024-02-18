@@ -7,7 +7,7 @@ import {
 } from "../../../constants/player.constants";
 import { FiSearch } from "react-icons/fi";
 import { TbFilter } from "react-icons/tb";
-
+import Filter from "../Filter";
 
 const Media = () => {
   const players = [
@@ -49,8 +49,8 @@ const Media = () => {
                 placeholder="Search here"
               />
             </div>
-            <div className="text-[24px] font-bold bg-[#fff] py-[9px] px-[16px] border rounded-[4px] text-[#636363] border-[#ccc]">
-              <TbFilter  />
+            <div className="">
+              <Filter></Filter>
             </div>
           </div>
         </div>
