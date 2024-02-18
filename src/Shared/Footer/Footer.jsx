@@ -49,7 +49,7 @@ const Footer = () => {
               />
             </svg>
 
-            <h3 className="text-[16px] xs:text-[20px] leading-[20px] whitespace-nowrap md:text-[40px] bebas-Neue font-normal md:leading-10 text-[#CCC]">
+            <h3 className="text-[16px] xs:text-[20px] leading-[20px] whitespace-nowrap md:text-[32px] bebas-Neue font-normal md:leading-10 text-[#CCC]">
               Download App
             </h3>
             <div className="p-[6.4px] bg-[#4A4A4A] rounded-[3.2px]">
@@ -145,7 +145,7 @@ const Footer = () => {
           </div> */}
           <div className="flex justify-center sm:justify-start items-center gap-[12px]">
             <div className="text-black cursor-pointer bg-[#fff]  p-[8px] rounded-full">
-              <FaTiktok className="text-[10px] xs:text-[16px] sm:text-[16px]" />
+              <FaTiktok className="text-[10px] xs:text-[16px] " />
             </div>
             <div className="bg-pink-500 cursor-pointer p-[8px] text-white rounded-2xl">
               <AiFillInstagram className="text-[10px]  xs:text-[16px]" />
