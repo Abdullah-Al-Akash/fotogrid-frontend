@@ -4,75 +4,70 @@ import line from "../../../public/Footer/line.png";
 const Footer = () => {
   return (
     <div className="bg-[#1A1A1A]">
-      <div className="fotogrit-container py-[32px] px-[62px]">
-        <footer className="flex flex-col gap-[20px] md:flex-row justify-between">
-          <div className="footer-download-group flex items-center cursor-pointer gap-[12px]">
-            <div className="flex gap-[20px] items-center">
-              <div className="svg-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="28"
-                  height="34"
-                  viewBox="0 0 28 34"
-                  fill="none"
-                  className="svg-icon"
-                >
-                  <path
-                    d="M23.1148 18.0546C23.0761 13.8647 26.6335 11.8263 26.7961 11.7314C24.7815 8.86748 21.6588 8.47618 20.5615 8.44498C17.9388 8.17588 15.3948 9.97508 14.0588 9.97508C12.6961 9.97508 10.6388 8.47098 8.42146 8.51518C5.56813 8.55808 2.89879 10.1688 1.43479 12.67C-1.58654 17.7699 0.666794 25.2644 3.56146 29.3867C5.00946 31.4056 6.70146 33.6598 8.91613 33.5805C11.0828 33.4934 11.8921 32.2337 14.5068 32.2337C17.0975 32.2337 17.8575 33.5805 20.1161 33.5298C22.4415 33.4934 23.9055 31.5018 25.3028 29.4647C26.9761 27.1507 27.6481 24.8718 27.6748 24.7548C27.6201 24.7366 23.1588 23.0765 23.1148 18.0546Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M18.8481 5.73318C20.0135 4.31228 20.8108 2.37918 20.5895 0.41748C18.9028 0.49028 16.7935 1.55498 15.5788 2.94468C14.5041 4.16928 13.5441 6.17648 13.7921 8.06408C15.6868 8.20188 17.6321 7.13198 18.8481 5.73318Z"
-                    fill="white"
-                  />
-                </svg>
-              </div>
-              <img src={line} alt="" />
-              <div className="svg-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="34"
-                  height="36"
-                  viewBox="0 0 34 36"
-                  fill="none"
-                >
-                  <path
-                    d="M1.29314 1.79751C0.90147 2.19726 0.674805 2.81964 0.674805 3.62564V32.3751C0.674805 33.1811 0.90147 33.8035 1.29314 34.2033L1.3898 34.291L17.9131 18.1873V17.807L1.3898 1.70327L1.29314 1.79751Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M25.4148 23.5579L19.9131 18.1872V17.807L25.4214 12.4364L25.5448 12.5062L32.0681 16.1251C33.9297 17.1521 33.9297 18.8421 32.0681 19.8756L25.5448 23.488L25.4148 23.5579Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M24.5449 24.488L18.9132 18.9972L2.29321 35.2033C2.91155 35.837 3.91988 35.9134 5.06655 35.2797L24.5449 24.488Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M24.5449 11.5063L5.06655 0.714697C3.91988 0.0874473 2.91155 0.163821 2.29321 0.79757L18.9132 16.9972L24.5449 11.5063Z"
-                    fill="white"
-                  />
-                </svg>
-              </div>
-            </div>
-            <h3 className="text-[40px] bebas-Neue font-normal leading-10 text-[#CCC]">
-              Download App
-            </h3>
+      <div className="fotogrit-container py-[12px] ">
+        <footer className="flex gap-[48px] flex-row justify-between">
+          <div className=" flex items-center cursor-pointer gap-[12px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="25"
-              height="24"
-              viewBox="0 0 25 24"
+              className="md:w-[28px] w-[16px] xs:w-[20px]"
+              viewBox="0 0 28 34"
               fill="none"
             >
               <path
-                d="M21.4644 15V16.2C21.4644 17.8802 21.4644 18.7202 21.1374 19.362C20.8498 19.9265 20.3908 20.3854 19.8263 20.673C19.1846 21 18.3445 21 16.6644 21H8.26436C6.5842 21 5.74412 21 5.10238 20.673C4.5379 20.3854 4.07896 19.9265 3.79134 19.362C3.46436 18.7202 3.46436 17.8802 3.46436 16.2V15M17.4644 10L12.4644 15M12.4644 15L7.46436 10M12.4644 15V3"
-                stroke="#D0A885"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                d="M23.1148 18.0546C23.0761 13.8647 26.6335 11.8263 26.7961 11.7314C24.7815 8.86748 21.6588 8.47618 20.5615 8.44498C17.9388 8.17588 15.3948 9.97508 14.0588 9.97508C12.6961 9.97508 10.6388 8.47098 8.42146 8.51518C5.56813 8.55808 2.89879 10.1688 1.43479 12.67C-1.58654 17.7699 0.666794 25.2644 3.56146 29.3867C5.00946 31.4056 6.70146 33.6598 8.91613 33.5805C11.0828 33.4934 11.8921 32.2337 14.5068 32.2337C17.0975 32.2337 17.8575 33.5805 20.1161 33.5298C22.4415 33.4934 23.9055 31.5018 25.3028 29.4647C26.9761 27.1507 27.6481 24.8718 27.6748 24.7548C27.6201 24.7366 23.1588 23.0765 23.1148 18.0546Z"
+                fill="white"
+              />
+              <path
+                d="M18.8481 5.73318C20.0135 4.31228 20.8108 2.37918 20.5895 0.41748C18.9028 0.49028 16.7935 1.55498 15.5788 2.94468C14.5041 4.16928 13.5441 6.17648 13.7921 8.06408C15.6868 8.20188 17.6321 7.13198 18.8481 5.73318Z"
+                fill="white"
               />
             </svg>
+
+            <img src={line} alt="" />
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="md:w-[28px] w-[16px] xs:w-[20px]"
+              viewBox="0 0 34 36"
+              fill="none"
+            >
+              <path
+                d="M1.29314 1.79751C0.90147 2.19726 0.674805 2.81964 0.674805 3.62564V32.3751C0.674805 33.1811 0.90147 33.8035 1.29314 34.2033L1.3898 34.291L17.9131 18.1873V17.807L1.3898 1.70327L1.29314 1.79751Z"
+                fill="white"
+              />
+              <path
+                d="M25.4148 23.5579L19.9131 18.1872V17.807L25.4214 12.4364L25.5448 12.5062L32.0681 16.1251C33.9297 17.1521 33.9297 18.8421 32.0681 19.8756L25.5448 23.488L25.4148 23.5579Z"
+                fill="white"
+              />
+              <path
+                d="M24.5449 24.488L18.9132 18.9972L2.29321 35.2033C2.91155 35.837 3.91988 35.9134 5.06655 35.2797L24.5449 24.488Z"
+                fill="white"
+              />
+              <path
+                d="M24.5449 11.5063L5.06655 0.714697C3.91988 0.0874473 2.91155 0.163821 2.29321 0.79757L18.9132 16.9972L24.5449 11.5063Z"
+                fill="white"
+              />
+            </svg>
+
+            <h3 className="text-[16px] xs:text-[20px] leading-[20px] whitespace-nowrap md:text-[40px] bebas-Neue font-normal md:leading-10 text-[#CCC]">
+              Download App
+            </h3>
+            <div className="p-[6.4px] bg-[#4A4A4A] rounded-[3.2px]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="md:w-[28px] w-[16px] xs:w-[20px]"
+                viewBox="0 0 25 24"
+                fill="none"
+              >
+                <path
+                  d="M21.4644 15V16.2C21.4644 17.8802 21.4644 18.7202 21.1374 19.362C20.8498 19.9265 20.3908 20.3854 19.8263 20.673C19.1846 21 18.3445 21 16.6644 21H8.26436C6.5842 21 5.74412 21 5.10238 20.673C4.5379 20.3854 4.07896 19.9265 3.79134 19.362C3.46436 18.7202 3.46436 17.8802 3.46436 16.2V15M17.4644 10L12.4644 15M12.4644 15L7.46436 10M12.4644 15V3"
+                  stroke="#D0A885"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </div>
           </div>
           {/* <div className="flex md:ms-auto">
             <div className="cursor-pointer">
@@ -148,15 +143,15 @@ const Footer = () => {
               </svg>
             </div>
           </div> */}
-          <div className="flex justify-center sm:justify-start items-center gap-[20px]">
-            <div className="text-black cursor-pointer bg-[#fff] text-[20px] p-[10px] rounded-full">
-              <FaTiktok />
+          <div className="flex justify-center sm:justify-start items-center gap-[12px]">
+            <div className="text-black cursor-pointer bg-[#fff]  p-[8px] rounded-full">
+              <FaTiktok className="text-[10px] xs:text-[16px] sm:text-[16px]" />
             </div>
-            <div className="bg-pink-500 cursor-pointer text-[20px] p-[10px] text-white rounded-2xl">
-              <AiFillInstagram />
+            <div className="bg-pink-500 cursor-pointer p-[8px] text-white rounded-2xl">
+              <AiFillInstagram className="text-[10px]  xs:text-[16px]" />
             </div>
-            <div className="text-white cursor-pointer bg-red-700 text-[20px] p-[10px] rounded-full">
-              <FaYoutube />
+            <div className="text-white cursor-pointer bg-red-700  p-[8px] rounded-full">
+              <FaYoutube className="text-[10px]  xs:text-[16px]" />
             </div>
           </div>
         </footer>
