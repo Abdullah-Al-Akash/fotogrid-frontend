@@ -32,11 +32,11 @@ const Filter = () => {
       >
         <TbFilter />
       </div>
-      <div className="absolute top-[15px] right-[190px] text-[20px] ">
+      <div className="absolute top-[50px] right-[0px] text-[20px] z-[9999999999999999999999999999999999]">
         {filterOpen && (
-          <div className="cursor-pointer whitespace-nowrap absolute top-[30px] p-[32px] bg-[#fff] z-[9999] left-[50%] -translate-x-[50%] rounded-[8px] border shadow-md">
-            <div className="w-[351px]">
-              <h3 className="bebas-Neue uppercase text-[#1A1A1A] text-[20px] py-[24px] font-normal leading-[32px]">
+          <div className="whitespace-nowrap  bg-[rgb(255,255,255)]  rounded-[8px] border shadow-md ">
+            <div className="md:w-[383px] w-[263px] p-[32px] border">
+              <h3 className="bebas-Neue uppercase text-[#1A1A1A] text-[20px] pb-[10px] md:py-[24px] font-normal leading-[32px]">
                 Filters
               </h3>
               <div className="flex items-center mb-4 ">
