@@ -2,26 +2,28 @@
   color: var(--BrandColor-Parimary-Bronze500, #a46e40);
   /* Headline/H4 */
   font-family: "Bebas Neue";
-  font-size: 32px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px; /* 125% */
+  /* 125% */
 }
+
 .sub-heading {
   color: var(--BrandColor-Dark-Grey400, #7d7d7d);
   /* Headline/H6 */
   font-family: "Bebas Neue";
-  font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 100% */
+  line-height: 20px;
+  /* 100% */
 }
+
 .mid-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex: 1 0 0;
 }
+
 .score {
   color: var(--BrandColor-Dark-Grey500, #1a1a1a);
   /* Headline/H2 */
@@ -29,17 +31,20 @@
 
   font-style: normal;
   font-weight: 400;
-  line-height: 60px; /* 125% */
+  line-height: 60px;
+  /* 125% */
 }
+
 .final {
   color: var(--BrandColor-Dark-Grey600, #636363);
   /* Bodysmall/Medium */
   font-family: Montserrat;
-  font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 28px; /* 175% */
+  line-height: 28px;
+  /* 175% */
 }
+
 .btn-text {
   color: #fff;
 
@@ -48,7 +53,8 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 100% */
+  line-height: 20px;
+  /* 100% */
 }
 
 .team-name {
@@ -58,5 +64,68 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 171.429% */
+  line-height: 24px;
+  /* 171.429% */
+}
+
+@media only screen and (max-width: 1004px) and (min-width: 363px) {
+  .mid-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex: 1 0 0; */
+  }
+
+  .score {
+    line-height: 30px;
+  }
+
+  .final {
+    line-height: 10px;
+  }
+}
+
+@media only screen and (max-width: 362px) and (min-width: 0px) {
+  .top-bar-button {
+    font-size: 14px !important;
+    padding: 0px 12px !important;
+    line-height: 0px !important;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mid-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex: 1 0 0; */
+  }
+
+  .score {
+    line-height: 30px;
+  }
+
+  .final {
+    line-height: 10px;
+  }
+
+  .footer-download-group {
+    display: flex;
+    flex-direction: column;
+  }
+  .team-list-card-Heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .team-list-card-Heading h2{
+    font-size: 25px;
+  }
+  
 }

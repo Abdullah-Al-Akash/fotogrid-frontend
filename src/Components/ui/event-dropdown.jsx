@@ -34,7 +34,6 @@ export default function EventDropdown() {
       setSelectedOption("");
     }
   }, [route]);
-  console.log(route.pathname.split("/")[1]);
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -49,7 +48,7 @@ export default function EventDropdown() {
           </span>
         </button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="min-w-[120px] bg-white">
+      <DropdownMenuContent className="min-w-[120px] z-[9999999999999999999] bg-white ">
         <DropdownMenuItem key="1">
           <button
             onClick={() => {

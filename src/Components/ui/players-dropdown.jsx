@@ -48,7 +48,7 @@ export default function PlayerDropdown() {
           </span>
         </button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="min-w-[120px] bg-white">
+      <DropdownMenuContent className="min-w-[120px] bg-white  z-[99999999999999999999]">
         {/* <DropdownMenuItem>
           <button
             // to="/event-details"

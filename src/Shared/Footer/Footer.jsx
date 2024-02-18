@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="bg-[#1A1A1A]">
       <div className="fotogrit-container py-[32px] px-[62px]">
         <footer className="flex flex-col gap-[20px] md:flex-row justify-between">
-          <div className="flex items-center cursor-pointer gap-[12px]">
+          <div className="footer-download-group flex items-center cursor-pointer gap-[12px]">
             <div className="flex gap-[20px] items-center">
               <div className="svg-icon">
                 <svg
@@ -148,7 +148,7 @@ const Footer = () => {
               </svg>
             </div>
           </div> */}
-          <div className="flex items-center gap-[20px]">
+          <div className="flex justify-center sm:justify-start items-center gap-[20px]">
             <div className="text-black cursor-pointer bg-[#fff] text-[20px] p-[10px] rounded-full">
               <FaTiktok />
             </div>

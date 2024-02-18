@@ -5,7 +5,7 @@ const Topvar = () => {
   return (
     <div className="bg-[#1A1A1A]">
       <div className="fotogrit-container">
-        <div className="flex items-center justify-between rubik  h-[100px] px-[8px]">
+        <div className="top-bar-content-group flex items-center justify-between rubik  h-[100px] px-[8px]">
           <div className="flex items-center gap-[48px]">
             <div className="w-[72px] h-[85.5px]">
               <Link to="/">
@@ -22,11 +22,11 @@ const Topvar = () => {
               </h3>
             </div>
           </div>
-          <div className="flex items-center justify-center gap-[8px]">
-            <button className="btn text-[#7D7D7D] border-[#A46E40] bg-[#1A1A1A] px-[28px] py-[12px] uppercase">
+          <div className="top-button-group flex items-center justify-center gap-[8px]">
+            <button className="btn top-bar-button text-[#7D7D7D] border-[#A46E40] bg-[#1A1A1A] px-[28px] py-[12px] uppercase">
               Sign Up
             </button>
-            <button className="btn px-[36px] py-[12px] bg-[#A46E40] border-[#A46E40] text-[#FFF] uppercase">
+            <button className="btn top-bar-button px-[36px] py-[12px] bg-[#A46E40] border-[#A46E40] text-[#FFF] uppercase">
               Login
             </button>
           </div>
