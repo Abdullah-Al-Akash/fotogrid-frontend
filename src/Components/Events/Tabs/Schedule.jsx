@@ -36,7 +36,10 @@ const Schedule = () => {
         <TableWrapper>
           <table className="table-auto table table-ui">
             <tr className="bg-[#f2f2f2] font-medium text-[#7D7D7D]">
-              <td rowSpan="2" className="border-b w-[88px] z-[999999999] bg-[#F2F2F2] ">
+              <td
+                rowSpan="2"
+                className="border-b w-[88px] z-[999999999] bg-[#F2F2F2] "
+              >
                 <button className="flex items-center justify-center gap-[10px] text-center w-full px-[8px] py-[16px]">
                   <span>Event Name</span>{" "}
                   <img src="/Arrow.png" alt="drop down" />
