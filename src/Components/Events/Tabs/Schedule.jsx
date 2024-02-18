@@ -13,7 +13,7 @@ const Schedule = () => {
   return (
     <div className="flex flex-col gap-[16px]">
       <div className="flex flex-col md:flex-row gap-[15px] md:gap-0 md:justify-between md:items-center">
-        <div className="flex gap-[16px]">
+        <div className="flex gap-[16px] flex-wrap">
           <Dropdown options={ScheduleBoyAndGirl} label="KU 12 Girl" />
           <Dropdown options={ScheduleStandingGender} label="Male" />
           <Dropdown options={ScheduleMonth} label="Jan 12 2024" />
@@ -32,7 +32,7 @@ const Schedule = () => {
         <TableWrapper>
           <table className="table-auto table table-ui">
             <tr className="bg-[#f2f2f2] font-medium text-[#7D7D7D]">
-              <td rowSpan="2" className="border-b w-[88px] z-40 bg-[#F2F2F2]">
+              <td rowSpan="2" className="border-b w-[88px] z-[999999999] bg-[#F2F2F2] ">
                 <button className="flex items-center justify-center gap-[10px] text-center w-full px-[8px] py-[16px]">
                   <span>Event Name</span>{" "}
                   <img src="/Arrow.png" alt="drop down" />

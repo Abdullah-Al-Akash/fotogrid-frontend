@@ -86,9 +86,9 @@ const PlayersCard = () => {
         return (
           <div
             key={_id}
-            className="sm:h-[460px] sm:w-[316px] mx-auto bg-[#E5D5C9] rounded-t-[6px]"
+            className="md:h-[460px] md:w-[316px] h-full flex flex-col mx-auto bg-[#E5D5C9] rounded-t-[6px]"
           >
-            <div className="relative sm:h-[60%]">
+            <div className="relative sm:h-[60%] h-full">
               <div className="pt-[10px] md:pt-[24px] px-[10px] md:px-[24px]">
                 <img
                   className="sm:h-[242px] sm:w-[242px] mx-auto object-contain"
@@ -97,7 +97,7 @@ const PlayersCard = () => {
                 />
               </div>
               {itsYou ? (
-                <p className="absolute top-[6px] right-[50%] whitespace-nowrap opacity-[77%] px-[16px] py-[4px] rounded-[100px] bg-[#A46E40] translate-x-[50%] montserrat font-medium text-[12px] text-[#FFFFFF]">
+                <p className="absolute top-[6px] right-[50%] whitespace-nowrap opacity-[77%] px-[16px] py-[4px] rounded-[100px] bg-[#A46E40] translate-x-[50%] montserrat font-medium text-[10px] md:text-[12px] text-[#FFFFFF]">
                   This is me. Please link to my ID
                 </p>
               ) : (
@@ -106,10 +106,10 @@ const PlayersCard = () => {
             </div>
             <div
               style={{ clipPath: "polygon(0 0, 100% 25%, 100% 100%, 0 100%)" }}
-              className="sm:h-[40%] bg-[#1A1A1A] rounded-b-[6px]"
+              className="md:h-[40%] h-full bg-[#1A1A1A] rounded-b-[6px]"
             >
-              <div className="pb-[24px] px-[24px] text-white pt-[45px] flex flex-col justify-between items-start">
-                <div className="flex items-center h-full">
+              <div className="pb-[24px] px-[24px] text-white pt-[45px] flex flex-col justify-between items-start ">
+                <div className="flex items-center h-full flex-wrap">
                   <div className="relative">
                     <img src={jersey} alt="" />
                     <p className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-[24px] bebas-Neue">
@@ -131,7 +131,7 @@ const PlayersCard = () => {
                     }
                   </div>
                 </div>
-                <div className="mt-[16px] flex flex-col sm:flex-row gap-[10px] items-start sm:items-center">
+                <div className="mt-[16px] flex flex-col sm:flex-row gap-[10px] items-start sm:items-center flex-wrap">
                   {isCaptain === true && (
                     <button
                       className={`px-[16px] py-[8px] rounded-full montserrat bg-[#419066]`}

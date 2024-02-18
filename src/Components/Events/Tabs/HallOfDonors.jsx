@@ -64,7 +64,7 @@ const HallOfDonors = () => {
     <div className="flex flex-col">
       <div className="">
         <div className="flex flex-col md:flex-row gap-[15px] md:gap-0 md:justify-between md:items-center">
-          <div className="flex gap-[16px]">
+          <div className="flex gap-[16px] flex-wrap">
             <Dropdown options={HallOfDonorsKu12Girl} label="KU 12 Girl" />
             <Dropdown options={HallOfDonorsGender} label="Male" />
           </div>
@@ -78,22 +78,25 @@ const HallOfDonors = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-12 gap-[24px] mt-[16px]">
-        <div className="md:col-span-8 col-span-12 border  rounded-[6px]">
+      <div className="grid md:grid-cols-12 grid-cols-1 gap-[24px] mt-[16px]">
+        <div className="md:col-span-8 border  rounded-[6px]">
           <div className="p-[24px]">
-            <h2 className="mb-[8px] text-[24px] bebas-Neue">
+            <h2 className="mb-[8px] text-[24px] bebas-Neue text-center lg:text-start">
               Platinum Sponsors
             </h2>
-            <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-1 gap-[16px]">
+            <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[16px]">
               {platinumArray?.map((platinum, i) => {
                 const { image, name } = platinum || {};
                 return (
-                  <div key={i} className="p-[16px] bg-[#E8E8E8] rounded-[6px]">
+                  <div
+                    key={i}
+                    className="p-[16px] bg-[#E8E8E8] rounded-[6px] w-[160px] mx-auto"
+                  >
                     <div
                       style={{
                         boxShadow: "0px 1px 1px 0px rgba(46, 46, 48, 0.44)",
                       }}
-                      className="bg-[#fff] rounded-full p-[21px] h-[115px] border-[4px] border-[#CCC] mb-[16px] flex justify-center items-center object-contain"
+                      className="bg-[#fff] rounded-full w-[129px] h-[129px] mx-auto border-[4px] border-[#CCC] mb-[16px] flex justify-center items-center object-contain "
                     >
                       <img
                         src={image}
@@ -110,17 +113,20 @@ const HallOfDonors = () => {
             </div>
           </div>
           <div className="p-[24px]">
-            <h2 className="mb-[8px] text-[24px] bebas-Neue">Gold Sponsors</h2>
-            <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-1 gap-[16px]">
+            <h2 className="mb-[8px] text-[24px] bebas-Neue text-center lg:text-start">Gold Sponsors</h2>
+            <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[16px]">
               {goldArray?.map((platinum, i) => {
                 const { image, name } = platinum || {};
                 return (
-                  <div key={i} className="p-[16px] bg-[#EDDDC0] rounded-[6px]">
+                  <div
+                    key={i}
+                    className="p-[16px] bg-[#EDDDC0] rounded-[6px] w-[160px] mx-auto"
+                  >
                     <div
                       style={{
                         boxShadow: "0px 1px 1px 0px rgba(46, 46, 48, 0.44)",
                       }}
-                      className="bg-[#fff] rounded-full p-[21px] h-[115px] border-[4px] border-[#D1AE61] mb-[16px] flex justify-center items-center "
+                      className="bg-[#fff] rounded-full w-[129px] h-[129px] mx-auto border-[4px] border-[#D1AE61] mb-[16px] flex justify-center items-center "
                     >
                       <img
                         src={image}
@@ -137,7 +143,7 @@ const HallOfDonors = () => {
             </div>
           </div>
         </div>
-        <div className="md:col-span-4 col-span-12 border p-[24px] rounded-[6px]">
+        <div className="md:col-span-4 border p-[24px] rounded-[6px]">
           <h2 className="text-[24px] bebas-Neue">
             Individual Sponsors / Donors
           </h2>

@@ -11,7 +11,7 @@ const EventsList = () => {
   return (
     <div className="fotogrit-container mb-[12px]">
       <div className="mt-[16px] mb-[24px]">
-        <div className="flex items-center gap-[24px]">
+        <div className="flex items-center flex-wrap gap-[24px]">
           <Dropdown options={eventsListGameOptions} label="Basketball" />
           <Dropdown options={eventsListMonth} label="January 2024" />
           <Dropdown options={eventsListKu12Girl} label="KU 12 Girl" />
