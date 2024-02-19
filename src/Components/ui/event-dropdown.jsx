@@ -11,7 +11,7 @@ import {
 } from "./drop-down";
 import { useLocation, useNavigate } from "react-router-dom";
 
-export default function EventDropdown() {
+export default function EventDropdown({ NavToggleDrawer }) {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
 
@@ -54,6 +54,7 @@ export default function EventDropdown() {
             onClick={() => {
               handleOptionClick("Event list");
               redirect("/events");
+              NavToggleDrawer()
             }}
             className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
             role="menuitem"
@@ -67,6 +68,7 @@ export default function EventDropdown() {
             onClick={() => {
               handleOptionClick("Event Details");
               redirect("/event-details");
+              NavToggleDrawer()
             }}
             className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
             role="menuitem"

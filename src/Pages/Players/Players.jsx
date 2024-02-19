@@ -1,9 +1,9 @@
-import TopVarForLogIn from "../../Shared/Topvar/TopVarForLogIn";
+// import TopVarForLogIn from "../../Shared/Topvar/TopVarForLogIn";
 import PlayersComponents from "./../../Components/Players/PlayersComponents";
 const Players = () => {
   return (
     <>
-      <TopVarForLogIn></TopVarForLogIn>
+      {/* <TopVarForLogIn></TopVarForLogIn> */}
       <PlayersComponents />
     </>
   );

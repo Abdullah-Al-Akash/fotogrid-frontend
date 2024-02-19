@@ -10,7 +10,7 @@ const ResultsAndStanding = () => {
     <div className="flex flex-col gap-[16px]">
       <div className="my-[8px]">
         <div className="flex flex-col md:flex-row items-start justify-between md:justify-start md:items-center gap-[24px]">
-          <div className="flex flex-wrap items-center gap-[24px]">
+          <div className="flex flex-col sm:flex-row w-full flex-wrap sm:items-center gap-[24px]">
             <Dropdown options={ResultsStandingKU10} label="KU 10" />
             <Dropdown options={ResultsStandingGender} label="Male" />
           </div>

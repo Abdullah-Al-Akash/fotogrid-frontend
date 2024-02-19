@@ -11,11 +11,27 @@ const EventsList = () => {
   return (
     <div className="fotogrit-container mb-[12px]">
       <div className="mt-[16px] mb-[24px]">
-        <div className="flex items-center flex-wrap gap-[24px]">
-          <Dropdown white={true} options={eventsListGameOptions} label="Basketball" />
-          <Dropdown white={true} options={eventsListMonth} label="January 2024" />
-          <Dropdown white={true} options={eventsListKu12Girl} label="KU 12 Girl" />
-          <Dropdown white={true} options={eventsListJakartaOption} label="Jakarta" />
+        <div className="flex sm:flex-row flex-col  sm:items-center flex-wrap gap-[24px] w-full">
+          <Dropdown
+            white={true}
+            options={eventsListGameOptions}
+            label="Basketball"
+          />
+          <Dropdown
+            white={true}
+            options={eventsListMonth}
+            label="January 2024"
+          />
+          <Dropdown
+            white={true}
+            options={eventsListKu12Girl}
+            label="KU 12 Girl"
+          />
+          <Dropdown
+            white={true}
+            options={eventsListJakartaOption}
+            label="Jakarta"
+          />
         </div>
       </div>
       <div className="flex flex-col gap-[12px]">

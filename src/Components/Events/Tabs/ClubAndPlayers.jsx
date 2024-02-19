@@ -11,7 +11,7 @@ const ClubAndPlayers = () => {
     <div className="flex flex-col gap-[16px]">
       <div className="mx-[15px]">
         <div className="flex flex-col md:flex-row items-start justify-between md:justify-start md:items-center gap-[24px] py-[8px]">
-          <div className="flex flex-wrap items-center gap-[24px]">
+          <div className="flex flex-col sm:flex-row w-full flex-wrap sm:items-center gap-[24px]">
             <Dropdown options={ClubPlayersKU10} label="KU 10" />
             <Dropdown options={ClubPlayersGender} label="Male" />
           </div>

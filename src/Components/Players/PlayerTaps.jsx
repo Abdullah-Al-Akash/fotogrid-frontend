@@ -56,7 +56,7 @@ const PlayerTaps = ({ tab, setTab }) => {
                   Social Media
                 </p>
               </div>
-              <div className="md:hidden ms-3 ">
+              <div className="md:hidden sm:ms-3 mx-[16px] sm:mx-0">
                 <PlayerDropdownTap tab={tab} setTab={setTab} />
               </div>
             </div>

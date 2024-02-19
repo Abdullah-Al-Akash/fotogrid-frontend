@@ -64,8 +64,8 @@ const HallOfDonors = () => {
   return (
     <div className="flex flex-col">
       <div className="">
-        <div className="flex flex-col md:flex-row gap-[15px] md:gap-0 md:justify-between items-start ">
-          <div className="flex gap-[16px] flex-wrap w-full">
+        <div className="flex flex-col sm:flex-row gap-[15px] md:gap-0 md:justify-between items-start w-full">
+          <div className="flex gap-[16px] flex-col sm:flex-row flex-wrap w-full">
             <Dropdown options={HallOfDonorsKu12Girl} label="KU 12 Girl" />
             <Dropdown options={HallOfDonorsGender} label="Male" />
           </div>
@@ -117,7 +117,9 @@ const HallOfDonors = () => {
             </div>
           </div>
           <div className="p-[24px]">
-            <h2 className="mb-[8px] text-[24px] bebas-Neue text-center lg:text-start">Gold Sponsors</h2>
+            <h2 className="mb-[8px] text-[24px] bebas-Neue text-center lg:text-start">
+              Gold Sponsors
+            </h2>
             <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[16px]">
               {goldArray?.map((platinum, i) => {
                 const { image, name } = platinum || {};
