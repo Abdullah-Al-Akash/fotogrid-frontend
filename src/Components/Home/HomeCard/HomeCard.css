@@ -18,9 +18,7 @@
 }
 
 .mid-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
   flex: 1 0 0;
 }
 
@@ -68,23 +66,6 @@
   /* 171.429% */
 }
 
-@media only screen and (max-width: 1004px) and (min-width: 363px) {
-  .mid-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* flex: 1 0 0; */
-  }
-
-  .score {
-    line-height: 30px;
-  }
-
-  .final {
-    line-height: 10px;
-  }
-}
 
 @media only screen and (max-width: 363px) and (min-width: 0px) {
   .top-bar-button {
@@ -93,37 +74,13 @@
     line-height: 0px !important;
   }
 
-  .card-content {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .mid-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* flex: 1 0 0; */
-  }
-
-  .score {
-    line-height: 30px;
-  }
-
-  .final {
-    line-height: 10px;
-  }
-
-  .footer-download-group {
-    display: flex;
-    flex-direction: column;
-  }
   .team-list-card-Heading {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
   }
+
   .team-list-card-Heading h2 {
     font-size: 25px;
   }

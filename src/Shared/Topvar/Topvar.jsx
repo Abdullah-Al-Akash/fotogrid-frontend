@@ -36,9 +36,9 @@ const Topvar = () => {
   );
   return (
     <div className="bg-[#1A1A1A]">
-      <div className="fotogrit-container">
-        <div className="top-bar-content-group flex items-center justify-between rubik  h-[100px] px-[8px]">
-          <div className="flex items-center gap-[48px] order-1 ">
+      <div className="px-[10px]">
+        <div className="top-bar-content-group flex items-center justify-between rubik  h-[100px] md:px-[8px]">
+          <div className="flex items-center gap-[10px] md:gap-[48px] order-1 ">
             <div className="w-[72px] h-[85.5px]">
               <Link to="/">
                 <img
@@ -48,8 +48,8 @@ const Topvar = () => {
                 />
               </Link>
             </div>
-            <div className="w-full hidden md:block">
-              <h3 className="tracking-widest text-[#D9C2AB]">
+            <div className="w-full block">
+              <h3 className="text-[16px] md:text-[24px] text-[#D9C2AB]">
                 Making memories of those giving their best
               </h3>
             </div>
@@ -75,7 +75,9 @@ const Topvar = () => {
                 >
                   <GrFormClose />
                 </button>
-                <div className="list-none pt-[60px] flex flex-col gap-3 pb-[16px]">{drawerMenu}</div>
+                <div className="list-none pt-[60px] flex flex-col gap-3 pb-[16px]">
+                  {drawerMenu}
+                </div>
                 <hr />
                 <div className="pt-[16px] flex gap-[16px]">
                   <button className="rounded-[8px] top-bar-button px-[36px] py-[12px] bg-[#A46E40] border-[#A46E40] text-[#FFF] uppercase cursor-pointer bebas-Neue">

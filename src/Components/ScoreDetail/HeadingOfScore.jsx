@@ -41,10 +41,10 @@ const HeadingOfScore = () => {
           <div>
             <h3 className="match-number">EC2738</h3>
           </div>
-          <div className="flex justify-between py-[12px] px-[24px]">
-            <h3 className="ms-auto match-detail">Filari Court</h3>
-            <h3 className="mx-auto match-detail">Sat, 2 Dec 2023</h3>
-            <h3 className="me-auto match-detail">08:00 - 10:00</h3>
+          <div className="flex flex-col   md:flex-row justify-between py-[12px] px-[24px]">
+            <h3 className="md:ms-auto match-detail">Filari Court</h3>
+            <h3 className="md:mx-auto match-detail">Sat, 2 Dec 2023</h3>
+            <h3 className="md:me-auto match-detail">08:00 - 10:00</h3>
           </div>
         </div>
       </div>
@@ -56,7 +56,7 @@ const HeadingOfScore = () => {
         </h3>
         <div className="flex justify-between items-center md:p-[16px]">
           <img className="w-[56px] h-[56px] " src={TeamLogo} alt="" />
-          <h3 className="match-headline">Roar vs Warriors - KU 12</h3>
+          <h3 className="match-headline md:text-[36px] text-[25px] text-center md:text-start">Roar vs Warriors - KU 12</h3>
           <img className="w-[56px] h-[56px]" src={TeamLogo} alt="" />
         </div>
       </div>
