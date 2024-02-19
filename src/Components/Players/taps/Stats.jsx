@@ -42,7 +42,7 @@ const Stats = () => {
         </div>
         <div className="mt-[8px]">
           <TableWrapper>
-            <table className="rounded-[2px] w-full mx-auto table-ui table">
+            <table className="rounded-[2px] w-full mx-auto table">
               <thead className="bg-primary ">
                 <tr>
                   <th className="border-r-[1px]  text-[14px] md:w-[317px] bg-[#F2F2F2]  text-[#7D7D7D] p-[24px] border-t-0 border-l-0 border border-[#E8E8E8]">
