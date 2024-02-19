@@ -81,9 +81,11 @@ const PlayerInfo = () => {
             {/* Recent in Game Fotogrit Pins  */}
             <div className="p-[24px] border-t-[1px] border-b-[1px] border-l-[1px] border-0 border-[#333333]">
               <h2 className="uppercase text-[24px] leading-[32px] text-white bebas-Neue">
-                Media Highlight
+                Media Highlight 21
               </h2>
-              <div className="flex md:flex-row flex-wrap gap-[24px] items-center sm: mt-[6px]  w-full sm:w-auto">
+              <div
+                className="md:flex grid grid-cols-3 md:flex-row  gap-[24px] items-center sm:mt-[6px]  w-full sm:w-auto"
+              >
                 {media?.map((card, i) => {
                   const { image, youtube } = card || {};
                   return (
@@ -96,8 +98,12 @@ const PlayerInfo = () => {
                         />
                       </div>
                       {youtube == true ? (
-                        <div className="sm:w-[32px] w-[40px] h-[40px] sm:h-[32px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] cursor-pointer">
-                          <img className="h-full w-full" src={youtubeImage} alt="" />
+                        <div className="sm:w-[32px]  sm:h-[32px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] cursor-pointer">
+                          <img
+                            className="h-full w-full"
+                            src={youtubeImage}
+                            alt=""
+                          />
                         </div>
                       ) : (
                         <></>

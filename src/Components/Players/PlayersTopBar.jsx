@@ -90,9 +90,12 @@ const PlayersTopBar = () => {
             className="w-full text-[#7D7D7D] bg-transparent h-full placeholder:text-[#7D7D7D] px-[48px] border-none outline-none"
             placeholder="Search Individual Player"
             value={searchQuery}
-            // onBlur={() => setSearchResults([])}
+            onBlur={() => setSearchResults([])}
             onChange={(e) => setSearchQuery(e.target.value)}
             onKeyUp={handleSearch}
+            onFocus={() => {
+              setSearchResults(players);
+            }}
           />
         </div>
         {/* Display search results */}
@@ -123,9 +126,17 @@ const PlayersTopBar = () => {
                       </h2>
                       <div className="flex justify-start sm:justify-center md:justify-start lg:justify-center items-start sm:items-center whitespace-nowrap text-[14px] gap-0 sm:gap-[7px] flex-col sm:flex-row md:flex-col lg:flex-row md:items-start lg:items-center">
                         <p>{ClubName}</p>
-                        <img className="hidden sm:inline md:hidden lg:inline" src={line} alt="" />
+                        <img
+                          className="hidden sm:inline md:hidden lg:inline"
+                          src={line}
+                          alt=""
+                        />
                         <p>{jerseyNo}</p>
-                        <img className="hidden sm:inline md:hidden lg:inline" src={line} alt="" />
+                        <img
+                          className="hidden sm:inline md:hidden lg:inline"
+                          src={line}
+                          alt=""
+                        />
                         <p>{shooting}</p>
                       </div>
                     </div>
