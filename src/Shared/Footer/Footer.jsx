@@ -69,6 +69,7 @@ const Footer = () => {
               </svg>
             </div> */}
           </div>
+          {/* Old Icon */}
           {/* <div className="flex md:ms-auto">
             <div className="cursor-pointer">
               <svg
