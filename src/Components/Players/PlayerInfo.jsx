@@ -83,7 +83,9 @@ const PlayerInfo = () => {
               <h2 className="uppercase text-[24px] leading-[32px] text-white bebas-Neue">
                 Media Highlight 21
               </h2>
-              <div className="md:flex grid grid-cols-3 md:flex-row  gap-[24px] items-center sm:mt-[6px]  w-full sm:w-auto">
+              <div
+                className="md:flex grid grid-cols-3 md:flex-row  gap-[24px] items-center sm:mt-[6px]  w-full sm:w-auto"
+              >
                 {media?.map((card, i) => {
                   const { image, youtube } = card || {};
                   return (

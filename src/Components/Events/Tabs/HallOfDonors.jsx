@@ -64,8 +64,8 @@ const HallOfDonors = () => {
   return (
     <div className="flex flex-col">
       <div className="">
-        <div className="flex flex-col md:flex-row gap-[15px] md:gap-0 md:justify-between items-start ">
-          <div className="flex gap-[16px] flex-wrap w-full">
+        <div className="flex flex-col sm:flex-row gap-[15px] md:gap-0 md:justify-between items-start w-full">
+          <div className="flex gap-[16px] flex-col sm:flex-row flex-wrap w-full">
             <Dropdown options={HallOfDonorsKu12Girl} label="KU 12 Girl" />
             <Dropdown options={HallOfDonorsGender} label="Male" />
           </div>
@@ -88,27 +88,27 @@ const HallOfDonors = () => {
             <h2 className="mb-[8px] text-[24px] bebas-Neue text-center lg:text-start">
               Platinum Sponsors
             </h2>
-            <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[16px]">
+            <div className="grid xl:grid-cols-5 lg:grid-cols-4  grid-cols-2 gap-[16px]">
               {platinumArray?.map((platinum, i) => {
                 const { image, name } = platinum || {};
                 return (
                   <div
                     key={i}
-                    className="p-[16px] bg-[#E8E8E8] rounded-[6px] w-[160px] mx-auto"
+                    className="p-[16px] bg-[#E8E8E8] rounded-[6px] sm:w-[160px] w-full mx-auto"
                   >
                     <div
                       style={{
                         boxShadow: "0px 1px 1px 0px rgba(46, 46, 48, 0.44)",
                       }}
-                      className="bg-[#fff] rounded-full w-[129px] h-[129px] mx-auto border-[4px] border-[#CCC] mb-[16px] flex justify-center items-center object-contain "
+                      className="bg-[#fff] rounded-full w-[70px] h-[70px] sm:w-[129px] sm:h-[129px] mx-auto border-[4px] border-[#CCC] mb-[16px] flex justify-center items-center object-contain "
                     >
                       <img
                         src={image}
-                        className="w-[88px] mx-auto object-cover"
+                        className="sm:w-[88px] w-[50px] mx-auto object-cover"
                         alt=""
                       />
                     </div>
-                    <h2 className=" bebas-Neue text-[20px] text-center">
+                    <h2 className=" bebas-Neue sm:text-[20px] text-center text-[12px]">
                       {name}
                     </h2>
                   </div>
@@ -117,28 +117,31 @@ const HallOfDonors = () => {
             </div>
           </div>
           <div className="p-[24px]">
-            <h2 className="mb-[8px] text-[24px] bebas-Neue text-center lg:text-start">Gold Sponsors</h2>
-            <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[16px]">
+            <h2 className="mb-[8px] text-[24px] bebas-Neue text-center lg:text-start">
+              Gold Sponsors
+            </h2>
+            {/*   ,  */}
+            <div className="grid xl:grid-cols-5 lg:grid-cols-4  grid-cols-2 gap-[16px]">
               {goldArray?.map((platinum, i) => {
                 const { image, name } = platinum || {};
                 return (
                   <div
                     key={i}
-                    className="p-[16px] bg-[#EDDDC0] rounded-[6px] w-[160px] mx-auto"
+                    className="p-[16px] bg-[#EDDDC0] rounded-[6px] sm:w-[160px] w-full mx-auto"
                   >
                     <div
                       style={{
                         boxShadow: "0px 1px 1px 0px rgba(46, 46, 48, 0.44)",
                       }}
-                      className="bg-[#fff] rounded-full w-[129px] h-[129px] mx-auto border-[4px] border-[#D1AE61] mb-[16px] flex justify-center items-center "
+                      className="bg-[#fff] rounded-full w-[70px] h-[70px] sm:w-[129px] sm:h-[129px] mx-auto border-[4px] border-[#D1AE61] mb-[16px] flex justify-center items-center object-contain "
                     >
                       <img
                         src={image}
-                        className="w-[88px] mx-auto object-cover"
+                        className="sm:w-[88px] w-[50px] mx-auto object-cover"
                         alt=""
                       />
                     </div>
-                    <h2 className=" bebas-Neue text-[20px] text-center">
+                    <h2 className=" bebas-Neue sm:text-[20px] text-center text-[12px]">
                       {name}
                     </h2>
                   </div>

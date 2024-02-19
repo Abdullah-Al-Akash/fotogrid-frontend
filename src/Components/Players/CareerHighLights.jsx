@@ -63,7 +63,7 @@ const CareerHighLights = () => {
           </tbody>
         </table>
       </TableWrapper>
-      <div className="mt-[32px] mb-[16px] flex flex-wrap gap-[16px] items-center">
+      <div className="mt-[32px] mb-[16px] flex sm:flex-row flex-col flex-wrap gap-[16px] sm:items-center w-full">
         <DarkDropdown options={defaultOptions} label="Age Group" />
         <DarkDropdown options={defaultOptions} label="Event Group" />
         <DarkDropdown options={defaultOptions} label="Months" />

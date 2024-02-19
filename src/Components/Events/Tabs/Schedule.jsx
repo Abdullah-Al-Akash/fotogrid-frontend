@@ -14,7 +14,7 @@ const Schedule = () => {
   return (
     <div className="flex flex-col gap-[16px]">
       <div className="flex flex-col md:flex-row gap-[15px] md:gap-0 md:justify-between items-start w-full">
-        <div className="flex gap-[16px] flex-wrap w-full sm:w-auto">
+        <div className="flex gap-[16px] flex-col sm:flex-row flex-wrap w-full sm:w-auto">
           <Dropdown options={ScheduleBoyAndGirl} label="KU 12 Girl" />
           <Dropdown options={ScheduleStandingGender} label="Male" />
           <Dropdown options={ScheduleMonth} label="Jan 12 2024" />

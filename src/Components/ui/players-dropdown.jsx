@@ -11,7 +11,7 @@ import {
 } from "./drop-down";
 import { useLocation, useNavigate } from "react-router-dom";
 
-export default function PlayerDropdown() {
+export default function PlayerDropdown({ NavToggleDrawer }) {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
 
@@ -68,6 +68,7 @@ export default function PlayerDropdown() {
             onClick={() => {
               handleOptionClick("Leader board");
               redirect("/leader-board");
+              NavToggleDrawer();
             }}
             className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
             role="menuitem"
@@ -81,6 +82,7 @@ export default function PlayerDropdown() {
             onClick={() => {
               handleOptionClick("Individual Players");
               redirect("/players");
+              NavToggleDrawer();
             }}
             className="block px-4 py-2 text-sm text-gray-700 w-full text-left hover:bg-gray-100"
             role="menuitem"
