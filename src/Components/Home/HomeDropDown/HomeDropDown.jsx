@@ -12,11 +12,9 @@ import Filter from "../../Players/Filter";
 const HomeDropDown = () => {
   return (
     <div
-      className="flex flex-col md:flex-row md:gap-0 md:justify-between items-start px-[8px] my-[16px] gap-[15px] 
-
-    "
+      className="flex flex-col md:flex-row md:gap-0 md:justify-between items-start px-[8px] my-[16px] gap-[15px]"
     >
-      <div className="flex md:flex md:flex-row flex-wrap flex-col w-full gap-[16px]">
+      <div className="hidden sm:flex md:flex-row flex-wrap flex-col w-full gap-[16px]">n
         <Dropdown white={true} options={HomeGameOptions} label="Basketball" />
         <Dropdown white={true} options={HomeMonth} label="January 2024" />
         <Dropdown
