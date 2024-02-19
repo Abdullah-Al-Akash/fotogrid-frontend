@@ -80,7 +80,7 @@ const FotogritPins = () => {
       </h2>
 
       <div className="sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-[16px]">
-        {fotogritPins.map((item) => {
+        {fotogritPins.map((item, i) => {
           const { image, label, _id } = item;
           return (
             <article
@@ -89,7 +89,7 @@ const FotogritPins = () => {
             >
               <div>
                 <img
-                  className="w-[160px] border-[3px] border-[#CCCCCC] rounded-full mx-auto mt-[18px]  "
+                  className="w-[160px] border-[3px] border-[#CCCCCC] rounded-full mx-auto mt-[18px] "
                   src={image}
                   alt="icon"
                 />
@@ -104,7 +104,13 @@ const FotogritPins = () => {
                     <LuInfo />
                   </h2>
                   {open === _id && (
-                    <h2 className="text-[14px] whitespace-nowrap absolute top-[30px] py-[6px] px-[12px] bg-[#fff] z-[9999] lg:left-[50%] -translate-x-[90%] lg:-translate-x-[50%] leading-[24px] rounded-[8px]">
+                    <h2
+                      className={`text-[14px] whitespace-nowrap absolute  py-[6px] px-[12px] bg-[#fff] z-[9999]  leading-[24px] rounded-[8px] ${
+                        i === 5 || i === 10
+                          ? "top-[30px] lg:left-[50%] -translate-x-[90%] "
+                          : "top-[30px] lg:left-[50%] -translate-x-[90%] lg:-translate-x-[50%]"
+                      }`}
+                    >
                       Score 50 points in one single game
                     </h2>
                   )}

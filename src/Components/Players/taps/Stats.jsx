@@ -13,15 +13,15 @@ import Filter from "../Filter";
 const Stats = () => {
   return (
     <div>
-      <div className="flex py-[24px]  bebas-Neue lg:flex-row flex-col justify-between items-center ">
-        <div className="flex flex-col md:flex-row items-center bebas-Neue gap-[24px] py-[8px]">
+      <div className="flex py-[24px]  bebas-Neue lg:flex-row flex-col justify-between">
+        <div className="flex flex-col md:flex-row  bebas-Neue gap-[24px] py-[8px]">
           <Dropdown options={CakraSaktiCup} label="Cakra Sakti Cup 2023" />
           <Dropdown options={JakartaOption} label="Jakarta" />
           <Dropdown options={genderOptions} label="Male" />
           <Dropdown options={Month} label="January" />
         </div>
-        <div className="flex items-center gap-[8px]">
-          <div className="h-[46px] mt-[18px] lg:mt-auto relative border-[#CCCCCC] overflow-hidden border-[1px] rounded-[6px] bg-white w-[90%] md:w-[70%] lg:max-w-[300px]">
+        <div className="flex items-center gap-[8px] w-full md:w-auto">
+          <div className="h-[46px] relative border-[#CCCCCC] overflow-hidden border-[1px] rounded-[6px] bg-white lg:max-w-[300px] w-[calc(100%-58px)]">
             <FiSearch className=" text-[#636363] text-[18px] bebas-Neue left-[17px] absolute top-1/2 -translate-y-1/2" />
             <input
               className="w-full h-full placeholder:text-[#636363] px-[48px] border-none outline-none"
