@@ -4,6 +4,7 @@ import line from "../../../public/Footer/line.png";
 const Footer = () => {
   return (
     <div className="bg-[#1A1A1A]">
+      {/* Footer Content */}
       <div className="fotogrit-container py-[12px]">
         <footer className="flex flex-wrap md:gap-[48px] gap-[20px] flex-row justify-between">
           <div className=" flex items-center cursor-pointer gap-[12px]">
