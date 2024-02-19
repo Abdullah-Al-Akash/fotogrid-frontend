@@ -48,7 +48,7 @@ const PlayerInfo = () => {
             <PlayerPersonalInfo />
           </div>
           <div className="col-span-3">
-            <div className="flex md:flex-row flex-col justify-between items-center  border-l-[1px] border-b-[1px] border-[#333333] p-[24px]">
+            <div className="flex md:flex-row flex-col justify-between items-start md:items-center w-full  border-l-[1px] border-b-[1px] border-[#333333] p-[24px]">
               <h2 className="uppercase text-[48px] leading-[60px] bebas-Neue text-[#F2F2F2]">
                 Avery FreeMan
               </h2>
@@ -58,16 +58,16 @@ const PlayerInfo = () => {
                 <span className="ml-[9px]">12</span>
               </div>
             </div>
-            <div className="border-l-[1px] border-b-[1px] border-[#333333] bebas-Neue flex md:flex-row flex-col justify-evenly items-center">
-              <div className="px-[30px] py-[18px] flex gap-[6px] items-center ">
+            <div className="border-l-[1px] border-b-[1px] border-[#333333] bebas-Neue flex md:flex-row flex-col justify-evenly items-start md:items-center">
+              <div className="px-[30px] py-[18px] flex gap-[6px] items-center w-full sm:w-auto">
                 <img className="w-[28px] h-[28px]" src="/ball.png" alt="ball" />
                 <h3 className="text-[48px] leading-[60px] text-[#F2F2F2]">6</h3>
                 <p className="text-[20px] text-[#ABABAB] leading-[20px]">
                   Recorded Events <br /> Played
                 </p>
               </div>
-              <hr className=" w-[30%] h-[1px] md:w-[1px] md:h-[60px] bg-[#4A4A4A] " />
-              <div className="px-[30px] py-[18px] flex gap-[6px] items-center  ">
+              <hr className="w-[100%] h-[1px] md:w-[1px] md:h-[60px] bg-[#4A4A4A]" />
+              <div className="px-[30px] py-[18px] flex gap-[6px] items-center">
                 <img className="w-[28px] h-[28px]" src="/cup.png" alt="cup" />
                 <h3 className="text-[48px] leading-[60px] text-[#F2F2F2]">
                   45
@@ -83,21 +83,21 @@ const PlayerInfo = () => {
               <h2 className="uppercase text-[24px] leading-[32px] text-white bebas-Neue">
                 Media Highlight 21
               </h2>
-              <div className="flex md:flex-row gap-[24px] items-center mt-[6px]">
+              <div className="flex md:flex-row flex-wrap gap-[24px] items-center sm: mt-[6px]  w-full sm:w-auto">
                 {media?.map((card, i) => {
                   const { image, youtube } = card || {};
                   return (
-                    <div key={i} className="relative">
-                      <div className="">
+                    <div key={i} className="relative w-full sm:w-auto">
+                      <div className="w-full sm:w-auto">
                         <img
                           src={image}
-                          className="w-[120px] h-full rounded-[6px]"
+                          className="sm:w-[120px] w-full h-full rounded-[6px]"
                           alt=""
                         />
                       </div>
                       {youtube == true ? (
-                        <div className="w-[32px] h-[32px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] cursor-pointer">
-                          <img src={youtubeImage} alt="" />
+                        <div className="sm:w-[32px] w-[40px] h-[40px] sm:h-[32px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] cursor-pointer">
+                          <img className="h-full w-full" src={youtubeImage} alt="" />
                         </div>
                       ) : (
                         <></>

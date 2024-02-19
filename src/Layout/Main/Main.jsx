@@ -12,7 +12,7 @@ const Main = () => {
       <div className="md:min-h-[calc(100vh-172px)]">
         <Outlet></Outlet>
       </div>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </div>
   );
 };

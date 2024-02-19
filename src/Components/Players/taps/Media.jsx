@@ -34,15 +34,15 @@ const Media = () => {
         <h2 className="uppercase text-[24px] md:text-[36px] bebas-Neue bebas-Neue leading-[44px] text-[#1A1A1A]">
           Avery Freeman Media Highlights
         </h2>
-        <div className="flex  bebas-Neue lg:flex-row flex-col justify-between items-center">
-          <div className="flex flex-col md:flex-row items-center bebas-Neue gap-[24px] py-[8px] mt-[8px]">
+        <div className="flex  bebas-Neue lg:flex-row flex-col justify-between items-start md:items-center w-full mt-[8px]">
+          <div className="flex flex-col md:flex-row items-start md:items-center bebas-Neue gap-[24px] py-[8px]">
             <Dropdown options={CakraSaktiCup} label="Cakra Sakti Cup 2023" />
             <Dropdown options={JakartaBali} label="Jakarta Bali" />
             <Dropdown options={genderOptions} label="Male" />
             <Dropdown options={Month} label="January" />
           </div>
-          <div className="flex justify-between items-center gap-[8px]">
-            <div className="h-[46px]  lg:mt-auto relative border-[#CCCCCC] overflow-hidden border-[1px] rounded-[6px] bg-white w-full md:w-[272px] lg:max-w-[300px]">
+          <div className="flex justify-between items-center gap-[8px] w-full sm:w-auto">
+            <div className="h-[46px] lg:mt-auto relative border-[#CCCCCC] overflow-hidden border-[1px] rounded-[6px] bg-white w-[calc(100%-58px)] ">
               <FiSearch className=" text-[#636363] text-[18px]  left-[17px] absolute top-1/2 -translate-y-1/2" />
               <input
                 className="w-full h-full placeholder:text-[#636363] px-[48px] border-none outline-none"
@@ -63,7 +63,7 @@ const Media = () => {
         <small className="rubik text-[20px] text-[#4A4A4A]">
           Warriors vs AirOne KU 12 PA
         </small>
-        <div className="sm:grid sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-[16px] mt-[16px]">
+        <div className="grid sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-[16px] mt-[16px]">
           {players.map((item, key) => {
             return (
               <article key={key} className="relative  w-full">
