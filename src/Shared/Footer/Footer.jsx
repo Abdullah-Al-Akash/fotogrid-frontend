@@ -4,12 +4,15 @@ import line from "../../../public/Footer/line.png";
 const Footer = () => {
   return (
     <div className="bg-[#1A1A1A]">
-      <div className="fotogrit-container py-[12px] ">
-        <footer className="flex gap-[48px] flex-row justify-between">
+      <div className="fotogrit-container py-[12px]">
+        <footer className="flex flex-wrap md:gap-[48px] gap-[20px] flex-row justify-between">
           <div className=" flex items-center cursor-pointer gap-[12px]">
+            <h3 className="text-[20px] xs:text-[20px] leading-[20px] whitespace-nowrap md:text-[24px] bebas-Neue font-normal md:leading-10 text-[#CCC]">
+              Download App
+            </h3>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="md:w-[28px] w-[16px] xs:w-[20px]"
+              className="md:w-[24px] w-[20px]"
               viewBox="0 0 28 34"
               fill="none"
             >
@@ -27,7 +30,7 @@ const Footer = () => {
 
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="md:w-[28px] w-[16px] xs:w-[20px]"
+              className="md:w-[24px] w-[20px]"
               viewBox="0 0 34 36"
               fill="none"
             >
@@ -49,10 +52,7 @@ const Footer = () => {
               />
             </svg>
 
-            <h3 className="text-[16px] xs:text-[20px] leading-[20px] whitespace-nowrap md:text-[32px] bebas-Neue font-normal md:leading-10 text-[#CCC]">
-              Download App
-            </h3>
-            <div className="p-[6.4px] bg-[#4A4A4A] rounded-[3.2px]">
+            {/* <div className="p-[6.4px] bg-[#4A4A4A] rounded-[3.2px]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="md:w-[28px] w-[16px] xs:w-[20px]"
@@ -67,7 +67,7 @@ const Footer = () => {
                   strokeLinejoin="round"
                 />
               </svg>
-            </div>
+            </div> */}
           </div>
           {/* <div className="flex md:ms-auto">
             <div className="cursor-pointer">
@@ -145,13 +145,13 @@ const Footer = () => {
           </div> */}
           <div className="flex justify-center sm:justify-start items-center gap-[12px]">
             <div className="text-black cursor-pointer bg-[#fff]  p-[8px] rounded-full">
-              <FaTiktok className="text-[10px] xs:text-[16px] " />
+              <FaTiktok className="w-[20px] h-[20px]" />
             </div>
             <div className="bg-pink-500 cursor-pointer p-[8px] text-white rounded-2xl">
-              <AiFillInstagram className="text-[10px]  xs:text-[16px]" />
+              <AiFillInstagram className="w-[20px] h-[20px]" />
             </div>
             <div className="text-white cursor-pointer bg-red-700  p-[8px] rounded-full">
-              <FaYoutube className="text-[10px]  xs:text-[16px]" />
+              <FaYoutube className="w-[20px] h-[20px]" />
             </div>
           </div>
         </footer>
