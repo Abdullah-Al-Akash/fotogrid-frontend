@@ -12,7 +12,7 @@ import { FiSearch } from "react-icons/fi";
 const PlayerTopbar = () => {
   return (
     <section className="flex flex-col lg:flex-row justify-between items-start gap-[16px] w-full">
-      <div className="flex flex-col sm:flex-row gap-5 flex-wrap w-full">
+      <div className="hidden sm:flex flex-col sm:flex-row gap-5 flex-wrap w-full">
         <Dropdown options={gameOptions} label="Basketball" />
         <Dropdown options={boyAndGirl} label="KU 12 Girl" />
         <Dropdown options={genderOptions} label="Male" />
