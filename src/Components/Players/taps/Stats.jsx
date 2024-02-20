@@ -14,7 +14,7 @@ const Stats = () => {
   return (
     <div>
       <div className="flex py-[24px]  bebas-Neue lg:flex-row flex-col justify-between">
-        <div className="flex flex-col md:flex-row  bebas-Neue gap-[24px] py-[8px]">
+        <div className="sm:flex hidden flex-col md:flex-row  bebas-Neue gap-[24px] py-[8px]">
           <Dropdown options={CakraSaktiCup} label="Cakra Sakti Cup 2023" />
           <Dropdown options={JakartaOption} label="Jakarta" />
           <Dropdown options={genderOptions} label="Male" />
@@ -112,7 +112,7 @@ const Stats = () => {
               </thead>
               <tbody>
                 <tr>
-                  <td className="px-[17px] border-t-0 bg-white border-l-0 border-b-0 text-center py-[20px] text-[#1A1A1A] leading-[24px] text-[14px] border-r-[1px] border border-[#E8E8E8] whitespace-nowrap">
+                  <td className="px-[17px] border-t-0 bg-white border-l-0 border-b-0 text-center py-[20px] text-[#1A1A1A] leading-[24px] text-[14px] border-r-[1px] border border-[#E8E8E8] break-words sm:whitespace-nowrap">
                     LIL |Li'l Warriors Cup 2020 KU-8
                   </td>
                   <td className="px-[17px] text-center py-[20px] border-b-0 text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">

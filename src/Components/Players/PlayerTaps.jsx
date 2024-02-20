@@ -13,7 +13,7 @@ const PlayerTaps = ({ tab, setTab }) => {
       <div className="bg-[#F2F2F2]  pb-[84px] w-full">
         <div className="">
           <div className="border-b">
-            <div className="bg-[#FBFBFB]  rounded-t-[8px]">
+            <div className=" bg-[#f2f2f2] rounded-t-[8px]">
               <div className="md:flex fotogrit-container hidden items-start gap-[16px] px-[24px] text-[20px] text-[#7D7D7D] rubik ">
                 <p
                   onClick={() => setTab("tab1")}

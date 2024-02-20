@@ -21,7 +21,7 @@ const PlayerDropdownTap = ({ tab, setTab }) => {
         <div className="flex flex-col w-full sm:block">
           <button
             type="button"
-            className="rounded-[6px] border-gray-300 shadow-md py-[10px] my-[8px] px-[16px] bg-white text-sm text-gray-700 hover:bg-gray-50  flex item-center justify-between text-[16px] font-semibold"
+            className="rounded-[6px] border-gray-300 shadow-md py-[10px] my-[8px] px-[16px] text-sm hover:bg-gray-50  flex item-center justify-between text-[16px] font-semibold bg-white text-[#A46E40]"
             onClick={toggleDropdown}
           >
             {selectedOption ? selectedOption : "Stats"}
