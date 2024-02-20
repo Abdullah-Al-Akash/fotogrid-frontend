@@ -65,7 +65,7 @@ const TotalScoreTable = () => {
         </table>
       </TableWrapper>
       <h3 className="text-[32px]  py-[16px] mt-[8px] leading-5 font-normal bebas-Neue">
-        Team Name
+        Roar
       </h3>
       <MainScoreTable></MainScoreTable>
     </div>

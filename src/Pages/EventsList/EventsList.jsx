@@ -1,3 +1,4 @@
+import { IoSearchOutline } from "react-icons/io5";
 import EventListCard from "../../Components/EventList/EventListCard";
 import Dropdown from "../../Components/ui/dropdown";
 import {
@@ -6,6 +7,7 @@ import {
   eventsListKu12Girl,
   eventsListMonth,
 } from "../../constants/player.constants";
+import Filter from "../../Components/Players/Filter";
 
 const EventsList = () => {
   return (
@@ -33,6 +35,18 @@ const EventsList = () => {
             label="Jakarta"
           />
         </div>
+      </div>
+      <div className="md:hidden flex items-center gap-[8px] py-[10px] w-full md:w-auto ">
+        <div className="border w-[calc(100%-58px)]  flex items-center py-[8px] px-[16px] rounded-[4px] bg-white">
+          {/*  */}
+          <IoSearchOutline className="mt-[2px] me-[8px]" />
+          <input
+            type="text"
+            placeholder="Search here"
+            className="outline-none bg-transparent"
+          />
+        </div>
+        <Filter></Filter>
       </div>
       <div className="flex flex-col gap-[12px]">
         <EventListCard />
