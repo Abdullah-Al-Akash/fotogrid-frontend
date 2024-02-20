@@ -13,7 +13,7 @@ const EventsList = () => {
   return (
     <div className="fotogrit-container mb-[12px]">
       <div className="mt-[16px] mb-[24px]">
-        <div className="flex sm:flex-row flex-col  sm:items-center flex-wrap gap-[24px] w-full">
+        <div className="hidden sm:flex sm:flex-row flex-col  sm:items-center flex-wrap gap-[24px] w-full">
           <Dropdown
             white={true}
             options={eventsListGameOptions}

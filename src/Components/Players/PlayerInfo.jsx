@@ -58,16 +58,18 @@ const PlayerInfo = () => {
                 <span className="ml-[9px]">12</span>
               </div>
             </div>
-            <div className="sm:border-l-[1px] border-b-[1px] border-[#333333] bebas-Neue flex flex-row  justify-between items-start sm:items-center">
+            <div className="sm:border-l-[1px] border-b-[1px] border-[#333333] bebas-Neue flex flex-row  justify-around items-start sm:items-center">
               <div className="sm:px-[30px] py-[18px] flex gap-[6px] items-center md:w-auto w-[50%] border-r md:border-r-0 border-[#4A4A4A]">
                 <img className="w-[28px] h-[28px]" src="/ball.png" alt="ball" />
-                <h3 className="text-[48px] leading-[60px]  text-[#F2F2F2]">6</h3>
+                <h3 className="text-[48px] leading-[60px]  text-[#F2F2F2]">
+                  6
+                </h3>
                 <p className="text-[14px] sm:text-[20px] text-[#ABABAB] leading-[20px]">
                   Recorded Events <br /> Played
                 </p>
               </div>
               <span className="w-[100%] hidden md:block h-[1px] md:w-[1px] md:h-[60px] md:bg-[#4A4A4A]  text-[#4A4AA]" />
-              <div className="sm:px-[30px] py-[18px] flex gap-[6px] items-center w-[50%] m md:w-auto mx-auto sm:mx-0">
+              <div className=" sm:ps-[30px] sm:pe-[30px] ps-[10px] py-[18px] flex gap-[6px] items-center w-[50%] m md:w-auto mx-auto sm:mx-0">
                 <img className="w-[28px] h-[28px]" src="/cup.png" alt="cup" />
                 <h3 className="text-[48px] leading-[60px]  text-[#F2F2F2]">
                   6
