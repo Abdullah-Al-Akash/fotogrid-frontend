@@ -104,6 +104,16 @@ export const HomeGameOptions = [
   { label: "Cricket", value: "Cricket" },
   { label: "Football", value: "Football" },
 ];
+export const HomeQ3 = [
+  { label: "Q3", value: "Q3" },
+  { label: "Q3", value: "Q3" },
+  { label: "Q3", value: "Q3" },
+];
+export const ScoreRoarVsWarriosKU12PA = [
+  { label: "Roar vs Warrios KU 12 PA", value: "Roar vs Warrios KU 12 PA" },
+  { label: "Roar vs Warrios KU 12 PA", value: "Roar vs Warrios KU 12 PA" },
+  { label: "Roar vs Warrios KU 12 PA", value: "Roar vs Warrios KU 12 PA" },
+];
 export const HomeMonth = [
   { label: "January 2024", value: "January 2024" },
   { label: "February 2024", value: "February 2024" },

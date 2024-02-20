@@ -2,12 +2,37 @@ import "./HeadingOfScore.css";
 import { CiShare2 } from "react-icons/ci";
 import { FiPrinter } from "react-icons/fi";
 import TeamLogo from "../../assets/ScoreTable/logo.png";
+import Dropdown from "../ui/dropdown";
+import {
+  HomeQ3,
+  ScoreRoarVsWarriosKU12PA,
+} from "../../constants/player.constants";
 
 const HeadingOfScore = () => {
   return (
     <div>
+      <div className="sm:hidden flex flex-col gap-[12px] my-[16px]">
+        <Dropdown
+          white={true}
+          options={ScoreRoarVsWarriosKU12PA}
+          label="Roar vs Warrios KU 12 PA"
+        />
+        <Dropdown white={true} options={HomeQ3} label="Q3" />
+      </div>
       <div className="md:flex items-center justify-between">
-        <div>
+        <div className="flex sm:block justify-start items-center gap-[6px]">
+          <div className="flex sm:hidden items-center gap-[8px]">
+            <img
+              className="w-[20px] h-[20px]"
+              src={TeamLogo}
+              alt=""
+            />
+            <img
+              className="w-[20px] h-[20px]"
+              src={TeamLogo}
+              alt=""
+            />
+          </div>
           <h1 className="md:text-[48px] text-[24px] font-normal bebas-Neue leading-5">
             Fotogrit Simplified Box Score
           </h1>
@@ -25,14 +50,14 @@ const HeadingOfScore = () => {
       </div>
       {/* Match Summary */}
       <div className="md:grid grid-cols-4 my-[16px]">
-        <div className="col-span-1 flex md:justify-start justify-between">
+        <div className="col-span-1 hidden sm:flex md:justify-start justify-between">
           <img
-            className="w-[80px] h-[80px] mx-[12px] my-[12px]"
+            className="w-[56px] h-[56px] mx-[12px] my-[12px]"
             src={TeamLogo}
             alt=""
           />
           <img
-            className="w-[80px] h-[80px] mx-[12px] my-[12px]"
+            className="w-[56px] h-[56px] mx-[12px] my-[12px]"
             src={TeamLogo}
             alt=""
           />
@@ -55,11 +80,11 @@ const HeadingOfScore = () => {
           Kejuaraan Provinsi Bola Basket DKI Jakarta 2023
         </h3>
         <div className="flex justify-between items-center md:p-[16px] gap-[8px]">
-          <img className="w-[56px] h-[56px]" src={TeamLogo} alt="" />
+          <img className="w-[80px] h-[80px]" src={TeamLogo} alt="" />
           <h3 className="match-headline md:text-[36px] text-[18px] text-center md:text-start">
             Roar vs Warriors - KU 12
           </h3>
-          <img className="w-[56px] h-[56px]" src={TeamLogo} alt="" />
+          <img className="w-[80px] h-[80px]" src={TeamLogo} alt="" />
         </div>
       </div>
     </div>

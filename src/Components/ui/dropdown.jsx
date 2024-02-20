@@ -20,13 +20,13 @@ export default function Dropdown({ options, label, white }) {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="hidden md:block">
+    <div className="w-full sm:w-auto">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <button
             className={`h-[48px] rounded-[6px]  border-[#E8E8E8] border shadow-sm py-[8px] px-[16px] ${
               white === true ? "bg-[#fff]" : "bg-[#F2F2F2]"
-            } text-sm text-gray-700  flex items-center justify-between text-[16px] font-bold outline-none montserrat`}
+            } text-sm text-gray-700  flex items-center justify-between text-[16px] font-bold outline-none montserrat w-full sm:w-auto`}
             onClick={() => setIsOpen(!isOpen)}
           >
             {selectedOption ? selectedOption : label}

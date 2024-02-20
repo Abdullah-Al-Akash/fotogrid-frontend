@@ -54,7 +54,7 @@ const Topvar = () => {
               </h3>
             </div>
           </div>
-          <div className="z-[999999999999999999] sm:hidden block order-3 sm:order-2">
+          <div className="z-[999999999999999999] sm:hidden block order-3 sm:order-2 text-[#A46E40]">
             <button
               onClick={NavToggleDrawer}
               className="text-[24px] text-white"

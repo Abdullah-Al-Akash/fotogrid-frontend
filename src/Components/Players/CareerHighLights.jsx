@@ -1,11 +1,11 @@
-import { defaultOptions } from "../../constants/player.constants";
+import { CakraSaktiCup, Month, defaultOptions } from "../../constants/player.constants";
 import DarkDropdown from "../ui/dark-dropdown";
 
 import TableWrapper from "../ui/table-wrapper";
 
 const CareerHighLights = () => {
   return (
-    <div className="border-l-[1px] border-[#333333] p-[30px]">
+    <div className="sm:border-l-[1px] border-[#333333] px-[0px] sm:px-[30px] p-[30px]">
       <h2 className="uppercase mb-[18px] text-[#F2F2F2] bebas-Neue text-[24px] leading-[32px]">
         Career highlights
       </h2>
@@ -64,9 +64,9 @@ const CareerHighLights = () => {
         </table>
       </TableWrapper>
       <div className="mt-[32px] mb-[16px] flex sm:flex-row flex-col flex-wrap gap-[16px] sm:items-center w-full">
-        <DarkDropdown options={defaultOptions} label="Age Group" />
-        <DarkDropdown options={defaultOptions} label="Event Group" />
-        <DarkDropdown options={defaultOptions} label="Months" />
+        <DarkDropdown options={defaultOptions} label="KU 12 Girl" />
+        <DarkDropdown options={CakraSaktiCup} label="Cakra Sakti Cup 2023" />
+        <DarkDropdown options={Month} label="January" />
       </div>
       <TableWrapper
         minWidth="984px"
