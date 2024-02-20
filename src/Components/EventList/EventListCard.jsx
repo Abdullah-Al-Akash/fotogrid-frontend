@@ -13,8 +13,12 @@ const EventListCard = () => {
           </div>
           <h2 className="bebas-Neue text-[32px]">Cakra Sakti Cup 2023</h2>
         </div>
-        <h2 className="md:text-[24px] text-[16px] bebas-Neue text-[#7D7D7D] order-2">Tampa (FL)</h2>
-        <h2 className="md:text-[24px] text-[16px] bebas-Neue text-[#7D7D7D] order-3">June 16, 2024</h2>
+        <h2 className="md:text-[24px] text-[16px] bebas-Neue text-[#7D7D7D] order-2">
+          Tampa (FL)
+        </h2>
+        <h2 className="md:text-[24px] text-[16px] bebas-Neue text-[#7D7D7D] order-3">
+          June 16, 2024
+        </h2>
         <Link to="/event-details" className="md:order-4 order-5">
           <button className="uppercase px-[36px] py-[10px] rounded-[4px] bg-[#A46E40] text-[#fff] order-3 md:order-1 text-[20px] bebas-Neue mb-[10px]">
             View Details

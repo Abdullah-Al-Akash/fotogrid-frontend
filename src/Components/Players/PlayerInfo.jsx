@@ -66,7 +66,7 @@ const PlayerInfo = () => {
                   Recorded Events <br /> Played
                 </p>
               </div>
-              <hr className="w-[100%] h-[1px] md:w-[1px] md:h-[60px] bg-[#4A4A4A]" />
+              <span className="w-[100%] h-[1px] md:w-[1px] md:h-[60px] md:bg-[#4A4A4A]  text-[#4A4AA]" />
               <div className="px-[30px] py-[18px] flex gap-[6px] items-center">
                 <img className="w-[28px] h-[28px]" src="/cup.png" alt="cup" />
                 <h3 className="text-[48px] leading-[60px] text-[#F2F2F2]">
@@ -83,9 +83,7 @@ const PlayerInfo = () => {
               <h2 className="uppercase text-[24px] leading-[32px] text-white bebas-Neue">
                 Media Highlight 21
               </h2>
-              <div
-                className="md:flex grid grid-cols-3 md:flex-row  gap-[24px] items-center sm:mt-[6px]  w-full sm:w-auto"
-              >
+              <div className="md:flex grid grid-cols-3 md:flex-row  gap-[24px] items-center sm:mt-[6px]  w-full sm:w-auto">
                 {media?.map((card, i) => {
                   const { image, youtube } = card || {};
                   return (
@@ -117,7 +115,7 @@ const PlayerInfo = () => {
               <h2 className="uppercase text-[24px] leading-[32px] text-white bebas-Neue">
                 Fotogrit Pins Highlight
               </h2>
-              <div className="  sm:gap-[18px] sm:grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 ">
+              <div className="gap-[18px] grid grid-cols-3 md:grid-cols-4 lg:grid-cols-8 ">
                 <img
                   className="w-[200px] border-[3px] border-[#636363] rounded-full mx-auto mt-[18px] sm:w-full "
                   src="/pins/Logo1.png"

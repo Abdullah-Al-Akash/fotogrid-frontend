@@ -25,7 +25,7 @@ const HeadingOfScore = () => {
       </div>
       {/* Match Summary */}
       <div className="md:grid grid-cols-4 my-[16px]">
-        <div className="col-span-1 flex md:justify-start justify-center">
+        <div className="col-span-1 flex md:justify-start justify-between">
           <img
             className="w-[80px] h-[80px] mx-[12px] my-[12px]"
             src={TeamLogo}
@@ -41,22 +41,24 @@ const HeadingOfScore = () => {
           <div>
             <h3 className="match-number">EC2738</h3>
           </div>
-          <div className="flex flex-col   md:flex-row justify-between py-[12px] px-[24px]">
-            <h3 className="md:ms-auto match-detail">Filari Court</h3>
-            <h3 className="md:mx-auto match-detail">Sat, 2 Dec 2023</h3>
-            <h3 className="md:me-auto match-detail">08:00 - 10:00</h3>
+          <div className="flex flex-col md:flex-row py-[12px] px-[24px]">
+            <h3 className="md:ms-auto mx-auto match-detail">Filari Court</h3>
+            <h3 className="md:mx-auto mx-auto match-detail">Sat, 2 Dec 2023</h3>
+            <h3 className="md:me-auto mx-auto match-detail">08:00 - 10:00</h3>
           </div>
         </div>
       </div>
       {/*  */}
       <hr />
       <div className="p-[16px]">
-        <h3 className="match-subheading text-center p-[16px]">
+        <h3 className="match-subheading text-center p-[16px] text-[20px] md:text-[24px]">
           Kejuaraan Provinsi Bola Basket DKI Jakarta 2023
         </h3>
-        <div className="flex justify-between items-center md:p-[16px]">
-          <img className="w-[56px] h-[56px] " src={TeamLogo} alt="" />
-          <h3 className="match-headline md:text-[36px] text-[25px] text-center md:text-start">Roar vs Warriors - KU 12</h3>
+        <div className="flex justify-between items-center md:p-[16px] gap-[8px]">
+          <img className="w-[56px] h-[56px]" src={TeamLogo} alt="" />
+          <h3 className="match-headline md:text-[36px] text-[18px] text-center md:text-start">
+            Roar vs Warriors - KU 12
+          </h3>
           <img className="w-[56px] h-[56px]" src={TeamLogo} alt="" />
         </div>
       </div>
