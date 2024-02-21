@@ -80,8 +80,8 @@ const Schedule = () => {
               </td>
             </tr>
             <tr className="bg-[#f2f2f2] font-medium text-[#7D7D7D]">
-              <td className="border-r border-b py-[12px] px-[16px] text-[14px] leading-[24px]">
-                <button className="flex items-center justify-center gap-[10px] text-center w-full px-[8px] py-[16px]">
+              <td className=" relative !z-[-1] border-r border-b py-[12px] px-[16px] text-[14px] leading-[24px]">
+                <button className="  flex items-center justify-center gap-[10px] text-center w-full px-[8px] py-[16px]">
                   <span>Name</span> <img src="/Arrow.png" alt="drop down" />
                 </button>
               </td>
@@ -95,7 +95,7 @@ const Schedule = () => {
                   <span>Win/Lose</span> <img src="/Arrow.png" alt="drop down" />
                 </button>
               </td>
-              <td className="border-r border-b py-[12px] px-[16px] text-[14px] leading-[24px]">
+              <td className="relative z-[-1px] border-r border-b py-[12px] px-[16px] text-[14px] leading-[24px]">
                 <button className="flex items-center justify-center gap-[10px] text-center w-full px-[8px] py-[16px]">
                   <span>Name</span> <img src="/Arrow.png" alt="drop down" />
                 </button>
