@@ -5,7 +5,7 @@ import WarriorsTable from "./WarriorsTable";
 
 const ScoreDetail = () => {
   return (
-    <div className="mx-[8px] my-[16px] bg-white md:p-[24px] p-[10px]">
+    <div className="md:mx-[8px] mx-[0] my-[16px] bg-white md:p-[24px] p-[10px]">
       <HeadingOfScore></HeadingOfScore>
       <TotalScoreTable></TotalScoreTable>
       <WarriorsTable></WarriorsTable>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaArrowDown, FaArrowUp } from "react-icons/fa";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 // eslint-disable-next-line no-unused-vars, react/prop-types
 const PlayerDropdownTap = ({ tab, setTab }) => {
@@ -14,18 +14,19 @@ const PlayerDropdownTap = ({ tab, setTab }) => {
     setSelectedOption(option);
     setIsOpen(false);
   };
+  //
   return (
     <div>
-      <div className="relative inline-block text-left mt-[16px] montserrat">
-        <div>
+      <div className="relative flex flex-col w-full sm:inline-block text-left montserrat">
+        <div className="flex flex-col w-full sm:block">
           <button
             type="button"
-            className="rounded-[6px] border-gray-300 shadow-sm py-[10px] my-[8px] px-[16px] bg-white text-sm text-gray-700 hover:bg-gray-50  flex item-center justify-between text-[16px]"
+            className="rounded-[6px] border-gray-300 shadow-md py-[10px] my-[8px] px-[16px] text-sm hover:bg-gray-50  flex item-center justify-between text-[16px] font-semibold bg-white text-[#A46E40]"
             onClick={toggleDropdown}
           >
-            {selectedOption ? selectedOption : "Select an option"}
+            {selectedOption ? selectedOption : "Stats"}
             <span className={`mt-[2px] ms-[26px]`}>
-              {isOpen ? <FaArrowUp /> : <FaArrowDown />}
+              {isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
             </span>
           </button>
         </div>

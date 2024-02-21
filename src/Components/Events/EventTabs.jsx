@@ -61,7 +61,7 @@ const EventTabs = ({ tab, setTab }) => {
                 Hall of Donors
               </p>
             </div>
-            <div className="md:hidden ms-3 ">
+            <div className="md:hidden sm:ms-3  p-[15px] sm:p-[0px]">
               <DropDownTab tab={tab} setTab={setTab} />
             </div>
           </div>

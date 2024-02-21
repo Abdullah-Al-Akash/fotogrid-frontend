@@ -13,14 +13,14 @@ import Filter from "../../Players/Filter";
 const Schedule = () => {
   return (
     <div className="flex flex-col gap-[16px]">
-      <div className="flex flex-col md:flex-row gap-[15px] md:gap-0 md:justify-between md:items-center">
-        <div className="flex gap-[16px] flex-wrap">
+      <div className="flex flex-col md:flex-row gap-[15px] md:gap-0 md:justify-between items-start w-full">
+        <div className="flex gap-[16px] flex-col sm:flex-row flex-wrap w-full sm:w-auto">
           <Dropdown options={ScheduleBoyAndGirl} label="KU 12 Girl" />
           <Dropdown options={ScheduleStandingGender} label="Male" />
           <Dropdown options={ScheduleMonth} label="Jan 12 2024" />
         </div>
-        <div className="flex items-center gap-[8px]">
-          <div className="border flex items-center py-[8px] px-[16px] rounded-[4px]">
+        <div className="flex items-center gap-[8px] w-full sm:w-auto">
+          <div className="border flex items-center py-[8px] px-[16px] w-[calc(100%-58px)] rounded-[4px]">
             <IoSearchOutline className="mt-[2px] me-[8px]" />
             <input
               type="text"

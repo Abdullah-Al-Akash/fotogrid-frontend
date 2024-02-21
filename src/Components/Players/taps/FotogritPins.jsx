@@ -11,11 +11,10 @@ import logo8 from "../../../../public/fotogrit-pins/logo8.png";
 import logo9 from "../../../../public/fotogrit-pins/logo9.png";
 import logo10 from "../../../../public/fotogrit-pins/logo10.png";
 import logo11 from "../../../../public/fotogrit-pins/logo11.png";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 
 const FotogritPins = () => {
   const [open, setOpen] = useState("");
-  const tooltipRef = useRef(null);
 
   const fotogritPins = [
     {
@@ -71,18 +70,6 @@ const FotogritPins = () => {
     },
   ];
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (tooltipRef.current && !tooltipRef.current.contains(event.target)) {
-        setOpen("");
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
   const handleTooltipToggle = (id) => {
     setOpen(open === id ? null : id);
   };
@@ -93,7 +80,7 @@ const FotogritPins = () => {
       </h2>
 
       <div className="sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-[16px]">
-        {fotogritPins.map((item) => {
+        {fotogritPins.map((item, i) => {
           const { image, label, _id } = item;
           return (
             <article
@@ -102,20 +89,27 @@ const FotogritPins = () => {
             >
               <div>
                 <img
-                  className="w-[160px] border-[3px] border-[#CCCCCC] rounded-full mx-auto mt-[18px]  "
+                  className="w-[160px] border-[3px] border-[#CCCCCC] rounded-full mx-auto mt-[18px] "
                   src={image}
                   alt="icon"
                 />
               </div>
               <div className="absolute top-[15px] right-[15px] text-[20px] text-[#7D7D7D]">
-                <div className="relative cursor-pointer">
-                  <h2 onClick={() => handleTooltipToggle(_id)}>
+                <div className="relative">
+                  <h2
+                    className="cursor-pointer"
+                    onMouseLeave={() => handleTooltipToggle(null)}
+                    onMouseEnter={() => handleTooltipToggle(_id)}
+                  >
                     <LuInfo />
                   </h2>
                   {open === _id && (
                     <h2
-                      ref={tooltipRef}
-                      className="text-[14px] whitespace-nowrap absolute top-[30px] py-[6px] px-[12px] bg-[#fff] z-[9999] left-[50%] -translate-x-[50%] leading-[24px] rounded-[8px]"
+                      className={`text-[14px] whitespace-nowrap absolute  py-[6px] px-[12px] bg-[#fff] z-[9999]  leading-[24px] rounded-[8px] ${
+                        i === 5 || i === 10
+                          ? "top-[30px] lg:left-[50%] -translate-x-[90%] "
+                          : "top-[30px] lg:left-[50%] -translate-x-[90%] lg:-translate-x-[50%]"
+                      }`}
                     >
                       Score 50 points in one single game
                     </h2>

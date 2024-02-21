@@ -1,8 +1,12 @@
-# React + Vite
+Fotogri Frontend Project:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+To run the project you can follow these instructions:
 
-Currently, two official plugins are available:
+- First, clone the project
+- Then open the project and go to your command prompt
+- run npm i command
+- After completing the npm package install then run this command npm run dev
+- copy your localhost server link and go to your browser
+- Finally, paste your localhost link in the URL and press enter.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Thank You
