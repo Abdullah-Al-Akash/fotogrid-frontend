@@ -4,7 +4,13 @@ const MainScoreTable = () => {
   return (
     <div>
       <TableWrapper>
-        <table border={1} className="table-auto  table-ui">
+        <table
+          border={1}
+          className="table-auto  table-ui w-full"
+          cellPadding="0"
+          cellSpacing={0}
+          
+        >
           <tr>
             <td
               className="text-[14px] bg-white border-b-[1px] border-r-[1px] text-[#7D7D7D] p-[16px] text-center whitespace-nowrap"
@@ -253,82 +259,82 @@ const MainScoreTable = () => {
             <td className="px-[16px]  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px] border-r-[1px]"></td>
             <td className="px-[16px]  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px] border-r-[1px]"></td>
             <td className="px-[16px]  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px] border-r-[1px]"></td>
-            <td className="px-[16px]  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px] border-r-[1px]"></td>
+            <td className="px-[16px]  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]"></td>
           </tr>
 
           {/* table footer */}
           <tr>
             <td
               className={`px-[16px] border-r-[1px]
-              bg-white  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px] border-b-[1px]`}
+              bg-white  py-[6px] text-[#1A1A1A] text-[14px]`}
               colSpan={3}
             >
               Total
             </td>
             <td
-              className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]"
+              className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]"
               colSpan={3}
             >
               Daffarel
             </td>
             <td
-              className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]"
+              className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]"
               colSpan={2}
             >
               07:35
             </td>
-            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]">
               6/13
             </td>
-            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]">
               46,2
             </td>
-            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]">
               6/13
             </td>
-            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]">
               46,2
             </td>
-            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]">
               6/13
             </td>
-            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]">
               46,2
             </td>
-            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]">
               6/13
             </td>
-            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]">
               46,2
             </td>
-            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]">
               4
             </td>
-            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]">
               5
             </td>
-            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]">
               9
             </td>
-            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]">
               5
             </td>
-            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]">
               5
             </td>
-            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]">
               5
             </td>
-            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]">
               5
             </td>
-            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]">
               5
             </td>
-            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]">
               5
             </td>
-            <td className="px-[16px]  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+            <td className="px-[16px]  py-[6px] text-[#1A1A1A] text-[14px]">
               5
             </td>
           </tr>
