@@ -1,290 +1,337 @@
-import React from "react";
 import TableWrapper from "../ui/table-wrapper";
 
 const MainScoreTable = () => {
   return (
-    <div className="mt-[8px]">
+    <div>
       <TableWrapper>
-        <table
-          className="table-ui !w-full mx-auto table-auto"
-          cellSpacing="0"
-          cellPadding="0"
-        >
-          <thead className="bg-primary">
-            <tr>
-              <th className="text-[14px] border-l-0 bg-[#F2F2F2]  text-[#7D7D7D] p-[16px] border border-t-0 border-[#E8E8E8]">
-                Jersey No
-              </th>
-              <th className="text-[14px]  text-[#7D7D7D] p-[16px] border border-t-0 border-[#E8E8E8]">
-                Name
-              </th>
-              <th className="text-[14px]  text-[#7D7D7D] p-[16px] border border-t-0 border-[#E8E8E8]">
-                Min
-              </th>
+        <table border={1} className="table-auto  table-ui">
+          <tr>
+            <td
+              className="text-[14px] bg-white border-b-[1px] border-r-[1px] text-[#7D7D7D] p-[16px] text-center whitespace-nowrap"
+              rowSpan={2}
+              colSpan={3}
+            >
+              Jersey No
+            </td>
+            <td
+              className="text-[14px] border-b-[1px] border-r-[1px] text-[#7D7D7D] p-[16px] text-center"
+              rowSpan={2}
+              colSpan={3}
+            >
+              Name
+            </td>
+            <td
+              className="text-[14px] border-b-[1px] border-r-[1px] text-[#7D7D7D] p-[16px] text-center"
+              rowSpan={2}
+              colSpan={2}
+            >
+              Min
+            </td>
+            <td
+              className="text-[14px] border-b-[1px] border-r-[1px] text-[#7D7D7D] p-[16px] text-center whitespace-nowrap"
+              colSpan={2}
+            >
+              Field Goals
+            </td>
+            <td
+              className="text-[14px] border-b-[1px] border-r-[1px] text-[#7D7D7D] p-[16px] text-center whitespace-nowrap"
+              colSpan={2}
+            >
+              2 Points
+            </td>
+            <td
+              className="text-[14px] border-b-[1px] border-r-[1px] text-[#7D7D7D] p-[16px] text-center whitespace-nowrap"
+              colSpan={2}
+            >
+              3 Points
+            </td>
+            <td
+              className="text-[14px] border-b-[1px] border-r-[1px] text-[#7D7D7D] p-[16px] text-center whitespace-nowrap"
+              colSpan={2}
+            >
+              Free Throws
+            </td>
+            <td
+              className="text-[14px] border-b-[1px] border-r-[1px] text-[#7D7D7D] p-[16px] text-center"
+              colSpan={3}
+            >
+              Rebounds
+            </td>
+            <td
+              className="text-[14px] border-b-[1px] border-r-[1px] text-[#7D7D7D] p-[16px] text-center"
+              rowSpan={2}
+            >
+              AST
+            </td>
+            <td
+              className="text-[14px] border-b-[1px] border-r-[1px] text-[#7D7D7D] p-[16px] text-center"
+              rowSpan={2}
+            >
+              TO
+            </td>
+            <td
+              className="text-[14px] border-b-[1px] border-r-[1px] text-[#7D7D7D] p-[16px] text-center"
+              rowSpan={2}
+            >
+              ST
+            </td>
+            <td
+              className="text-[14px] border-b-[1px] border-r-[1px] text-[#7D7D7D] p-[16px] text-center"
+              rowSpan={2}
+            >
+              FOUIS
+            </td>
+            <td
+              className="text-[14px] border-b-[1px] border-r-[1px] text-[#7D7D7D] p-[16px] text-center"
+              rowSpan={2}
+            >
+              +/-
+            </td>
+            <td
+              className="text-[14px] border-b-[1px] border-r-[1px] text-[#7D7D7D] p-[16px] text-center"
+              rowSpan={2}
+            >
+              EF
+            </td>
+            <td
+              className="text-[14px] border-b-[1px]  text-[#7D7D7D] p-[16px] text-center"
+              rowSpan={2}
+            >
+              EF/MIN
+            </td>
+          </tr>
+          <tr>
+            <td className="text-[14px] relative !z-[-1] border-b-[1px] border-r-[1px] text-[#7D7D7D] p-[16px] text-center">
+              M/A
+            </td>
+            <td className="text-[14px] border-b-[1px] border-r-[1px] text-[#7D7D7D] p-[16px] text-center">
+              %
+            </td>
+            <td className="text-[14px] border-b-[1px] border-r-[1px] text-[#7D7D7D] p-[16px] text-center">
+              M/A
+            </td>
+            <td className="text-[14px] border-b-[1px] border-r-[1px] text-[#7D7D7D] p-[16px] text-center">
+              %
+            </td>
+            <td className="text-[14px] border-b-[1px] border-r-[1px] text-[#7D7D7D] p-[16px] text-center">
+              M/A
+            </td>
+            <td className="text-[14px] border-b-[1px] border-r-[1px] text-[#7D7D7D] p-[16px] text-center">
+              %
+            </td>
+            <td className="text-[14px] border-b-[1px] border-r-[1px] text-[#7D7D7D] p-[16px] text-center">
+              M/A
+            </td>
+            <td className="text-[14px] border-b-[1px] border-r-[1px] text-[#7D7D7D] p-[16px] text-center">
+              %
+            </td>
+            <td className="text-[14px] border-b-[1px] border-r-[1px] text-[#7D7D7D] p-[16px] text-center">
+              OR
+            </td>
+            <td className="text-[14px] border-b-[1px] border-r-[1px] text-[#7D7D7D] p-[16px] text-center">
+              DR
+            </td>
+            <td className="text-[14px] border-b-[1px] border-r-[1px] text-[#7D7D7D] p-[16px] text-center">
+              TOT
+            </td>
+          </tr>
+          {/* table body start here  */}
 
-              <th className="text-[#7D7D7D]   border-[#E8E8E8] border-t-0 text-center border">
-                <th className="p-[16px] !z-0 relative flex justify-center items-center border-b">
-                  Field Goals
-                </th>
-                <tr>
-                  <th className="p-[16px] !z-0 relative w-full">M/A</th>
-                  <th className="border-l !z-0 relative px-[21.9px] w-full">
-                    %
-                  </th>
-                </tr>
-              </th>
-              <th className="text-[#7D7D7D] border-[#E8E8E8] border-t-0 text-center border">
-                <th className="p-[16px] flex !z-0 relative justify-center items-center border-b">
-                  Field Goals
-                </th>
-                <tr>
-                  <th className="p-[16px] !z-0 relative w-full">M/A</th>
-                  <th className="border-l !z-0 relative  px-[21.9px] w-full">
-                    %
-                  </th>
-                </tr>
-              </th>
-              <th className="text-[#7D7D7D] border-[#E8E8E8] border-t-0 text-center border">
-                <th className="p-[16px] !z-0 relative flex justify-center items-center border-b">
-                  Field Goals
-                </th>
-                <tr>
-                  <th className="p-[16px] !z-0 relative w-full">M/A</th>
-                  <th className="border-l !z-0 relative px-[21.9px] w-full">
-                    %
-                  </th>
-                </tr>
-              </th>
-              <th className="text-[#7D7D7D] border-[#E8E8E8] border-t-0 text-center border">
-                <th className="p-[16px] flex !z-0 relative justify-center items-center border-b">
-                  Field Goals
-                </th>
-                <tr>
-                  <th className="p-[16px] !z-0 relative w-full">M/A</th>
-                  <th className="border-l !z-0 relative px-[21.9px] w-full">
-                    %
-                  </th>
-                </tr>
-              </th>
-              <th className="text-[#7D7D7D]  border-[#E8E8E8] border-t-0 text-center border">
-                <th className="p-[16px] !z-0 relative flex justify-center items-center border-b">
-                  Field Goals
-                </th>
-                <tr>
-                  <th className="p-[16px] !z-0 relative  w-full">M/A</th>
-                  <th className="border-l !z-0 relative  px-[26.12px] w-full">
-                    %
-                  </th>
-                  <th className="border-l !z-0 relative  px-[38px] w-full">
-                    %
-                  </th>
-                </tr>
-              </th>
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map((item) => {
+            return (
+              <tr
+                key={item}
+                className={`${item % 2 !== 0 ? "bg-[#f9f7f4]" : ""}`}
+              >
+                <td
+                  className={`px-[16px] border-r-[1px] ${
+                    item % 2 !== 0 ? "bg-[#f9f7f4]" : "bg-white"
+                  }  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px] border-b-[1px]`}
+                  colSpan={3}
+                >
+                  {item}
+                </td>
+                <td
+                  className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]"
+                  colSpan={3}
+                >
+                  Daffarel
+                </td>
+                <td
+                  className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]"
+                  colSpan={2}
+                >
+                  07:35
+                </td>
+                <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+                  6/13
+                </td>
+                <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+                  46,2
+                </td>
+                <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+                  6/13
+                </td>
+                <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+                  46,2
+                </td>
+                <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+                  6/13
+                </td>
+                <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+                  46,2
+                </td>
+                <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+                  6/13
+                </td>
+                <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+                  46,2
+                </td>
+                <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+                  4
+                </td>
+                <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+                  5
+                </td>
+                <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+                  9
+                </td>
+                <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+                  2
+                </td>
+                <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+                  2
+                </td>
+                <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+                  2
+                </td>
+                <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+                  2
+                </td>
+                <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+                  2
+                </td>
+                <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+                  2
+                </td>
+                <td className="px-[16px]  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+                  2
+                </td>
+              </tr>
+            );
+          })}
+          {/* empty table data  */}
+          <tr>
+            <td
+              className="px-[16px] bg-white  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px] border-r-[1px] "
+              colSpan={3}
+            ></td>
+            <td
+              className="px-[16px]  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px] border-r-[1px] opacity-0"
+              colSpan={3}
+            >
+              1
+            </td>
+            <td
+              className="px-[16px]  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px] border-r-[1px]"
+              colSpan={2}
+            ></td>
+            <td className="px-[16px]  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px] border-r-[1px]"></td>
+            <td className="px-[16px]  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px] border-r-[1px]"></td>
+            <td className="px-[16px]  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px] border-r-[1px]"></td>
+            <td className="px-[16px]  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px] border-r-[1px]"></td>
+            <td className="px-[16px]  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px] border-r-[1px]"></td>
+            <td className="px-[16px]  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px] border-r-[1px]"></td>
+            <td className="px-[16px]  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px] border-r-[1px]"></td>
+            <td className="px-[16px]  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px] border-r-[1px]"></td>
+            <td className="px-[16px]  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px] border-r-[1px]"></td>
+            <td className="px-[16px]  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px] border-r-[1px]"></td>
+            <td className="px-[16px]  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px] border-r-[1px]"></td>
+            <td className="px-[16px]  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px] border-r-[1px]"></td>
+            <td className="px-[16px]  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px] border-r-[1px]"></td>
+            <td className="px-[16px]  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px] border-r-[1px]"></td>
+            <td className="px-[16px]  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px] border-r-[1px]"></td>
+            <td className="px-[16px]  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px] border-r-[1px]"></td>
+            <td className="px-[16px]  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px] border-r-[1px]"></td>
+            <td className="px-[16px]  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px] border-r-[1px]"></td>
+          </tr>
 
-              <th className="text-[14px]  text-[#7D7D7D] p-[16px] border border-[#E8E8E8] border-t-0">
-                AST
-              </th>
-              <th className="text-[14px]  text-[#7D7D7D] p-[16px] border border-[#E8E8E8] border-t-0 border-r-0">
-                TO
-              </th>
-              <th className="text-[14px]  text-[#7D7D7D] p-[16px] border border-[#E8E8E8] border-t-0 border-r-0">
-                ST
-              </th>
-              <th className="text-[14px]  text-[#7D7D7D] p-[16px] border border-[#E8E8E8] border-t-0 border-r-0">
-                FOUIS
-              </th>
-              <th className="text-[14px]  text-[#7D7D7D] p-[16px] border border-[#E8E8E8] border-t-0 border-r-0">
-                +/-
-              </th>
-              <th className="text-[14px]  text-[#7D7D7D] p-[16px] border border-[#E8E8E8] border-t-0 border-r-0">
-                EF
-              </th>
-              <th className="text-[14px]  text-[#7D7D7D] p-[16px] border border-[#E8E8E8] border-t-0 border-r-0">
-                EF/MIN
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => {
-              return (
-                <React.Fragment key={item}>
-                  <tr>
-                    <td className="bg-[white]  p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                      1
-                    </td>
-                    <td className="p-[16px]  text-center  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                      Daffarel
-                    </td>
-                    <td className="p-[16px] text-center  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                      07:35
-                    </td>
-
-                    <td className="border">
-                      <tr>
-                        <td className="p-[16px] !z-0 relative border-r text-center  text-[#1A1A1A] leading-[24px] text-[14px]   border-[#E8E8E8] w-full">
-                          6/13
-                        </td>
-                        <td className="p-[16px]  text-center  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] w-full">
-                          46,2
-                        </td>
-                      </tr>
-                    </td>
-                    <td className="border">
-                      <tr>
-                        <td className="p-[16px] !z-0 relative border-r text-center  text-[#1A1A1A] leading-[24px] text-[14px]   border-[#E8E8E8] w-full">
-                          6/13
-                        </td>
-                        <td className="p-[16px] border-r-0 text-center  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] w-full">
-                          46,2
-                        </td>
-                      </tr>
-                    </td>
-                    <td className="border">
-                      <tr>
-                        <td className="p-[16px] !z-0 relative border-r text-center  text-[#1A1A1A] leading-[24px] text-[14px]   border-[#E8E8E8] w-full">
-                          6/13
-                        </td>
-                        <td className="p-[16px] text-center  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] border-r-0 w-full">
-                          46,2
-                        </td>
-                      </tr>
-                    </td>
-                    <td className="border">
-                      <tr>
-                        <td className="p-[16px] border-r !z-0 relative text-center  text-[#1A1A1A] leading-[24px] text-[14px]   border-[#E8E8E8] w-full">
-                          6/13
-                        </td>
-                        <td className="p-[16px] text-center  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] border-r-0 w-full">
-                          46,2
-                        </td>
-                      </tr>
-                    </td>
-                    <td className="border">
-                      <tr>
-                        <td className="p-[16px] !z-0 relative border-r text-center  text-[#1A1A1A] leading-[24px] text-[14px]   border-[#E8E8E8] w-full">
-                          Name
-                        </td>
-                        <td className="p-[16px] border-r text-center  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] w-full">
-                          Score
-                        </td>
-                        <td className="p-[16px] text-center  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] w-full">
-                          Win/Lose
-                        </td>
-                      </tr>
-                    </td>
-                    <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                      1
-                    </td>
-                    <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                      1
-                    </td>
-                    <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                      1
-                    </td>
-                    <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                      1
-                    </td>
-                    <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                      1
-                    </td>
-                    <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                      1
-                    </td>
-                    <td className="p-[16px] border-l-0 border-r-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                      1
-                    </td>
-                  </tr>
-                </React.Fragment>
-              );
-            })}
-
-            <tr>
-              <td className="bg-[white]  p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                Total
-              </td>
-              <td className="p-[16px] text-center  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                Daffarel
-              </td>
-              <td className="p-[16px] text-center  text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                07:35
-              </td>
-
-              <td className="border">
-                <tr>
-                  <td className="p-[16px] !z-0 relative border-r text-center  text-[#1A1A1A] leading-[24px] text-[14px]   border-[#E8E8E8] w-full">
-                    6/13
-                  </td>
-                  <td className="p-[16px]  text-center  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] w-full">
-                    46,2
-                  </td>
-                </tr>
-              </td>
-              <td className="border">
-                <tr>
-                  <td className="p-[16px] !z-0 relative border-r text-center  text-[#1A1A1A] leading-[24px] text-[14px]   border-[#E8E8E8] w-full">
-                    6/13
-                  </td>
-                  <td className="p-[16px] border-r-0 text-center  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] w-full">
-                    46,2
-                  </td>
-                </tr>
-              </td>
-              <td className="border">
-                <tr>
-                  <td className="p-[16px] !z-0 relative border-r text-center  text-[#1A1A1A] leading-[24px] text-[14px]   border-[#E8E8E8] w-full">
-                    6/13
-                  </td>
-                  <td className="p-[16px] text-center  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] border-r-0 w-full">
-                    46,2
-                  </td>
-                </tr>
-              </td>
-              <td className="border">
-                <tr>
-                  <td className="p-[16px] !z-0 relative border-r text-center  text-[#1A1A1A] leading-[24px] text-[14px]   border-[#E8E8E8] w-full">
-                    6/13
-                  </td>
-                  <td className="p-[16px] text-center  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] border-r-0 w-full">
-                    46,2
-                  </td>
-                </tr>
-              </td>
-              <td className="border">
-                <tr>
-                  <td className="p-[16px] !z-0 relative border-r text-center  text-[#1A1A1A] leading-[24px] text-[14px]   border-[#E8E8E8] w-full">
-                    Name
-                  </td>
-                  <td className="p-[16px] border-r text-center  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] w-full">
-                    Score
-                  </td>
-                  <td className="p-[16px] text-center  text-[#1A1A1A] leading-[24px] text-[14px]  border-[#E8E8E8] w-full">
-                    Win/Lose
-                  </td>
-                </tr>
-              </td>
-              <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                1
-              </td>
-              <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                1
-              </td>
-              <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                1
-              </td>
-              <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                1
-              </td>
-              <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                1
-              </td>
-              <td className="p-[16px] border-l-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                1
-              </td>
-              <td className="p-[16px] border-l-0 border-r-0  text-center text-[#1A1A1A] leading-[24px] text-[14px] border border-[#E8E8E8]">
-                1
-              </td>
-            </tr>
-          </tbody>
+          {/* table footer */}
+          <tr>
+            <td
+              className={`px-[16px] border-r-[1px]
+              bg-white  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px] border-b-[1px]`}
+              colSpan={3}
+            >
+              Total
+            </td>
+            <td
+              className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]"
+              colSpan={3}
+            >
+              Daffarel
+            </td>
+            <td
+              className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]"
+              colSpan={2}
+            >
+              07:35
+            </td>
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+              6/13
+            </td>
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+              46,2
+            </td>
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+              6/13
+            </td>
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+              46,2
+            </td>
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+              6/13
+            </td>
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+              46,2
+            </td>
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+              6/13
+            </td>
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+              46,2
+            </td>
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+              4
+            </td>
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+              5
+            </td>
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+              9
+            </td>
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+              5
+            </td>
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+              5
+            </td>
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+              5
+            </td>
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+              5
+            </td>
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+              5
+            </td>
+            <td className="px-[16px] border-r-[1px] py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+              5
+            </td>
+            <td className="px-[16px]  py-[6px] text-[#1A1A1A] text-[14px]  border-b-[1px]">
+              5
+            </td>
+          </tr>
         </table>
       </TableWrapper>
     </div>
