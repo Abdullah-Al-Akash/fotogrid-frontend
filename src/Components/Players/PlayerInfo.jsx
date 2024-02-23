@@ -58,6 +58,7 @@ const PlayerInfo = () => {
                 <span className="ml-[9px]">12</span>
               </div>
             </div>
+            {/* Updated */}
             <div className="sm:border-l-[1px] border-b-[1px] border-[#333333] bebas-Neue flex flex-row  justify-around items-start sm:items-center">
               <div className="sm:px-[30px] py-[18px] flex gap-[6px] items-center md:w-auto w-[50%] border-r md:border-r-0 border-[#4A4A4A]">
                 <img className="w-[28px] h-[28px]" src="/ball.png" alt="ball" />
